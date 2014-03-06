@@ -1,0 +1,34 @@
+$header-full-width: 100%;
+$header-logo-width: 25%;
+$header-image-width: $header-full-width - $header-logo-width;
+
+section.site-header {
+  @include size($header-full-width 250px);
+  display: flex;
+
+  .logo-content {
+    background: rgb(107, 126, 128);
+    width: $header-logo-width;
+    padding: 1em;
+    overflow: hidden;
+
+    h1 {
+      color: white;
+    }
+
+    img {
+      width: 200px;
+      height: auto;
+      display: block;
+      margin: 0 auto;
+    }
+  }
+
+  .image-content {
+    @include size(100%);
+    overflow: hidden;
+    background: image_url('highway1.JPG');
+    background-size: cover;
+    background-position-y: 62%;
+  }
+}

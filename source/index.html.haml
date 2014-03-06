@@ -1,0 +1,11 @@
+---
+title: Lisa makes things
+---
+
+%article.blog-post
+  - blog.articles[0..5].each do |article|
+    %header
+      %h1= article.title
+      %h6.timestamp= article.date.strftime("%m/%d/%Y")
+    .article-body
+      = article.body

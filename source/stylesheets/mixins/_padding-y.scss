@@ -1,0 +1,4 @@
+@mixin padding-y($value: 1em) {
+  padding-top: $value;
+  padding-bottom: $value;
+}

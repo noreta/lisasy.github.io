@@ -1,0 +1,4 @@
+@mixin equal-gutter($direction: top, $value: 1em) {
+  padding-#{$direction}: $value;
+  margin-#{$direction}: $value;
+}

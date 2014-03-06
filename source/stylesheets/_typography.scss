@@ -1,0 +1,39 @@
+$base-font-size: 15px;
+
+body {
+  letter-spacing: 0.5px;
+  font-family: $serif-typeface;
+  color: $base-font-color;
+  font-weight: 300;
+  font-size: $base-font-size;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: $header-font-color;
+  letter-spacing: 0.5px;
+  font-family: $serif-typeface;
+}
+
+h1 {
+  font-size: 64px;
+  font-weight: 300;
+  font-family: $display-typeface;
+}
+
+h5 {
+  font-size: 1em;
+}
+
+p {
+  line-height: 1.5;
+}
+
+a {
+  @include transition(0.25s color linear);
+  color: #92EBCE;
+
+  &:hover {
+    color: lighten(#92EBCE, 5);
+  }
+}
+
