@@ -2,10 +2,87 @@ body {
   background: $background-color;
 }
 
+aside.navigation {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  background: #D7E0E4;
+  width: 200px;
+
+  div.name {
+    margin: 0;
+    font-size: 22px;
+    text-align: center;
+
+    img {
+      @include size(80px);
+    }
+
+    a {
+      padding: 1em inherit;
+      background: #2AAAA5;
+      display: block;
+      color: white;
+    }
+  }
+
+  a {
+    color: #6A8194;
+  }
+
+  .description {
+    padding: 12px;
+    background: lighten(#d7e0e4, 10);
+
+    p {
+      font-size: 11px;
+    }
+  }
+
+  ul {
+    margin: 24px 0 0 0;
+    padding: 0;
+
+    li {
+      padding: 6px 0;
+
+      a {
+        display: block;
+        font-size: 18px;
+        padding-left: 36px;
+      }
+    }
+  }
+}
+
 section.container {
-  box-shadow: 0 -1px 2px 0 rgba(black, 0.6);
 
   section.container-content {
     @include outer-container;
+    margin-left: 300px;
+    padding: 36px inherit;
+
+    .section-subhead {
+      font-weight: 700;
+      text-transform: uppercase;
+      font-family: $sans-serif-typeface;
+      margin-bottom: 0;
+      font-size: 18px;
+      letter-spacing: 2px;
+
+      & + p {
+        margin-top: 0.25em;
+      }
+    }
+
+    p.intro {
+      font-size: 36px;
+      width: 800px;
+    }
+
+    .paragraph-wrapper {
+      width: 520px;
+    }
   }
 }

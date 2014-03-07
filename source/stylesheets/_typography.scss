@@ -1,10 +1,9 @@
 $base-font-size: 15px;
 
 body {
-  letter-spacing: 0.5px;
-  font-family: $serif-typeface;
+  font-family: 'minion-pro';
   color: $base-font-color;
-  font-weight: 300;
+  font-weight: 500;
   font-size: $base-font-size;
 }
 
@@ -26,13 +25,16 @@ h5 {
 
 p {
   line-height: 1.5;
+  font-size: 20px;
 }
 
 a {
   @include transition(0.25s color linear);
   color: #92EBCE;
+  text-decoration: none;
 
   &:hover {
+    text-decoration: underline;
     color: lighten(#92EBCE, 5);
   }
 }

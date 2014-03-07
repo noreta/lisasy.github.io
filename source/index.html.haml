@@ -2,10 +2,10 @@
 title: Lisa makes things
 ---
 
-%article.blog-post
-  - blog.articles[0..5].each do |article|
+- blog.articles[0..5].each do |article|
+  %article.blog-post
     %header
       %h1= article.title
-      %h6.timestamp= article.date.strftime("%m/%d/%Y")
+      %h6.timestamp= article.date.strftime("%B %-d, %Y")
     .article-body
       = article.body

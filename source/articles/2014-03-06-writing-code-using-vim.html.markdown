@@ -1,6 +1,7 @@
 ---
 title: Writing Code Using Vim
 date: 2014-03-06 05:55 UTC
+published: false
 ---
 
 When I first interviewed for a design apprentice position at
