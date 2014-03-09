@@ -1,0 +1,5 @@
+%ul
+  - blog.articles[0..5].each do |article|
+    %li
+      = link_to article.title, article.url
+      %h6.timestamp= article.date.strftime("%B %-d, %Y")
