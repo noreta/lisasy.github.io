@@ -1,6 +1,10 @@
 activate :automatic_image_sizes
 activate :livereload
 
+set :relative_links, true
+set :css_dir, 'stylesheets'
+set :js_dir, 'js'
+set :images_dir, 'img'
 set :haml, :format => :html5
 
 activate :blog do |blog|
@@ -19,8 +23,8 @@ configure :build do
   activate :relative_assets
 end
 
-set :relative_links, true
-set :css_dir, 'stylesheets'
-set :js_dir, 'js'
-set :images_dir, 'img'
+activate :deploy do |deploy|
+  deploy.method = :git
+end
+
 
