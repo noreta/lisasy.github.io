@@ -1,5 +1,4 @@
 activate :automatic_image_sizes
-activate :livereload
 
 set :relative_links, true
 set :css_dir, 'stylesheets'
