@@ -1,41 +1,64 @@
-$base-font-size: 15px;
-
 body {
-  font-family: 'minion-pro';
+  font-family: $body-typeface;
   color: $base-font-color;
-  font-weight: 500;
   font-size: $base-font-size;
 }
 
 h1, h2, h3, h4, h5, h6 {
-  color: $header-font-color;
-  letter-spacing: 0.5px;
-  font-family: $serif-typeface;
+  font-family: $display-typeface;
+  font-weight: 600;
+  margin: 0;
 }
 
 h1 {
-  font-size: 64px;
-  font-weight: 300;
-  font-family: $display-typeface;
+  @extend %display-headline;
+}
+
+h2 {
+  font-size: $f4;
+}
+
+h3 {
+  font-size: $f3;
+}
+
+h4 {
+  font-size: $f2;
 }
 
 h5 {
-  font-size: 1em;
+  @extend %byline;
 }
 
 p {
   line-height: 1.5;
-  font-size: 20px;
 }
 
 a {
   @include transition(0.25s color linear);
-  color: #92EBCE;
+  color: $base-accent-color;
   text-decoration: none;
 
   &:hover {
     text-decoration: underline;
-    color: lighten(#92EBCE, 5);
+    color: lighten($base-accent-color, 5);
   }
 }
 
+.half-opacity {
+  opacity: 0.5;
+}
+
+// Typographic Variables
+%display-headline {
+  font-family: $display-typeface;
+  font-size: $f5;
+  font-weight: 600;
+}
+
+%byline {
+  font-family: $display-typeface;
+  font-size: $f0;
+  font-weight: 600;
+  text-transform: uppercase;
+}

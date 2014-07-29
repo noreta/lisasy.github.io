@@ -20,15 +20,15 @@
     %script{:src => "js/article.js"}
     %script{:src => "js/vendor/modernizr-2.6.1.min.js"}
     :plain
-      <script type="text/javascript" src="//use.typekit.net/vzo3kgo.js"></script>
+      <script type="text/javascript" src="//use.typekit.net/fzo8osy.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
 
   %body
     /[if lt IE 7]
-      <p class="chromeframe">You are using an outdated browser. <a href="http://browsehappy.com/">Upgrade your browser today</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to better experience this site.</p>
-    = partial "partials/header"
-    = partial "partials/navigation"
-    %section.container
+    %header.masthead
+      .container
+        %h3 Lisa Sy
+    %main.container
       %section.container-content
         = yield
 

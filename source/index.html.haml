@@ -2,9 +2,29 @@
 title: Lisa makes things
 ---
 
-%article.blog-post
-  %header
-    %h1= blog.articles[0].title
-    %h6.timestamp= blog.articles[0].date.strftime("%B %-d, %Y")
-  .article-body
-    = blog.articles[0].body
+%section.container
+  - data.project.projects.each do |p|
+    %article.project-item
+      =link_to "/projects/hues-and-views.html" do
+        .image-wrapper
+          = image_tag('hues_and_views/hv-koblenz-2014.JPG')
+        .text-content
+          %h3= p
+          %h5 March 2014 - Present
+  -# %article.project-item
+  -#   =link_to "/projects/hues-and-views.html" do
+  -#     .image-wrapper
+  -#       = image_tag('hues_and_views/hv-koblenz-2014.JPG')
+  -#     .text-content
+  -#       %h3 Hues & Views
+  -#       %h5 March 2014 - Present
+  -# %article.project-item
+  -#   .image-wrapper
+  -#     = image_tag('neon_labs/neon-dashboard.png')
+  -#   .text-content
+  -#     %h3 Neon Labs
+  -#     %h5 March 2014 - Present
+  -# %article.project-item
+  -#   .text-content
+  -#     %h3 Hues & Views
+  -#     %h5 March 2014 - Present

@@ -1,0 +1,23 @@
+header.project-banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+
+  .image-wrapper {
+    margin-bottom: 0;
+  }
+
+  section.banner {
+    @include span-columns(4 of 12);
+    background: $dark-navy;
+    color: white;
+    position: absolute;
+    padding: 1em;
+    bottom: 20px;
+    right: 20px;
+  }
+}
+
+section.project-body {
+  @include outer-container;
+}

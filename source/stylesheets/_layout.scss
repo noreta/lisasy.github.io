@@ -1,89 +1,60 @@
-body {
-  background: $background-color;
-}
+$layout-padding: 2em;
 
-aside.navigation {
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  background: #D7E0E4;
-  width: 200px;
+header.masthead {
+  border-bottom: 3px solid $dark-navy;
 
-  div.name {
-    margin: 0;
-    font-size: 22px;
-    text-align: center;
-
-    img {
-      @include size(80px);
-    }
-
-    a {
-      padding: 1em inherit;
-      background: #2AAAA5;
-      display: block;
-      color: white;
-    }
-  }
-
-  a {
-    color: #6A8194;
-  }
-
-  .description {
-    padding: 12px;
-    background: lighten(#d7e0e4, 10);
-    height: 60px;
-
-    p {
-      font-size: 11px;
-    }
-  }
-
-  ul {
-    margin: 24px 0 0 0;
-    padding: 0;
-
-    li {
-      padding: 6px 0;
-
-      a {
-        display: block;
-        font-size: 18px;
-        padding-left: 36px;
-      }
-    }
+  .container {
+    @include outer-container;
+    padding: 1em 0;
   }
 }
 
 section.container {
+  @include outer-container;
+  padding-top: 1em;
+}
 
-  section.container-content {
-    @include outer-container;
-    margin-left: 300px;
-    padding: 36px inherit;
+article.project-item {
+  @include span-columns(4 of 12);
+  @include omega(3n);
 
-    .section-subhead {
-      font-weight: 700;
-      text-transform: uppercase;
-      font-family: $sans-serif-typeface;
-      margin-bottom: 0;
-      font-size: 18px;
-      letter-spacing: 2px;
+  .image-wrapper {
+    max-width: 100%;
+    max-height: 200px;
+    overflow: hidden;
+    position: relative;
 
-      & + p {
-        margin-top: 0.25em;
-      }
+    img {
+      position: relative;
+      width: 100%;
+      top: -15px;
+      height: auto;
     }
+  }
 
-    p.intro {
-      font-size: 36px;
-      width: 800px;
-    }
+  .text-content {
+    padding: 0.5em 0;
+  }
 
-    .paragraph-wrapper {
-      width: 520px;
-    }
+  a {
+    color: white;
+  }
+
+  background: $dark-navy;
+  border: 10px solid $dark-navy;
+  color: white;
+  box-sizing: border-box;
+  text-align: center;
+}
+
+.project-body {
+  padding: 2em 0;
+
+  aside {
+    @include span-columns(3);
+  }
+
+  article.main-column {
+    @include span-columns(4);
   }
 }

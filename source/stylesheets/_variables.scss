@@ -1,11 +1,28 @@
+// Typography
+$serif-typeface: 'minion-pro', $georgia;
+$sans-serif-typeface: 'jaf-facitweb', $helvetica;
+
+$display-typeface: $sans-serif-typeface;
+$body-typeface: $serif-typeface;
+
+// Colors
+$dark-navy: #0F2231;
+$green: #53B06A;
+$light-tan: #F4F3EE;
+
+$base-font-color: $dark-navy;
+$base-accent-color: $green;
+
+// Font Sizes
+$f0: 14px; // Captions/Small
+$f1: 16px; // Smaller descriptions
+$f2: 18px; // Body text
+$f3: 22px; // Body text header
+$f4: 36px;
+$f5: 48px; // Page headers
+
+$base-font-size: $f2;
+
 // Global Assets
 $background-color: white;
-$border-color: #4C5761;
 
-// Typography
-$base-font-color: #444;
-$header-font-color: #444;
-
-$display-typeface: 'minion-std-black', $georgia;
-$serif-typeface: 'ff-tisa-web-pro', $georgia;
-$sans-serif-typeface: 'franklin-gothic-urw', $helvetica;
