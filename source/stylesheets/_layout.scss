@@ -48,13 +48,35 @@ article.project-item {
 }
 
 .project-body {
-  padding: 2em 0;
+  padding: 3em 0;
 
   aside {
     @include span-columns(3);
+    font-family: $display-typeface;
+    font-size: $f0;
+    margin-top: $gutter-row-v0;
+
+    .sidebar-set {
+      margin-bottom: 2em;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: 0.5em 0 1.0em;
+      padding-left: 0;
+
+      li {
+        margin-bottom: 0.5em;
+      }
+
+      a {
+        @include jumpline();
+      }
+    }
   }
 
   article.main-column {
-    @include span-columns(4);
+    @include span-columns(9);
+    padding-left: 2em;
   }
 }

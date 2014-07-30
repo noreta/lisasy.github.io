@@ -56,9 +56,53 @@ a {
   font-weight: 600;
 }
 
+%article-header, .article-header {
+  font-family: $display-typeface;
+  font-size: ($f2 + $f3) / 2;
+  font-weight: 600;
+  display: inline;
+  border-bottom: 4px solid $base-font-color;
+}
+
+%standfirst, .standfirst {
+  font-size: ($f4 + $f3) / 2;
+}
+
 %byline {
   font-family: $display-typeface;
   font-size: $f0;
   font-weight: 600;
   text-transform: uppercase;
 }
+
+// Web UI
+a.button {
+  border-radius: $base-border-radius;
+  border: 3px solid $base-accent-color;
+  display: block;
+  font-family: $display-typeface;
+  padding: 0.5em 1em;
+  text-align: center;
+
+  &:hover {
+    background: rgba($base-accent-color, 0.10);
+    text-decoration: none;
+  }
+}
+
+@mixin jumpline($mixin-color: $light-gray) {
+  color: $mixin-color;
+  border-bottom: 1px solid rgba($mixin-color, 0.5);
+
+  &:hover {
+    color: darken($mixin-color, 10);
+    border-bottom-color: darken($mixin-color, 20);
+    text-decoration: none;
+  }
+}
+
+// Grid Elements
+$article-header-height: ($f3 + $f4) / 2;
+$paragraph-gutter-row: 16px;
+
+$gutter-row-v0: $article-header-height + ($paragraph-gutter-row * 2.5);
