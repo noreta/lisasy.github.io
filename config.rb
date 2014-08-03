@@ -6,9 +6,11 @@ set :js_dir, 'js'
 set :images_dir, 'img'
 set :haml, :format => :html5
 
-activate :blog do |blog|
-  blog.prefix = 'articles'
+activate :blog do |project|
+  project.layout = 'project'
 end
+
+page "/projects/*", layout: "project"
 
 activate :directory_indexes
 activate :i18n
