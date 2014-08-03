@@ -1,15 +1,18 @@
-details:
-  - name: "Hues & Views"
-    slug: "hues-and-views",
-    main_image_url: "hues_and_views/hv-koblenz-2014.JPG",
-    timeframe: "January 2014 - Present"
-  - name: "Neon Labs",
-    subtitle: "Made at thoughtbot",
-    slug: "neon-labs",
-    main_image_url: "neon_labs/neon-dashboard.png",
-    timeframe: "October 2013 - November 2013"
-  - name: "TypeClub",
-    subtitle: "Made at Wesleyan University",
-    slug: "type-club",
-    main_image_url: "",
-    timeframe: "January 2012 - May 2013"
+projects:
+  -
+    name: Hues & Views
+    slug: hues-and-views
+    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
+    timeframe: January 2014 - Present
+  -
+    name: Neon Labs
+    subtitle: Made at thoughtbot
+    slug: neon-labs
+    main_image_url: "neon_labs/neon-dashboard.png"
+    timeframe: October 2013 - November 2013
+  -
+    name: TypeClub
+    subtitle: Made at Wesleyan University
+    slug: type-club
+    main_image_url: "neon_labs/neon-dashboard.png"
+    timeframe: January 2012 - May 2013

@@ -1,0 +1,9 @@
+- p = locals[:project]
+
+%header.project-banner
+  <div class="image-wrapper #{p[:slug]}"></div>
+  %section.banner
+    %h1= p[:name]
+    %h5.half-opacity= p[:timeframe]
+    %p
+      This is an art project inspired by my environment.

@@ -1,30 +1,12 @@
 ---
 title: Lisa makes things
 ---
-
 %section.container
-  - data.project.projects.each do |p|
+  - data.projects.projects.each_with_index do |project, index|
     %article.project-item
-      =link_to "/projects/hues-and-views.html" do
+      =link_to "/projects/#{project.slug}.html" do
         .image-wrapper
-          = image_tag('hues_and_views/hv-koblenz-2014.JPG')
+          = image_tag(project.main_image_url)
         .text-content
-          %h3= p
-          %h5 March 2014 - Present
-  -# %article.project-item
-  -#   =link_to "/projects/hues-and-views.html" do
-  -#     .image-wrapper
-  -#       = image_tag('hues_and_views/hv-koblenz-2014.JPG')
-  -#     .text-content
-  -#       %h3 Hues & Views
-  -#       %h5 March 2014 - Present
-  -# %article.project-item
-  -#   .image-wrapper
-  -#     = image_tag('neon_labs/neon-dashboard.png')
-  -#   .text-content
-  -#     %h3 Neon Labs
-  -#     %h5 March 2014 - Present
-  -# %article.project-item
-  -#   .text-content
-  -#     %h3 Hues & Views
-  -#     %h5 March 2014 - Present
+          %h3= project.name
+          %h5= project.timeframe
