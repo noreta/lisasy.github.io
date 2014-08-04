@@ -4,7 +4,19 @@ header.project-banner {
   max-height: 500px;
 
   .image-wrapper {
+    @include size(auto 550px);
+    background-size: cover;
     margin-bottom: 0;
+
+    &.hues-and-views {
+      background-image: image_url("hues_and_views/hv-koblenz-2014.JPG");
+      background-position: 50%;
+    }
+
+    &.neon-labs {
+      background-image: image_url("neon_labs/neon-dashboard.png");
+      background-position: 50%;
+    }
   }
 
   section.banner {
