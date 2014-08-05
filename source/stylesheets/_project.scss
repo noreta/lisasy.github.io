@@ -5,6 +5,7 @@ header.project-banner {
 
   .image-wrapper {
     @include size(auto 550px);
+    background-attachment: fixed;
     background-size: cover;
     margin-bottom: 0;
 
