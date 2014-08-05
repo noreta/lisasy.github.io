@@ -1,15 +1,24 @@
 projects:
   -
     name: Hues & Views
+    subtitle:
+      This is an art project inspired by my environment.
     slug: hues-and-views
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: January 2014 - Present
+    content:
+      standfirst_title: The inspiration behind it
+      standfirst: In 2013, the San Francisco Bay Area became the first place I declared home that wasn't my childhood home, nor the place I went to college. In trying to understand my position in a place, I decided to capture the energy of places through urban sketching.
   -
     name: Neon Labs
-    subtitle: Made at thoughtbot
+    subtitle: Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on machine-learning from Carnegie Mellon University.
     slug: neon-labs
     main_image_url: "neon_labs/neon-dashboard.png"
     timeframe: October 2013 - November 2013
+    content:
+      standfirst_title: Identifying the user needs
+      standfirst:
+        The project first began with a Design Sprint at thoughtbot, wher e we identified the main user flow.
   -
     name: TypeClub
     subtitle: Made at Wesleyan University

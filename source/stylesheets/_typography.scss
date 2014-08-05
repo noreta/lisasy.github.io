@@ -49,6 +49,10 @@ a {
   opacity: 0.5;
 }
 
+p {
+  margin: 0.5em auto 1.0em;
+}
+
 // Typographic Variables
 %display-headline {
   font-family: $display-typeface;

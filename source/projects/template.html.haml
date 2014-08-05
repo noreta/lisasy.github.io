@@ -5,5 +5,35 @@
   %section.banner
     %h1= p[:name]
     %h5.half-opacity= p[:timeframe]
-    %p
-      This is an art project inspired by my environment.
+    %p= p[:subtitle]
+%section.project-body
+  .box
+    %aside.sidebar-l
+      -# .sidebar-set
+      -#   =link_to 'Visit website', 'http://huesandviews.tumblr.com', class: 'button'
+      .sidebar-set
+        %header
+          %h5 Tools Used
+          %ul
+            %li= link_to 'Micron Pens 005', 
+              'http://www.dickblick.com/products/sakura-pigma-micron-pen/', target: '_blank'
+            %li= link_to 'Prismacolor Markers', 
+              'http://www.prismacolor.com/products/art-markers/brush-tip-markers', target: '_blank'
+            %li= link_to 'Moleskine Large Sketchbook', 
+              'http://www.moleskine.com/us/collections/model/product/sketchbook-large', target: '_blank'
+      .sidebar-set
+        %header
+          %h5 Genre
+          %ul
+            %li Landscape
+            %li Urban sketching
+            %li Pen & ink
+            %li Illustration
+    %article.main-column
+      %h3.article-header= p[:content][:standfirst_title]
+      %p.standfirst= p[:content][:standfirst]
+
+  .box
+    %article.main-column.no-left
+      %h4 Introduction to Art
+      %p Since I was seven years old, I have always enjoyed drawing. I discovered it one during during the recess period of Chinese School when the third grade teacher began to draw Pokemon characters for all of us. I admired his ability to replicate the contours of Bulbasaur from the animated and imaginary character on TV onto a piece of paper I could take home.
