@@ -15,10 +15,6 @@ projects:
           - Pen and ink
           - Illustration
           - Environment
-    content:
-      standfirst_title: The inspiration behind it
-      standfirst:
-        "In 2013, the San Francisco Bay Area became the first place I declared home with purpose: this was neither the city of my childhood home, nor the place I went to college. In trying to understand what it means to be apart of a space, I decided to capture the energy of places through urban sketching."
   -
     name: Neon Labs
     subtitle: Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on machine-learning from Carnegie Mellon University.

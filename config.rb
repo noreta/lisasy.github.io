@@ -21,11 +21,11 @@ activate :pagination do
   end
 end
 
-data.projects.projects.each do |project|
-  proxy "/projects/#{project[:slug]}.html", "/projects/template.html",
-      locals: {project: project},
-      ignore: true
-end
+# data.projects.projects.each do |project|
+#   proxy "/projects/#{project[:slug]}.html", "/projects/template.html",
+#       locals: {project: project},
+#       ignore: true
+# end
 
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
