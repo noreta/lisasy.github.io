@@ -57,6 +57,10 @@ p {
   text-decoration: line-through;
 }
 
+figcaption {
+  @extend %caption;
+}
+
 // Typographic Variables
 %display-headline {
   font-family: $display-typeface;
@@ -81,6 +85,13 @@ p {
   font-size: $f0;
   font-weight: 600;
   text-transform: uppercase;
+}
+
+%caption {
+  color: $light-gray;
+  // font-family: $display-typeface;
+  font-size: $f0;
+  font-weight: 400;
 }
 
 // Web UI

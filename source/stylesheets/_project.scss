@@ -35,6 +35,10 @@ header.project-banner {
   @include outer-container;
   padding: 3em 0;
 
+  h4 {
+    padding-top: 1em;
+  }
+
   aside {
     @include span-columns(3);
     font-family: $display-typeface;
@@ -59,18 +63,50 @@ header.project-banner {
       }
     }
   }
-
-  article.main-column {
-    @include span-columns(9);
-    padding-left: 2em;
-
-    &.no-left {
-      @include shift(3);
-      @include span-columns(7);
-    }
-  }
 }
 
 .box {
   @include outer-container;
+  margin-bottom: 2em;
+
+  &:first-child {
+    margin-bottom: 0;
+  }
+}
+
+article.main-column {
+  @include span-columns(9);
+  padding-left: 2em;
+
+  &.no-left {
+    @include shift(3);
+    @include span-columns(7);
+  }
+}
+
+article.col-2 {
+  @include fill-parent;
+
+  .col {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+  }
+}
+
+article.col-3 {
+  @include fill-parent;
+
+  .col {
+    @include span-columns(4 of 12);
+    @include omega(3n);
+  }
+}
+
+figure.image-wrapper {
+  @include size(100% auto);
+
+  img {
+    width: 100%;
+    height: auto;
+  }
 }
