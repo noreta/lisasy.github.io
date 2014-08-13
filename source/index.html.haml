@@ -4,7 +4,7 @@ title: Lisa makes things
 %section.container
   - data.projects.projects.each_with_index do |project, index|
     %article.project-item
-      =link_to "/projects/#{project.slug}.html" do
+      =link_to "/projects/#{project.slug}" do
         .image-wrapper
           = image_tag(project.main_image_url)
         .text-content

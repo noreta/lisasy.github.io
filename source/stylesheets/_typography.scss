@@ -34,6 +34,10 @@ p {
   line-height: 1.5;
 }
 
+ul li {
+  margin-bottom: 0.5em;
+}
+
 a {
   @include transition(0.25s color linear);
   color: $base-accent-color;
@@ -80,6 +84,10 @@ figcaption {
   font-size: ($f4 + $f3) / 2;
 }
 
+%standfirst-second, .standfirst-second {
+  font-size: $f3;
+}
+
 %byline {
   font-family: $display-typeface;
   font-size: $f0;
@@ -89,9 +97,9 @@ figcaption {
 
 %caption {
   color: $light-gray;
-  // font-family: $display-typeface;
-  font-size: $f0;
+  font-size: $f00;
   font-weight: 400;
+  line-height: 1.4;
 }
 
 // Web UI

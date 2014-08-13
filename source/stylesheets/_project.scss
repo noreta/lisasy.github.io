@@ -18,6 +18,11 @@ header.project-banner {
       background-image: image_url("neon_labs/neon-dashboard.png");
       background-position: 50%;
     }
+
+    &.type-club {
+      background-image: image_url("type_club/Wesleyan-Olin.jpg");
+      background-position: center;
+    }
   }
 
   section.banner {
@@ -50,7 +55,7 @@ header.project-banner {
     }
 
     ul {
-      list-style-type: none;
+      list-style-type: square;
       margin: 0.5em 0 1.0em;
       padding-left: 0;
 
@@ -77,6 +82,12 @@ header.project-banner {
 article.main-column {
   @include span-columns(9);
   padding-left: 2em;
+
+  &.full-width {
+    @include fill-parent();
+    @include clearfix();
+    padding-left: 0;
+  }
 
   &.no-left {
     @include shift(3);
@@ -106,7 +117,24 @@ figure.image-wrapper {
   @include size(100% auto);
 
   img {
-    width: 100%;
-    height: auto;
+    @include size(100% auto);
+  }
+}
+
+figure.image-wrapper.side-caption {
+
+  img,
+  figcaption {
+    @include inline-block;
+    float: left;
+  }
+
+  img {
+    @include span-columns(6 of 9);
+  }
+
+  figcaption {
+    @include span-columns(3 of 9);
+    word-wrap: break-word;
   }
 }
