@@ -1,0 +1,25 @@
+footer.footer {
+  border-top: 1px solid rgba(black, 0.10);
+
+  p {
+    font-family: $display-typeface;
+    font-size: $f0;
+    color: $light-gray;
+  }
+
+  .description {
+    @include fill-parent;
+
+    @include media($medium-screen) {
+      @include span-columns(8 of 12);
+    }
+  }
+
+  .contact {
+    @include fill-parent;
+
+    @include media($medium-screen) {
+      @include span-columns(4 of 12);
+    }
+  }
+}

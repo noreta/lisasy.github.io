@@ -1,6 +1,11 @@
 .outer-container {
   @include outer-container;
-  padding-top: $gutter-m;
+  padding: $gutter-m;
+}
+
+.outer-container-s {
+  @include outer-container;
+  padding: $gutter-m $gutter-s;
 }
 
 article.project-item {

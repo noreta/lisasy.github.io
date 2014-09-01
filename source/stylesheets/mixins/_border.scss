@@ -1,3 +1,0 @@
-@mixin border($direction: bottom, $stroke-width: 1px, $border-color: #4C5761) {
-  border-#{$direction}: $stroke-width solid $border-color;
-}
