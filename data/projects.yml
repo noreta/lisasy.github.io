@@ -31,3 +31,9 @@ projects:
     slug: type-club
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
+  -
+    name: Art
+    subtitle: Made at Wesleyan University
+    slug: art
+    main_image_url: "type_club/Wesleyan-Olin.jpg"
+    timeframe: 1997 - Present

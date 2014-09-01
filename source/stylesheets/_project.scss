@@ -95,24 +95,6 @@ article.main-column {
   }
 }
 
-article.col-2 {
-  @include fill-parent;
-
-  .col {
-    @include span-columns(6 of 12);
-    @include omega(2n);
-  }
-}
-
-article.col-3 {
-  @include fill-parent;
-
-  .col {
-    @include span-columns(4 of 12);
-    @include omega(3n);
-  }
-}
-
 figure.image-wrapper {
   @include size(100% auto);
 

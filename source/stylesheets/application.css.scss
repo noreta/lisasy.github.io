@@ -1,13 +1,14 @@
 @import "bourbon/bourbon";
+@import "grid-settings";
 @import "neat/neat";
 @import "normalize";
 
-@import "mixins/padding-x";
-@import "mixins/padding-y";
-@import "mixins/equal-gutter";
-@import "mixins/border";
+@import "sycss/layout-variables";
+@import "sycss/typography";
+@import "sycss/columns";
 
 @import "variables";
 @import "typography";
 @import "layout";
+@import "header";
 @import "project";

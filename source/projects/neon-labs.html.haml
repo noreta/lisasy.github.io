@@ -1,0 +1,53 @@
+%header.project-banner
+  <div class="image-wrapper #{t('neon_labs.slug')}"></div>
+  %section.banner
+    %h1= t("neon_labs.name")
+    %h5.half-opacity= t("neon_labs.timeframe")
+    %p= t("neon_labs.subtitle")
+%section.project-body
+  .box
+    %aside.sidebar-l
+      .sidebar-set
+        %header
+          %h5 Toolkit
+          %ul
+            %li Ruby on Rails
+            %li HAML & SCSS
+            %li Vim
+            %li Trello for project management
+      .sidebar-set
+        %header
+          %h5 Team
+          %ul
+            %li 1 Rails developer
+            %li 1 other designer (part-time)
+    %article.main-column
+      %h3.article-header= t("neon_labs.standfirst_title")
+      %p.standfirst= t("neon_labs.standfirst")
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Defining the goal
+        %p
+          The Neon team came to thoughtbot with the need to design the interface and user experience for uploading and selecting Neon-generated thumbnails for their videos. I led a week-long design sprint with the stakeholders, addressing the customers' needs and identifying how Neon can fulfill them.
+        %h4 Moving into a gentrification project
+        %p
+          I guess I wasn't the only one who wanted to live in San Francisco.
+          What began as an innocuous desire to move to the city of my dreams
+          emerged a rocky relationship between myself and the city, where I
+          questioned my position as a "tech worker" amidst a housing crisis and
+          an ever-growing inequality gap amongst residents of the Bay Area.
+        %p
+          In wanting to belong to the city in a more participatory nature
+          beyond simply paying rent, I wanted to be in the public, deliberately
+          blending into the street as I drew it.
+  .box
+    %article.col-2
+      .col
+        %figure.image-wrapper
+          = image_tag("hues_and_views/hv-sf-2014-3.jpg")
+          %figcaption San Francisco, May 2014
+      .col
+        %figure.image-wrapper
+          = image_tag("hues_and_views/hv-paris-2014-1.jpg")
+          %figcaption Paris, April 2014

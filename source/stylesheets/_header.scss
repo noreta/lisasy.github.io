@@ -1,0 +1,13 @@
+header.header {
+  border-bottom: 1px solid rgba(black, 0.10);
+
+  a {
+    color: $base-font-color;
+  }
+
+  p {
+    font-family: $display-typeface;
+    font-size: $f0;
+    color: $light-gray;
+  }
+}

@@ -1,0 +1,41 @@
+%header.project-banner
+  <div class="image-wrapper #{t('art.slug')}"></div>
+  %section.banner
+    %h1= t("art.name")
+    %h5.half-opacity= t("art.timeframe")
+    %p= t("art.subtitle")
+%section.project-body
+  .box
+    %aside.sidebar-l
+      -# .sidebar-set
+      -#   =link_to 'Visit website', 'http://huesandviews.tumblr.com', class: 'button'
+      .sidebar-set
+        %header
+          %h5 Services Offered
+          %ul
+            %li Logo design
+            %li Poster design
+            %li Marketing campaigns
+            %li Design strategy workshops
+            %li Film screenings
+            %li Weekly design office hours
+            %li Travelling design library
+      .sidebar-set
+        %header
+          %h5 Clients
+          %ul
+            %li= link_to "Patricelli Center for Social Entrepreneurship at Wesleyan University",
+              "http://www.wesleyan.edu/patricelli/", target: "_blank"
+            %li= link_to "The Minds Foundation",
+              "http://www.mindsfoundation.org/", target: "_blank"
+            %li Wesleyan Consulting Group
+            %li= link_to "PYXIS - Wesleyan Journal of the Humanities", 
+              "http://pyxisjournal.com/", target: "_blank"
+            %li Wesleyan Doula Project
+            %li Wesleyan's College of the Environment & Sustainability Interns
+            %li= link_to "Shining Hope for Communities (SHOFCO)",
+              "http://www.shofco.org/", target: "_blank"
+    %article.main-column
+      %h3.article-header= t("art.standfirst_title")
+      %p.standfirst-second= t("art.standfirst")
+

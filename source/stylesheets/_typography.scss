@@ -67,15 +67,15 @@ figcaption {
 
 // Typographic Variables
 %display-headline {
+  @extend .semibold;
   font-family: $display-typeface;
   font-size: $f5;
-  font-weight: 600;
 }
 
 %article-header, .article-header {
+  @extend .semibold;
   font-family: $display-typeface;
   font-size: ($f2 + $f3) / 2;
-  font-weight: 600;
   display: inline;
   border-bottom: 4px solid $base-font-color;
 }
@@ -89,16 +89,16 @@ figcaption {
 }
 
 %byline {
+  @extend .semibold;
   font-family: $display-typeface;
   font-size: $f0;
-  font-weight: 600;
   text-transform: uppercase;
 }
 
 %caption {
+  @extend .normal;
   color: $light-gray;
   font-size: $f00;
-  font-weight: 400;
   line-height: 1.4;
 }
 
@@ -108,7 +108,7 @@ a.button {
   border: 3px solid $base-accent-color;
   display: block;
   font-family: $display-typeface;
-  padding: 0.5em 1em;
+  padding: $gutter-s $gutter-m;
   text-align: center;
 
   &:hover {
