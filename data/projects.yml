@@ -15,25 +15,25 @@ projects:
           - Pen and ink
           - Illustration
           - Environment
-  -
-    name: Neon Labs
-    subtitle: Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on machine-learning from Carnegie Mellon University.
-    slug: neon-labs
-    main_image_url: "neon_labs/neon-dashboard.png"
-    timeframe: October 2013 - November 2013
-    content:
-      standfirst_title: Identifying the user needs
-      standfirst:
-        The project first began with a Design Sprint at thoughtbot, wher e we identified the main user flow.
+  # -
+  #   name: Neon Labs
+  #   subtitle: Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on machine-learning from Carnegie Mellon University.
+  #   slug: neon-labs
+  #   main_image_url: "neon_labs/neon-dashboard.png"
+  #   timeframe: October 2013 - November 2013
+  #   content:
+  #     standfirst_title: Identifying the user needs
+  #     standfirst:
+  #       The project first began with a Design Sprint at thoughtbot, wher e we identified the main user flow.
   -
     name: TypeClub
     subtitle: Made at Wesleyan University
     slug: type-club
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
-  -
-    name: Art
-    subtitle: Made at Wesleyan University
-    slug: art
-    main_image_url: "type_club/Wesleyan-Olin.jpg"
-    timeframe: 1997 - Present
+  # -
+  #   name: Art
+  #   subtitle: Made at Wesleyan University
+  #   slug: art
+  #   main_image_url: "type_club/Wesleyan-Olin.jpg"
+  #   timeframe: 1997 - Present
