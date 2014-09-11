@@ -1,0 +1,29 @@
+---
+en:
+  hues_and_views:
+    name: Hues and Views
+    subtitle:
+      This is an art project examining the relationship between myself and the spaces I encounter.
+    slug: hues-and-views
+    timeframe: January 2014 - Present
+    standfirst_title: The inspiration behind it
+    standfirst:
+      "In 2013, the San Francisco Bay Area became the first place I declared home with purpose: this was neither the city of my childhood home, nor the place I went to college. In trying to understand what it means to be apart of a space, I decided to capture the energy of places through urban sketching."
+  neon_labs:
+    name: Neon Labs
+    subtitle:
+      This is an art project examining the relationship between myself and the spaces I encounter.
+    slug: neon-labs
+    timeframe: October 2013 - November 2013
+    standfirst_title: Overview
+    standfirst:
+      "I led the product design for the internal dashboard of Neon, a tool for predicting the most appealing thumbnails to the human eye based on a Ph.D research thesis on machine-learning at Carnegie Mellon University."
+  type_club:
+    name: Type Club
+    subtitle:
+      I co-founded and managed an 8-person design consultancy at Wesleyan University.
+    slug: type-club
+    timeframe: January 2012 - May 2013
+    standfirst_title: Overview
+    standfirst:
+      "At Wesleyan University, I co-founded and managed a student-run design consultancy called TypeClub. As a team of eight, we worked pro bono with student organizations, official campus administrators, and other resources to provide design strategy and assist in advertising and publicity efforts."
