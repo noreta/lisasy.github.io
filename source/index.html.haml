@@ -10,3 +10,10 @@ title: Lisa makes things
         .text-wrapper
           %h3.p-title= project.name
           %h6.p-timeframe= project.timeframe
+  %article.project-item.column.empty
+    - mail_content = capture do
+      .text-wrapper-static
+        %h3.p-title Add new
+        %h6.p-timeframe Let's work together
+
+    = mail_to "lisasyis@gmail.com", mail_content

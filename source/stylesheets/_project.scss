@@ -45,10 +45,14 @@ header.project-banner {
   }
 
   aside {
-    @include span-columns(3);
-    font-family: $display-typeface;
-    font-size: $f0;
-    margin-top: $gutter-row-v0;
+    display: none;
+
+    @include media($medium-screen) {
+      @include span-columns(3);
+      font-family: $display-typeface;
+      font-size: $f0;
+      margin-top: $gutter-row-v0;
+    }
 
     .sidebar-set {
       margin-bottom: 2em;
@@ -80,18 +84,24 @@ header.project-banner {
 }
 
 article.main-column {
-  @include span-columns(9);
-  padding-left: 2em;
+  @include fill-parent;
+
+  @include media($medium-screen) {
+    @include span-columns(9);
+    padding-left: 2em;
+  }
 
   &.full-width {
-    @include fill-parent();
-    @include clearfix();
+    @include fill-parent;
+    @include clearfix;
     padding-left: 0;
   }
 
   &.no-left {
-    @include shift(3);
-    @include span-columns(7);
+    @include media($medium-screen) {
+      @include shift(3);
+      @include span-columns(7);
+    }
   }
 }
 

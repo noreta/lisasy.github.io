@@ -6,10 +6,13 @@
 @import "sycss/layout-variables";
 @import "sycss/typography";
 @import "sycss/columns";
+@import "sycss/border";
+@import "sycss/sticky-footer";
 
 @import "variables";
 @import "typography";
 @import "layout";
+@import "index";
 @import "header";
 @import "footer";
 @import "project";
