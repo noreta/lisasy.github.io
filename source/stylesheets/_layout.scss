@@ -101,3 +101,14 @@ article.project-item {
     padding-left: $gt-l;
   }
 }
+
+.blockquote {
+  @include fill-parent;
+  @extend .bd-top;
+  @extend .bd-bottom;
+
+  blockquote {
+    font-size: $f5;
+    margin-left: 0;
+  }
+}

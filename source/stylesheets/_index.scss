@@ -39,6 +39,11 @@ article.project-item {
     @extend .normal;
   }
 
+  .p-type {
+    @extend .normal;
+    @extend .half-opacity;
+  }
+
   a {
     color: white;
     text-decoration: none;

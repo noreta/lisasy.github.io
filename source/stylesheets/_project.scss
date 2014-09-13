@@ -83,7 +83,7 @@ header.project-banner {
   }
 }
 
-article.main-column {
+.main-column {
   @include fill-parent;
 
   @include media($medium-screen) {
@@ -114,7 +114,6 @@ figure.image-wrapper {
 }
 
 figure.image-wrapper.side-caption {
-
   img,
   figcaption {
     @include inline-block;

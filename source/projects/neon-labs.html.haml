@@ -13,8 +13,13 @@
           %ul
             %li Ruby on Rails
             %li HAML & SCSS
-            %li Vim
-            %li Trello for project management
+            %li
+              = link_to "thoughtbot's Product Design Sprint",
+                "http://playbook.thoughtbot.com/#prep-work"
+            %li
+              = link_to "Vim",
+                "https://github.com/lisasy/dotfiles/blob/master/vimrc"
+            %li Trello
       .sidebar-set
         %header
           %h5 Team
@@ -29,25 +34,61 @@
       .row
         %h4 Defining the goal
         %p
-          The Neon team came to thoughtbot with the need to design the interface and user experience for uploading and selecting Neon-generated thumbnails for their videos. I led a week-long design sprint with the stakeholders, addressing the customers' needs and identifying how Neon can fulfill them.
-        %h4 Moving into a gentrification project
+          The Neon team came to <a href="http://thoughtbot.com"
+          target="_blank">thoughtbot</a> to design the interface and user
+          experience for uploading and selecting Neon-generated thumbnails for
+          their videos. In order the understand the product, business,
+          technology, and customer, I led a week-long design sprint with the
+          stakeholders, addressing the customers' needs and identifying how
+          Neon can fulfill them.
         %p
-          I guess I wasn't the only one who wanted to live in San Francisco.
-          What began as an innocuous desire to move to the city of my dreams
-          emerged a rocky relationship between myself and the city, where I
-          questioned my position as a "tech worker" amidst a housing crisis and
-          an ever-growing inequality gap amongst residents of the Bay Area.
+          While Neon came in with wireframes and mockups, we did not stay
+          too fixated on those existing sources. We had to learn more about the
+          product and what the customer needed before making decisions on how
+          the application should function.
+        %h4 The Customer
         %p
-          In wanting to belong to the city in a more participatory nature
-          beyond simply paying rent, I wanted to be in the public, deliberately
-          blending into the street as I drew it.
+          With the <a href="http://en.wikipedia.org/wiki/Software_as_a_service"
+          target="_blank">SaaS</a> business model, we defined our primary
+          customers for MVP to be media publishers.
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-sprint-whiteboard.jpg")
+          %figcaption
+            After defining our customer (media publishers), we brainstormed the
+            imagined critical user flow of the application. This is Bob's
+            story.
+  .box
+    %article
+      .blockquote
+        %h4 Value Proposition
+        %blockquote
+          Neon enables you to find the best thumbnail in your video to increase
+          viewership.
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 High-level user stories
+        %p
+          Now that we have a value proposition defined, how do we create a
+          great user experience for those using this service?
+        %p
+          With a lot of post-it notes, sketching, and whiteboarding, we estab
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Finding inspiration in existing products
+        %p
+          During this exploratory design phase, it's important to seek out
+          potential options of designing and building. It was useful to see
+          existing products' information architecture, product and interaction
+          design; we were inspired by RDIO, Dropbox, and iTunes.
   .box
     %article.col-2
-      .col
+      .column
         %figure.image-wrapper
-          = image_tag("hues_and_views/hv-sf-2014-3.jpg")
-          %figcaption San Francisco, May 2014
-      .col
+          = image_tag("neon_labs/neon-inspiration-1.jpg")
+          %figcaption RDIO and iTunes
+      .column
         %figure.image-wrapper
-          = image_tag("hues_and_views/hv-paris-2014-1.jpg")
-          %figcaption Paris, April 2014
+          = image_tag("neon_labs/neon-inspiration-2.jpg")
+          %figcaption Dropbox
