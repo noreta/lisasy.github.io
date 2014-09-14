@@ -2,8 +2,8 @@
   <div class="image-wrapper #{t('neon_labs.slug')}"></div>
   %section.banner
     %h1= t("neon_labs.name")
-    %h5.half-opacity= t("neon_labs.timeframe")
-    %p= t("neon_labs.subtitle")
+    %h5.half-opacity.timeframe= t("neon_labs.timeframe")
+    %p.subtitle= t("neon_labs.subtitle")
 %section.project-body
   .box
     %aside.sidebar-l
@@ -13,6 +13,7 @@
           %ul
             %li Ruby on Rails
             %li HAML & SCSS
+            %li Git
             %li
               = link_to "thoughtbot's Product Design Sprint",
                 "http://playbook.thoughtbot.com/#prep-work"
@@ -65,30 +66,196 @@
           Neon enables you to find the best thumbnail in your video to increase
           viewership.
   .box
-    %article.main-column.no-left
+    %article.main-column.no-left.counter
       .row
-        %h4 High-level user stories
+        %h4 High-level job stories
         %p
           Now that we have a value proposition defined, how do we create a
           great user experience for those using this service?
         %p
-          With a lot of post-it notes, sketching, and whiteboarding, we estab
+          With a lot of post-it notes, sketching, and whiteboarding, we
+          identified five (5) core situations, positioning them as <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank">job stories</a>.
+  .box
+    %article.full-width
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li Neon provides the UI for this process.
+            %li Neon makes it obvious how to do this.
+            %li
+              This is pretty neat. I don’t really have to think so much about
+              this. Neon is fast. 
+            %li
+              I can still “Confirm” that I want to publish the thumbnail, so it’s
+              nice to check the thumb before it gets published.
+        .main-column
+          %h5 Situation
+          %p
+            I want to find the best Neon-recommended thumbnails for my video 
+          %h5 Motivation
+          %p
+            so I use Neon’s generate-and-publish-thumbnail feature to
+            algorithmically find the best frames.
+          %h5 Desired Outcome
+          %p
+            to publish the best thumbnail for my video on its live site.
+
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li
+              I trust Neon’s algorithm reader, especially more than my
+              own subjective opinions.
+            %li
+              I never have to think about checking back on Neon to generate and
+              publish thumbs, especially when my biggest focus is on simply
+              checking analytics.
+            %li
+              If I’m unhappy with analytics, I can always change the video thumb
+              to test and try which performs best.
+            %li This is a huge timer saver for me.
+
+        .main-column
+          %h5 Situation
+          %p I want to effortlessly have Neon find the best thumbnails for my videos
+          %h5 Motivation
+          %p
+            so I use Neon’s auto-publish feature to find and publish the best
+            frame without my manual permission
+          %h5 Desired Outcome
+          %p
+            to publish the best thumbnail for my videos without having to always
+            confirm.
+
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li This makes me anxious. Did I do something wrong?
+            %li
+              I am wondering where the error came from. Is it my computer, or
+              something having to do with the server that I have no control over?
+            %li If it’s my fault, how do I retry?
+            %li When can I retry if it was the server’s issue?
+            %li
+              If my server fixes the problem, how do I find out it has been fixed
+              later on?
+            %li I’m frustrated. Can I just delete this?
+            %li
+              Can I get back to this error later? I don’t have time to deal with
+              this right now.
+
+        .main-column
+          %h5 Situation
+          %p I seem to have errors generate thumbnails for a video
+          %h5 Motivation
+          %p so I want to figure out how to resolve the error
+          %h5 Desired Outcome
+          %p to relieve my anxieties and publish the best thumbnail for my video.
+
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li
+              It will take some time to collect data that will provide insight
+              for us.
+            %li
+              I still wonder how this algorithm magically works.
+            %li This should be simple to do.
+
+        .main-column
+          %h5 Situation
+          %p I want to see how other thumbnails perform
+          %h5 Motivation
+          %p so I want to change the thumbnail to another option.
+          %h5 Desired Outcome
+          %p to see if other thumbnails can generate more views than other ones.
+
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li Should I delete or archive?
+            %li Deleting a project seems very concrete; I ought to be VERY sure.
+            %li
+              Archiving a project seems like a safe option. It will still be in
+              the system, but it won’t be completely out. I could still go back
+              to it if I needed. It would simply just hide it, which is great
+              because I don’t want to be distracted.
+        .main-column
+          %h5 Situation
+          %p This thumbnail is not relevant to me anymore
+          %h5 Motivation
+          %p so I want to delete or archive the thumbnail project
+          %h5 Desired Outcome
+          %p
+            to hide it from the main view and not really have to think about
+            maintaining it anymore.
+
   .box
     %article.main-column.no-left
       .row
-        %h4 Finding inspiration in existing products
+        %h4 Figuring out flow and information architecture
         %p
-          During this exploratory design phase, it's important to seek out
-          potential options of designing and building. It was useful to see
-          existing products' information architecture, product and interaction
-          design; we were inspired by RDIO, Dropbox, and iTunes.
+          After defining our job stories, we were able to better understand our users' anticipated experiences in using Neon. Synthesizing these job stories into a holistic product and experience allowed us to preliminarily define the information architecture of Neon.
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-information-architecture.jpg")
+          %figcaption A preliminary sketch of Neon's information architecture of navigation, defined during the design sprint.
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Wireframing
+        %p With all of the knowledge we have at this point, I created low-fidelity wireframes by sketching the main screens.
+
   .box
     %article.col-2
       .column
         %figure.image-wrapper
-          = image_tag("neon_labs/neon-inspiration-1.jpg")
-          %figcaption RDIO and iTunes
+          = image_tag("neon_labs/neon-wireframe-2.jpg")
       .column
         %figure.image-wrapper
-          = image_tag("neon_labs/neon-inspiration-2.jpg")
-          %figcaption Dropbox
+          = image_tag("neon_labs/neon-wireframe-1.jpg")
+
+  .box
+    .row
+      %article.main-column.no-left
+        %h4 Front-end Development
+        %p Working in parallel with a Rails developer on this project, I began the front-end development. I wrote in HAML, SCSS, and Coffeescript. The code is not publicly available on Github.
+
+  .box
+    .row
+      %article.main-column.no-left
+        %h4 Exploring different visual design and branding
+        %p In the browser using code, I got to explore different visual and communication design for Neon's dashboard. As a team, we liked the visual branding of the rightmost image below.
+  .box
+    %article.col-3
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-dashboard-3.jpg")
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-dashboard-2.jpg")
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-dashboard-1.jpg")
+
+  .box
+    %article.main-column.no-left
+      %h4 Shipping
+      %p We shipped the MVP in about five weeks. In this MVP, we addressed the five core job stories, included a helpful support and FAQ section, and synced the application successfully with the existing machine-learning technology in the back-end. 
+
+  .box
+    %article.main-column.no-left
+      %figure.image-wrapper
+        = image_tag("neon_labs/neon-selection.png")
+        %figcaption This modal appears when a user decides to select one of the three available thumbnails that Neon generates.
+
+  .box
+    %article.main-column.no-left
+      %h4 Funding success
+      %p In July 2014, I was delighted to learn that <a href="http://blogs.wsj.com/venturecapital/2014/07/15/neon-labs-raises-4-1m-to-figure-out-the-subconscious-appeal-of-images/" target="_blank">Neon raised $4.1 million in Series A funding</a>.
+

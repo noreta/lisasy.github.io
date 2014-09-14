@@ -1,0 +1,48 @@
+header.project-banner {
+  position: relative;
+  overflow: hidden;
+  max-height: 500px;
+
+  .image-wrapper {
+    @include size(auto 550px);
+    background-attachment: fixed;
+    background-size: cover;
+    margin-bottom: 0;
+
+    &.hues-and-views {
+      background-image: image_url("hues_and_views/hv-koblenz-2014.JPG");
+      background-position: 50%;
+    }
+
+    &.neon-labs {
+      background-image: image_url("neon_labs/neon-dashboard.png");
+      background-position: 50%;
+    }
+
+    &.type-club {
+      background-image: image_url("type_club/Wesleyan-Olin.jpg");
+      background-position: center bottom;
+    }
+  }
+
+  section.banner {
+    @include span-columns(4 of 12);
+    background: $dark-navy;
+    color: white;
+    position: absolute;
+    padding: 1em;
+    bottom: 20px;
+    right: 20px;
+
+    .timeframe {
+      margin-bottom: $gt-m + $gt-s;
+    }
+
+    .subtitle {
+      @extend .normal;
+      font-size: $f0;
+      opacity: 0.85;
+    }
+  }
+}
+

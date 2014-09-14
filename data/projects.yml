@@ -5,6 +5,7 @@ projects:
       This is an art project examining the relationship between myself and the
       spaces I encounter.
     slug: hues-and-views
+    type: Art & Drawing
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: January 2014 - Present
     sidebar:
@@ -16,19 +17,21 @@ projects:
           - Pen and ink
           - Illustration
           - Environment
-  # -
-  #   name:
-  #     Neon Labs
-  #   subtitle:
-  #     Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on
-  #     machine-learning from Carnegie Mellon University.
-  #   slug: neon-labs
-  #   main_image_url: "neon_labs/neon-dashboard.png"
-  #   timeframe: October 2013 - November 2013
+  -
+    name:
+      Neon Labs
+    subtitle:
+      Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on
+      machine-learning from Carnegie Mellon University.
+    slug: neon-labs
+    type: Product Design
+    main_image_url: "neon_labs/neon-dashboard.png"
+    timeframe: October 2013 - November 2013
   -
     name: TypeClub
     subtitle: Made at Wesleyan University
     slug: type-club
+    type: Leadership & Management
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
   # -
