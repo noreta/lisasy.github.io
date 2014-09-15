@@ -482,45 +482,45 @@ table {
   border-collapse: collapse;
   border-spacing: 0; }
 
-/* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 8, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .pull-l {
   float: left; }
 
-/* line 11, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 12, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .pull-r {
   float: right; }
 
-/* line 16, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 17, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .mbl-f-l {
   float: left; }
 
-/* line 21, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 22, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .mbl-f-r {
   float: right; }
 
 @media screen and (min-width: 40em) {
-  /* line 25, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+  /* line 26, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
   .f-r {
     float: right; } }
 
 @media screen and (min-width: 40em) {
-  /* line 31, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+  /* line 32, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
   .f-l {
     float: right; } }
 
-/* line 38, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 39, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .mbl-b {
   display: block; }
   @media screen and (min-width: 40em) {
-    /* line 38, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+    /* line 39, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
     .mbl-b {
       display: inherit; } }
 
-/* line 46, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+/* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
 .mbl-t-c {
   text-align: center; }
   @media screen and (min-width: 40em) {
-    /* line 46, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
+    /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_layout-variables.scss */
     .mbl-t-c {
       text-align: inherit; } }
 
@@ -529,11 +529,11 @@ table {
   font-weight: 300; }
 
 /* line 10, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_typography.scss */
-.normal, figcaption, article.project-item .p-timeframe {
+.normal, figcaption, article.project-item .p-timeframe, article.project-item .p-type, header.project-banner section.banner .subtitle {
   font-weight: 400; }
 
 /* line 14, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_typography.scss */
-.semibold, h1, .article-header, h5 {
+.semibold, h1, .article-header, h5, article .counter:before {
   font-weight: 600; }
 
 /* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_typography.scss */
@@ -601,7 +601,7 @@ table {
           margin-right: 0; } }
 
 /* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
-.bd-top {
+.bd-top, .blockquote {
   border-top: 1px solid #dddddd; }
 
 /* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
@@ -613,7 +613,7 @@ table {
   border-right: 1px solid #dddddd; }
 
 /* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
-.bd-bottom {
+.bd-bottom, .blockquote {
   border-bottom: 1px solid #dddddd; }
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
@@ -645,67 +645,72 @@ p {
   line-height: 1.5; }
 
 /* line 37, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+ul {
+  padding-left: 0; }
+
+/* line 41, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 ul li {
+  list-style-type: square;
   line-height: 1.5;
   margin-bottom: 0.5em; }
 
-/* line 42, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 a {
   -webkit-transition: 0.25s color linear;
   -moz-transition: 0.25s color linear;
   transition: 0.25s color linear;
   color: #53b06a;
   text-decoration: none; }
-  /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+  /* line 52, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
   a:hover {
     text-decoration: underline;
     color: #64b879; }
 
-/* line 53, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
-.half-opacity {
+/* line 58, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+.half-opacity, article.project-item .p-type {
   opacity: 0.5; }
 
-/* line 57, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 62, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 p {
   margin: 0.5em auto 1.0em; }
 
-/* line 61, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 66, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .strike {
   text-decoration: line-through; }
 
-/* line 70, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 75, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h1 {
   font-family: "jaf-facitweb", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px; }
 
-/* line 76, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 81, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .article-header {
   font-family: "jaf-facitweb", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 23px;
   display: inline;
   border-bottom: 4px solid #0f2231; }
 
-/* line 84, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 89, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .standfirst {
   font-size: 32px; }
 
-/* line 88, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 93, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .standfirst-second {
   font-size: 28px; }
 
-/* line 92, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
-h5 {
+/* line 97, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+h5, article .counter:before {
   font-family: "jaf-facitweb", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase; }
 
-/* line 99, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 104, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 figcaption {
   color: #9c9c9d;
   font-size: 12px;
   line-height: 1.4; }
 
-/* line 107, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+/* line 112, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 a.button {
   border-radius: 0.1875em;
   border: 3px solid #53b06a;
@@ -713,7 +718,7 @@ a.button {
   font-family: "jaf-facitweb", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5em 1em;
   text-align: center; }
-  /* line 115, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+  /* line 120, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
   a.button:hover {
     background: rgba(83, 176, 106, 0.1);
     text-decoration: none; }
@@ -776,7 +781,7 @@ article.project-item {
     -ms-transform: translateY(-100%);
     -o-transform: translateY(-100%);
     transform: translateY(-100%);
-    padding: 4em 0 2em 0;
+    padding: 5em 0 1em 0;
     text-decoration: none; }
   /* line 36, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
   article.project-item .image-wrapper {
@@ -832,7 +837,7 @@ article.project-item {
       .project-body aside ul a {
         color: #9c9c9d;
         border-bottom: 1px solid rgba(156, 156, 157, 0.5); }
-        /* line 125, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+        /* line 130, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
         .project-body aside ul a:hover {
           color: #828284;
           border-bottom-color: #69696a;
@@ -847,6 +852,14 @@ article.project-item {
     /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
     .project-body article.main-column:last-child {
       margin-right: 0; }
+
+/* line 105, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+.blockquote {
+  width: 100%; }
+  /* line 110, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+  .blockquote blockquote {
+    font-size: 48px;
+    margin-left: 0; }
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
 article.project-item {
@@ -888,28 +901,28 @@ article.project-item {
     transition: all 0.25s linear;
     background: #0f2231;
     padding: 0.5em 0; }
-  /* line 42, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+  /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item a {
     color: white;
     text-decoration: none; }
 
-/* line 53, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+/* line 58, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
 article.project-item.empty {
   border: 5px dashed #0f2231;
   background: transparent; }
-  /* line 57, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+  /* line 62, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item.empty:hover {
     border-color: #2d6693; }
-  /* line 61, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+  /* line 66, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item.empty a {
     display: flex;
     align-items: center;
     height: 240px;
     width: 100%; }
-    /* line 68, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+    /* line 73, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
     article.project-item.empty a:hover .text-wrapper-static {
       color: #2d6693; }
-  /* line 74, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
+  /* line 79, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item.empty .text-wrapper-static {
     color: #0f2231;
     margin: 0 auto; }
@@ -963,31 +976,31 @@ footer.footer {
         footer.footer .contact:last-child {
           margin-right: 0; } }
 
-/* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
 header.project-banner {
   position: relative;
   overflow: hidden;
   max-height: 500px; }
-  /* line 6, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  /* line 6, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
   header.project-banner .image-wrapper {
     width: auto;
     height: 550px;
     background-attachment: fixed;
     background-size: cover;
     margin-bottom: 0; }
-    /* line 12, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    /* line 12, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.hues-and-views {
       background-image: url("../img/hues_and_views/hv-koblenz-2014.JPG");
       background-position: 50%; }
-    /* line 17, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    /* line 17, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.neon-labs {
       background-image: url("../img/neon_labs/neon-dashboard-fdba00e0.png");
       background-position: 50%; }
-    /* line 22, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    /* line 22, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.type-club {
       background-image: url("../img/type_club/Wesleyan-Olin-16a8ab40.jpg");
-      background-position: center; }
-  /* line 28, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+      background-position: center bottom; }
+  /* line 28, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
   header.project-banner section.banner {
     float: left;
     display: block;
@@ -1002,8 +1015,15 @@ header.project-banner {
     /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
     header.project-banner section.banner:last-child {
       margin-right: 0; }
+    /* line 37, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
+    header.project-banner section.banner .timeframe {
+      margin-bottom: 1.5em; }
+    /* line 41, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
+    header.project-banner section.banner .subtitle {
+      font-size: 14px;
+      opacity: 0.85; }
 
-/* line 39, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 .project-body {
   *zoom: 1;
   max-width: 960px;
@@ -1017,14 +1037,14 @@ header.project-banner {
   /* line 23, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
   .project-body:after {
     clear: both; }
-  /* line 43, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  /* line 5, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
   .project-body h4 {
     padding-top: 1em; }
-  /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  /* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
   .project-body aside {
     display: none; }
     @media screen and (min-width: 40em) {
-      /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+      /* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
       .project-body aside {
         float: left;
         display: block;
@@ -1036,28 +1056,28 @@ header.project-banner {
         /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
         .project-body aside:last-child {
           margin-right: 0; } }
-    /* line 57, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    /* line 19, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
     .project-body aside .sidebar-set {
       margin-bottom: 2em; }
-    /* line 61, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    /* line 23, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
     .project-body aside ul {
       list-style-type: square;
       margin: 0.5em 0 1.0em;
       padding-left: 0; }
-      /* line 66, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+      /* line 28, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
       .project-body aside ul li {
         margin-bottom: 0.5em; }
-      /* line 70, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+      /* line 32, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
       .project-body aside ul a {
         color: #9c9c9d;
         border-bottom: 1px solid rgba(156, 156, 157, 0.5); }
-        /* line 125, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
+        /* line 130, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
         .project-body aside ul a:hover {
           color: #828284;
           border-bottom-color: #69696a;
           text-decoration: none; }
 
-/* line 77, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 39, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 .box {
   *zoom: 1;
   max-width: 960px;
@@ -1071,58 +1091,75 @@ header.project-banner {
   /* line 23, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
   .box:after {
     clear: both; }
-  /* line 81, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  /* line 43, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
   .box:first-child {
     margin-bottom: 0; }
+  /* line 47, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  .box aside.mini {
+    margin-top: 0; }
+    /* line 50, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    .box aside.mini ul {
+      margin-top: 1em; }
+    /* line 54, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    .box aside.mini li {
+      color: rgba(0, 0, 0, 0.35);
+      font-size: 12px; }
 
-/* line 86, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
-article.main-column {
+/* line 61, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+.main-column {
   width: 100%; }
   @media screen and (min-width: 40em) {
-    /* line 86, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
-    article.main-column {
+    /* line 61, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    .main-column {
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 74.41059%;
       padding-left: 2em; }
       /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
-      article.main-column:last-child {
+      .main-column:last-child {
         margin-right: 0; } }
-  /* line 94, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
-  article.main-column.full-width {
-    width: 100%;
-    *zoom: 1;
-    padding-left: 0; }
-    /* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
-    article.main-column.full-width:before, article.main-column.full-width:after {
-      content: " ";
-      display: table; }
-    /* line 23, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
-    article.main-column.full-width:after {
-      clear: both; }
   @media screen and (min-width: 40em) {
-    /* line 100, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
-    article.main-column.no-left {
+    /* line 69, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    .main-column.no-left {
       margin-left: 25.58941%;
       float: left;
       display: block;
       margin-right: 2.35765%;
       width: 57.35098%; }
       /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
-      article.main-column.no-left:last-child {
+      .main-column.no-left:last-child {
         margin-right: 0; } }
 
-/* line 108, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 77, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+.indent-left {
+  margin-left: 25.58941%;
+  padding-left: 2em; }
+
+/* line 82, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+.full-width {
+  width: 100%;
+  *zoom: 1;
+  padding-left: 0;
+  width: 100%; }
+  /* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .full-width:before, .full-width:after {
+    content: " ";
+    display: table; }
+  /* line 23, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/bourbon/addons/_clearfix.scss */
+  .full-width:after {
+    clear: both; }
+
+/* line 89, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 figure.image-wrapper {
   width: 100%;
   height: auto; }
-  /* line 111, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  /* line 92, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
   figure.image-wrapper img {
     width: 100%;
     height: auto; }
 
-/* line 119, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 99, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 figure.image-wrapper.side-caption img,
 figure.image-wrapper.side-caption figcaption {
   display: inline-block;
@@ -1131,7 +1168,7 @@ figure.image-wrapper.side-caption figcaption {
   *display: inline;
   *vertical-align: auto;
   float: left; }
-/* line 124, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 104, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 figure.image-wrapper.side-caption img {
   float: left;
   display: block;
@@ -1140,7 +1177,7 @@ figure.image-wrapper.side-caption img {
   /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
   figure.image-wrapper.side-caption img:last-child {
     margin-right: 0; }
-/* line 128, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+/* line 108, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
 figure.image-wrapper.side-caption figcaption {
   float: left;
   display: block;
@@ -1150,3 +1187,25 @@ figure.image-wrapper.side-caption figcaption {
   /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
   figure.image-wrapper.side-caption figcaption:last-child {
     margin-right: 0; }
+
+/* line 114, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+article {
+  counter-reset: section; }
+  /* line 117, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  article .counter {
+    float: left;
+    margin-bottom: 2em; }
+    /* line 121, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    article .counter:last-child {
+      margin-bottom: 0; }
+    /* line 125, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+    article .counter p {
+      margin-bottom: 2em; }
+  /* line 130, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project.scss */
+  article .counter:before {
+    display: block;
+    border-bottom: 3px solid #0f2231;
+    margin-bottom: 1em;
+    counter-increment: section;
+    content: "Job Story #" counter(section);
+    font-size: 18px; }

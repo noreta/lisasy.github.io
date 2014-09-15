@@ -13,7 +13,7 @@
     <meta content='' name='description'>
     <meta content='width=device-width' name='viewport'>
     <!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
-    <link href="../../stylesheets/application-9993b79a.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="../../stylesheets/application-f5fd43ee.css" media="screen" rel="stylesheet" type="text/css" />
     <script>
       window.jQuery || document.write('<script src="js/vendor/jquery-1.8.0.min.js"><\/script>')
     </script>
@@ -38,8 +38,8 @@
           <div class="image-wrapper neon-labs"></div>
           <section class='banner'>
             <h1>Neon Labs</h1>
-            <h5 class='half-opacity'>October 2013 - November 2013</h5>
-            <p>This is an art project examining the relationship between myself and the spaces I encounter.</p>
+            <h5 class='half-opacity timeframe'>October 2013 - November 2013</h5>
+            <p class='subtitle'>Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on machine-learning from Carnegie Mellon University.</p>
           </section>
         </header>
         <section class='project-body'>
@@ -51,8 +51,14 @@
                   <ul>
                     <li>Ruby on Rails</li>
                     <li>HAML & SCSS</li>
-                    <li>Vim</li>
-                    <li>Trello for project management</li>
+                    <li>Git</li>
+                    <li>
+                      <a href="http://playbook.thoughtbot.com/#prep-work">thoughtbot's Product Design Sprint</a>
+                    </li>
+                    <li>
+                      <a href="https://github.com/lisasy/dotfiles/blob/master/vimrc">Vim</a>
+                    </li>
+                    <li>Trello</li>
                   </ul>
                 </header>
               </div>
@@ -68,7 +74,7 @@
             </aside>
             <article class='main-column'>
               <h3 class='article-header'>Overview</h3>
-              <p class='standfirst'>I led the product design for the internal dashboard of Neon, a tool for predicting the most appealing thumbnails to the human eye based on a Ph.D research thesis on machine-learning at Carnegie Mellon University.</p>
+              <p class='standfirst'>I led the product, UX, and UI design and front-end development for the internal dashboard of <a href="http://www.neon-lab.com/" target="_blank">Neon</a>, a tool for predicting the most appealing thumbnails to the human eye based on a Ph.D research thesis on machine-learning at Carnegie Mellon University.</p>
             </article>
           </div>
           <div class='box'>
@@ -76,38 +82,303 @@
               <div class='row'>
                 <h4>Defining the goal</h4>
                 <p>
-                  The Neon team came to thoughtbot with the need to design the interface and user experience for uploading and selecting Neon-generated thumbnails for their videos. I led a week-long design sprint with the stakeholders, addressing the customers' needs and identifying how Neon can fulfill them.
-                </p>
-                <h4>Moving into a gentrification project</h4>
-                <p>
-                  I guess I wasn't the only one who wanted to live in San Francisco.
-                  What began as an innocuous desire to move to the city of my dreams
-                  emerged a rocky relationship between myself and the city, where I
-                  questioned my position as a "tech worker" amidst a housing crisis and
-                  an ever-growing inequality gap amongst residents of the Bay Area.
+                  The Neon team came to <a href="http://thoughtbot.com"
+                  target="_blank">thoughtbot</a> to design the interface and user
+                  experience for uploading and selecting Neon-generated thumbnails for
+                  their videos. In order the understand the product, business,
+                  technology, and customer, I led a week-long design sprint with the
+                  stakeholders, addressing the customers' needs and identifying how
+                  Neon can fulfill them.
                 </p>
                 <p>
-                  In wanting to belong to the city in a more participatory nature
-                  beyond simply paying rent, I wanted to be in the public, deliberately
-                  blending into the street as I drew it.
+                  While Neon came in with wireframes and mockups, we did not stay
+                  too fixated on those existing sources. We had to learn more about the
+                  product and what the customer needed before making decisions on how
+                  the application should function.
+                </p>
+                <h4>The Customer</h4>
+                <p>
+                  With the <a href="http://en.wikipedia.org/wiki/Software_as_a_service"
+                  target="_blank">SaaS</a> business model, we defined our primary
+                  customers for MVP to be media publishers.
+                </p>
+                <figure class='image-wrapper'>
+                  <img alt="" width="745" height="375" src="../../img/neon_labs/neon-sprint-whiteboard-c2b46117.jpg" />
+                  <figcaption>
+                    After defining our customer (media publishers), we brainstormed the
+                    imagined critical user flow of the application. This is Bob's
+                    story.
+                  </figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
+            <article>
+              <div class='blockquote'>
+                <h4>Value Proposition</h4>
+                <blockquote>
+                  Neon enables you to find the best thumbnail in your video to increase
+                  viewership.
+                </blockquote>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left counter'>
+              <div class='row'>
+                <h4>High-level job stories</h4>
+                <p>
+                  Now that we have a value proposition defined, how do we create a
+                  great user experience for those using this service?
+                </p>
+                <p>
+                  With a lot of post-it notes, sketching, and whiteboarding, we
+                  identified five (5) core situations, positioning them as <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank">job stories</a>.
                 </p>
               </div>
             </article>
           </div>
           <div class='box'>
+            <article class='full-width'>
+              <div class='row counter'>
+                <aside class='mini'>
+                  <h5>Forces</h5>
+                  <ul>
+                    <li>Neon provides the UI for this process.</li>
+                    <li>Neon makes it obvious how to do this.</li>
+                    <li>
+                      This is pretty neat. I don’t really have to think so much about
+                      this. Neon is fast.
+                    </li>
+                    <li>
+                      I can still “Confirm” that I want to publish the thumbnail, so it’s
+                      nice to check the thumb before it gets published.
+                    </li>
+                  </ul>
+                </aside>
+                <div class='main-column'>
+                  <h5>Situation</h5>
+                  <p>
+                    I want to find the best Neon-recommended thumbnails for my video
+                  </p>
+                  <h5>Motivation</h5>
+                  <p>
+                    so I use Neon’s generate-and-publish-thumbnail feature to
+                    algorithmically find the best frames.
+                  </p>
+                  <h5>Desired Outcome</h5>
+                  <p>
+                    to publish the best thumbnail for my video on its live site.
+                  </p>
+                </div>
+              </div>
+              <div class='row counter'>
+                <aside class='mini'>
+                  <h5>Forces</h5>
+                  <ul>
+                    <li>
+                      I trust Neon’s algorithm reader, especially more than my
+                      own subjective opinions.
+                    </li>
+                    <li>
+                      I never have to think about checking back on Neon to generate and
+                      publish thumbs, especially when my biggest focus is on simply
+                      checking analytics.
+                    </li>
+                    <li>
+                      If I’m unhappy with analytics, I can always change the video thumb
+                      to test and try which performs best.
+                    </li>
+                    <li>This is a huge timer saver for me.</li>
+                  </ul>
+                </aside>
+                <div class='main-column'>
+                  <h5>Situation</h5>
+                  <p>I want to effortlessly have Neon find the best thumbnails for my videos</p>
+                  <h5>Motivation</h5>
+                  <p>
+                    so I use Neon’s auto-publish feature to find and publish the best
+                    frame without my manual permission
+                  </p>
+                  <h5>Desired Outcome</h5>
+                  <p>
+                    to publish the best thumbnail for my videos without having to always
+                    confirm.
+                  </p>
+                </div>
+              </div>
+              <div class='row counter'>
+                <aside class='mini'>
+                  <h5>Forces</h5>
+                  <ul>
+                    <li>This makes me anxious. Did I do something wrong?</li>
+                    <li>
+                      I am wondering where the error came from. Is it my computer, or
+                      something having to do with the server that I have no control over?
+                    </li>
+                    <li>If it’s my fault, how do I retry?</li>
+                    <li>When can I retry if it was the server’s issue?</li>
+                    <li>
+                      If my server fixes the problem, how do I find out it has been fixed
+                      later on?
+                    </li>
+                    <li>I’m frustrated. Can I just delete this?</li>
+                    <li>
+                      Can I get back to this error later? I don’t have time to deal with
+                      this right now.
+                    </li>
+                  </ul>
+                </aside>
+                <div class='main-column'>
+                  <h5>Situation</h5>
+                  <p>I seem to have errors generate thumbnails for a video</p>
+                  <h5>Motivation</h5>
+                  <p>so I want to figure out how to resolve the error</p>
+                  <h5>Desired Outcome</h5>
+                  <p>to relieve my anxieties and publish the best thumbnail for my video.</p>
+                </div>
+              </div>
+              <div class='row counter'>
+                <aside class='mini'>
+                  <h5>Forces</h5>
+                  <ul>
+                    <li>
+                      It will take some time to collect data that will provide insight
+                      for us.
+                    </li>
+                    <li>
+                      I still wonder how this algorithm magically works.
+                    </li>
+                    <li>This should be simple to do.</li>
+                  </ul>
+                </aside>
+                <div class='main-column'>
+                  <h5>Situation</h5>
+                  <p>I want to see how other thumbnails perform</p>
+                  <h5>Motivation</h5>
+                  <p>so I want to change the thumbnail to another option.</p>
+                  <h5>Desired Outcome</h5>
+                  <p>to see if other thumbnails can generate more views than other ones.</p>
+                </div>
+              </div>
+              <div class='row counter'>
+                <aside class='mini'>
+                  <h5>Forces</h5>
+                  <ul>
+                    <li>Should I delete or archive?</li>
+                    <li>Deleting a project seems very concrete; I ought to be VERY sure.</li>
+                    <li>
+                      Archiving a project seems like a safe option. It will still be in
+                      the system, but it won’t be completely out. I could still go back
+                      to it if I needed. It would simply just hide it, which is great
+                      because I don’t want to be distracted.
+                    </li>
+                  </ul>
+                </aside>
+                <div class='main-column'>
+                  <h5>Situation</h5>
+                  <p>This thumbnail is not relevant to me anymore</p>
+                  <h5>Motivation</h5>
+                  <p>so I want to delete or archive the thumbnail project</p>
+                  <h5>Desired Outcome</h5>
+                  <p>
+                    to hide it from the main view and not really have to think about
+                    maintaining it anymore.
+                  </p>
+                </div>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left'>
+              <div class='row'>
+                <h4>Figuring out flow and information architecture</h4>
+                <p>
+                  After defining our job stories, we were able to better understand our users' anticipated experiences in using Neon. Synthesizing these job stories into a holistic product and experience allowed us to preliminarily define the information architecture of Neon.
+                </p>
+                <figure class='image-wrapper'>
+                  <img alt="" width="500" height="667" src="../../img/neon_labs/neon-information-architecture-58106f88.jpg" />
+                  <figcaption>A preliminary sketch of Neon's information architecture of navigation, defined during the design sprint.</figcaption>
+                </figure>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left'>
+              <div class='row'>
+                <h4>Wireframing</h4>
+                <p>With all of the knowledge we have at this point, I created low-fidelity wireframes by sketching the main screens.</p>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
             <article class='col-2'>
-              <div class='col'>
+              <div class='column'>
                 <figure class='image-wrapper'>
-                  <img alt="" width="1280" height="960" src="../../img/hues_and_views/hv-sf-2014-3-a2f55a16.jpg" />
-                  <figcaption>San Francisco, May 2014</figcaption>
+                  <img alt="" width="500" height="375" src="../../img/neon_labs/neon-wireframe-2-53515975.jpg" />
                 </figure>
               </div>
-              <div class='col'>
+              <div class='column'>
                 <figure class='image-wrapper'>
-                  <img alt="" width="1280" height="960" src="../../img/hues_and_views/hv-paris-2014-1-1a8ea610.jpg" />
-                  <figcaption>Paris, April 2014</figcaption>
+                  <img alt="" width="500" height="375" src="../../img/neon_labs/neon-wireframe-1-8699db1b.jpg" />
                 </figure>
               </div>
+            </article>
+          </div>
+          <div class='box'>
+            <div class='row'>
+              <article class='main-column no-left'>
+                <h4>Front-end Development</h4>
+                <p>Working in parallel with a Rails developer on this project, I began the front-end development. I wrote in HAML, SCSS, and Coffeescript. The code is not publicly available on Github.</p>
+              </article>
+            </div>
+          </div>
+          <div class='box'>
+            <div class='row'>
+              <article class='main-column no-left'>
+                <h4>Exploring different visual design and branding</h4>
+                <p>In the browser using code, I got to explore different visual and communication design for Neon's dashboard. As a team, we liked the visual branding of the rightmost image below.</p>
+              </article>
+            </div>
+          </div>
+          <div class='box'>
+            <article class='col-3'>
+              <div class='column'>
+                <figure class='image-wrapper'>
+                  <img alt="" width="400" height="255" src="../../img/neon_labs/neon-dashboard-3-b3c19374.jpg" />
+                </figure>
+              </div>
+              <div class='column'>
+                <figure class='image-wrapper'>
+                  <img alt="" width="400" height="243" src="../../img/neon_labs/neon-dashboard-2-0e98cb21.jpg" />
+                </figure>
+              </div>
+              <div class='column'>
+                <figure class='image-wrapper'>
+                  <img alt="" width="400" height="225" src="../../img/neon_labs/neon-dashboard-1-9adc3ebe.jpg" />
+                </figure>
+              </div>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left'>
+              <h4>Shipping</h4>
+              <p>We shipped the MVP in about five weeks. In this MVP, we addressed the five core job stories, included a helpful support and FAQ section, and synced the application successfully with the existing machine-learning technology in the back-end.</p>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left'>
+              <figure class='image-wrapper'>
+                <img alt="" width="900" height="692" src="../../img/neon_labs/neon-selection-3bd3b7b9.png" />
+                <figcaption>This modal appears when a user decides to select one of the three available thumbnails that Neon generates.</figcaption>
+              </figure>
+            </article>
+          </div>
+          <div class='box'>
+            <article class='main-column no-left'>
+              <h4>Funding success</h4>
+              <p>In July 2014, I was delighted to learn that <a href="http://blogs.wsj.com/venturecapital/2014/07/15/neon-labs-raises-4-1m-to-figure-out-the-subconscious-appeal-of-images/" target="_blank">Neon raised $4.1 million in Series A funding</a>.</p>
             </article>
           </div>
         </section>
