@@ -23,7 +23,7 @@ projects:
     subtitle:
       Made at thoughtbot, Neon is an intelligent thumbnail picker based on
       machine-learning from Carnegie Mellon University.
-    slug: neon-lab
+    slug: neon-labs
     type: Product Design
     main_image_url: "neon_labs/neon-dashboard.png"
     timeframe: October 2013 - November 2013
