@@ -2,40 +2,92 @@
   <div class="image-wrapper #{t('art.slug')}"></div>
   %section.banner
     %h1= t("art.name")
-    %h5.half-opacity= t("art.timeframe")
-    %p= t("art.subtitle")
+    %h5.half-opacity.timeframe= t("art.timeframe")
 %section.project-body
   .box
     %aside.sidebar-l
-      -# .sidebar-set
-      -#   =link_to 'Visit website', 'http://huesandviews.tumblr.com', class: 'button'
+      .sidebar-set
+        =link_to "See older work", "http://lisasy.carbonmade.com/", class: "button", target: "_blank"
       .sidebar-set
         %header
-          %h5 Services Offered
+          %h5 Experiences
           %ul
-            %li Logo design
-            %li Poster design
-            %li Marketing campaigns
-            %li Design strategy workshops
-            %li Film screenings
-            %li Weekly design office hours
-            %li Travelling design library
+            %li Drawing
+            %li Painting (oil, acryllic)
+            %li Printmaking (screen, letterpress)
+            %li Typography
+            %li Graphic design
+            %li Installation Art
+            %li Electronic Media
       .sidebar-set
         %header
-          %h5 Clients
+          %h5 Education
           %ul
-            %li= link_to "Patricelli Center for Social Entrepreneurship at Wesleyan University",
-              "http://www.wesleyan.edu/patricelli/", target: "_blank"
-            %li= link_to "The Minds Foundation",
-              "http://www.mindsfoundation.org/", target: "_blank"
-            %li Wesleyan Consulting Group
-            %li= link_to "PYXIS - Wesleyan Journal of the Humanities", 
-              "http://pyxisjournal.com/", target: "_blank"
-            %li Wesleyan Doula Project
-            %li Wesleyan's College of the Environment & Sustainability Interns
-            %li= link_to "Shining Hope for Communities (SHOFCO)",
-              "http://www.shofco.org/", target: "_blank"
+            %li Kala Institute: Wood engraving workshop (Berkeley, CA, 2014)
+            %li Wesleyan University: Drawing I, Drawing II, Painting I, Graphic Design, Typography (Middletown, CT, 2009-2013)
+            %li Art Center College of Design: Illustration at Saturday High (Pasadena, CA, 2008)
+            %li Carnegie Mellon University: Fine Art Pre-College Summer Program (Pittsburgh, PA, 2008)
     %article.main-column
       %h3.article-header= t("art.standfirst_title")
       %p.standfirst-second= t("art.standfirst")
 
+      .row
+        %figure.image-wrapper.side-caption
+          = image_tag("art/nude-1.jpg")
+          %figcaption Here are some nudes I drew during a figure-drawing session at <a href="http://www.gallerynucleus.com/" target="_blank">Nucleus</a> in Alhambra, CA during the summer of 2010.
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Ways of expressing
+        %p
+          While I've experimented with a lot of different medium, my favorite is probably the pencil. It's one of the simplest tools, yet it can express so much.
+
+  .box
+    %article.col-2
+      .column
+        %figure.image-wrapper
+          = image_tag("art/cardinal-colored.jpg")
+          %figcaption <em>Cardinal Colored</em>, 2010
+      .column
+        %figure.image-wrapper
+          = image_tag("art/self-sufficiency.jpg")
+          %figcaption <em>Self Sufficiency</em>, 2010
+  .box
+    %article.col-2
+      .column
+        %figure.image-wrapper
+          = image_tag("art/nude-2.jpg")
+          %figcaption 2010
+      .column
+        %figure.image-wrapper
+          = image_tag("art/nude-3.jpg")
+          %figcaption 2010
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 The sketchbook
+        %p
+          All artists ought to carry a sketchbook around with them everywhere they go. It's important to see many different things and places so that we can find inspiration and understand connections between things. Sketchbooks allow us to capture ideas and thoughts in the moment. We work within and on the process when we use our sketchbooks.
+      %figure.image-wrapper
+        = image_tag("art/sketch-1.png")
+        %figcaption 2008
+
+      %figure.image-wrapper
+        = image_tag("art/sketch-2.png")
+        %figcaption 2008
+
+      %figure.image-wrapper
+        = image_tag("art/sketch-3.png")
+        %figcaption 2008
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Oils
+        %p
+          Something I want to get back into doing more of is oil painting. It's been a little bit difficult to find the studio space in the Bay Area, but it will work out.
+      %figure.image-wrapper
+        = image_tag("art/corkboard.jpg")
+        %figcaption 2011

@@ -23,6 +23,11 @@ header.project-banner {
       background-image: image_url("type_club/Wesleyan-Olin.jpg");
       background-position: center bottom;
     }
+
+    &.art {
+      background-image: image_url("art/drawing-wip.jpg");
+      background-position: center;
+    }
   }
 
   section.banner {

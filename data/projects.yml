@@ -19,11 +19,11 @@ projects:
           - Environment
   -
     name:
-      Neon Labs
+      Neon
     subtitle:
-      Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on
+      Made at thoughtbot, Neon is an intelligent thumbnail picker based on
       machine-learning from Carnegie Mellon University.
-    slug: neon-labs
+    slug: neon-lab
     type: Product Design
     main_image_url: "neon_labs/neon-dashboard.png"
     timeframe: October 2013 - November 2013
@@ -34,9 +34,10 @@ projects:
     type: Leadership & Management
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
-  # -
-  #   name: Art
-  #   subtitle: Made at Wesleyan University
-  #   slug: art
-  #   main_image_url: "type_club/Wesleyan-Olin.jpg"
-  #   timeframe: 1997 - Present
+  -
+    name: Art
+    subtitle: Made at Wesleyan University
+    slug: art
+    type: Art
+    main_image_url: "art/sketch-1.png"
+    timeframe: 1997 - Present

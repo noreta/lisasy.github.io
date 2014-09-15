@@ -40,10 +40,6 @@
   @include outer-container;
   margin-bottom: 2em;
 
-  &:first-child {
-    margin-bottom: 0;
-  }
-
   aside.mini {
     margin-top: 0;
 

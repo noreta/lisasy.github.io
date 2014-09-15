@@ -15,7 +15,7 @@ en:
       apart of a space, I decided to capture the energy of places through urban
       sketching."
   neon_labs:
-    name: Neon Labs
+    name: Neon
     subtitle:
       Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on
       machine-learning from Carnegie Mellon University.
@@ -41,3 +41,12 @@ en:
       student organizations, official campus administrators, and other
       resources to provide design strategy and assist in advertising and
       publicity efforts."
+  art:
+    name: Art
+    subtitle:
+      I co-founded and managed an 8-person design consultancy at Wesleyan University.
+    slug: art
+    timeframe: 1997 - Present
+    standfirst_title: Background
+    standfirst:
+      All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.

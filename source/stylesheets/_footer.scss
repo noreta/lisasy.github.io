@@ -22,5 +22,9 @@ footer.footer {
     @include media($medium-screen) {
       @include span-columns(4 of 12);
     }
+
+    ul {
+      margin-left: $gt-m;
+    }
   }
 }
