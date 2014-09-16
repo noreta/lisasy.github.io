@@ -1,5 +1,9 @@
+= partial "partials/header"
+
 - wrap_layout :layout do
-  = yield
+  %main.container
+    %section.container-content
+      = yield
 
 .bd-top
   %section.outer-container.col-3
