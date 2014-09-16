@@ -1,5 +1,5 @@
 article.project-item {
-  height: 254px;
+  height: 275px;
   margin-bottom: $gt-l;
   position: relative;
 
@@ -10,7 +10,7 @@ article.project-item {
 
     .text-wrapper {
       @include transform(translateY(-100%));
-      padding: 4em 0 2em 0;
+      padding: 4em 0 1em 0;
       text-decoration: none;
     }
   }
@@ -30,18 +30,16 @@ article.project-item {
   }
 
   .text-wrapper {
-    @include transition(all 0.25s linear);
+    @include transition(all 0.35s ease-in-out);
     background: $dark-navy;
-    padding: ($gt-m / 2) 0;
+    padding: $gt-m 0;
   }
 
+  .p-type,
   .p-timeframe {
     @extend .normal;
-  }
-
-  .p-type {
-    @extend .normal;
     @extend .half-opacity;
+    font-size: $f00;
   }
 
   a {
@@ -64,10 +62,9 @@ article.project-item.empty {
   }
 
   a {
-    display: flex;
-    align-items: center;
-    height: 240px;
-    width: 100%;
+    @include display(flex);
+    @include align-items(center);
+    @include size(100% 260px);
 
     &:hover {
       .text-wrapper-static {

@@ -1,6 +1,7 @@
 ---
-title: Lisa makes things
+layout: "home"
 ---
+
 %section.outer-container.col-3
   - data.projects.projects.each_with_index do |project, index|
     %article.project-item.column
@@ -9,8 +10,8 @@ title: Lisa makes things
           = image_tag(project.main_image_url)
         .text-wrapper
           %h3.p-title= project.name
-          -# %h6.p-timeframe= project.timeframe
           %h6.p-type= project.type
+          %h6.p-timeframe= project.timeframe
   %article.project-item.column.empty
     - mail_content = capture do
       .text-wrapper-static

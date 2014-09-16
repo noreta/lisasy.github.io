@@ -10,22 +10,34 @@ header.project-banner {
     margin-bottom: 0;
 
     &.hues-and-views {
-      background-image: image_url("hues_and_views/hv-koblenz-2014.JPG");
+      @include background-image(
+        linear-gradient(0deg, rgba(black, 0.7), rgba(black, 0.2)),
+        image-url("hues_and_views/hv-koblenz-2014.JPG")
+      );
       background-position: 50%;
     }
 
     &.neon-labs {
-      background-image: image_url("neon_labs/neon-dashboard.png");
+      @include background-image(
+        linear-gradient(0deg, rgba(black, 0.7), rgba(black, 0.2)),
+        image-url("neon_labs/neon-dashboard.png")
+      );
       background-position: 50%;
     }
 
     &.type-club {
-      background-image: image_url("type_club/Wesleyan-Olin.jpg");
+      @include background-image(
+        linear-gradient(0deg, rgba(black, 0.7), rgba(black, 0.2)),
+        image-url("type_club/Wesleyan-Olin.jpg")
+      );
       background-position: center bottom;
     }
 
     &.art {
-      background-image: image_url("art/drawing-wip.jpg");
+      @include background-image(
+        linear-gradient(0deg, rgba(black, 0.5), rgba(black, 0.2)),
+        image-url("art/drawing-wip.jpg")
+      );
       background-position: center;
     }
   }

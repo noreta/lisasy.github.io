@@ -1,0 +1,7 @@
+@mixin grid-width($columns) {
+  @include fill-parent;
+
+  @include media($medium-screen) {
+    @include span-columns($columns of 12);
+  }
+}

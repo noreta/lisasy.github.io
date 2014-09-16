@@ -1,6 +1,6 @@
 footer.footer {
   border-top: 1px solid rgba(black, 0.10);
-  padding: 1em 0;
+  padding: $gt-m 0;
 
   p {
     font-family: $display-typeface;
@@ -9,22 +9,10 @@ footer.footer {
   }
 
   .description {
-    @include fill-parent;
-
-    @include media($medium-screen) {
-      @include span-columns(8 of 12);
-    }
+    @include grid-width(8);
   }
 
   .contact {
-    @include fill-parent;
-
-    @include media($medium-screen) {
-      @include span-columns(4 of 12);
-    }
-
-    ul {
-      margin-left: $gt-m;
-    }
+    @include grid-width(4);
   }
 }

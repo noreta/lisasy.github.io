@@ -33,15 +33,18 @@
   .box
     %article.main-column.no-left
       .row
-        %h4 Defining the goal
+        %h4 Project Background
         %p
           The Neon team came to <a href="http://thoughtbot.com"
           target="_blank">thoughtbot</a> to design the interface and user
           experience for uploading and selecting Neon-generated thumbnails for
-          their videos. In order the understand the product, business,
-          technology, and customer, I led a week-long design sprint with the
-          stakeholders, addressing the customers' needs and identifying how
-          Neon can fulfill them.
+          their videos. Their budget from funding afforded them about five
+          weeks of design and development time with thoughtbot.
+        %p
+          As the lead product designer on this project, it was imperative for
+          me to grasp Neon's product, business, technology, and customer. I led
+          a week-long design sprint with the stakeholders, addressing the
+          customers' needs and identifying how Neon can fulfill them.
         %p
           While Neon came in with wireframes and mockups, we did not stay
           too fixated on those existing sources. We had to learn more about the
@@ -245,16 +248,25 @@
           communication design for Neon's dashboard. As a team, we liked the
           visual branding of the rightmost image below.
   .box
-    %article.col-3
+    %article.col-2
       .column
         %figure.image-wrapper
           = image_tag("neon_labs/neon-dashboard-3.jpg")
+          %figcaption Iteration #1.
       .column
         %figure.image-wrapper
           = image_tag("neon_labs/neon-dashboard-2.jpg")
-      .column
-        %figure.image-wrapper
-          = image_tag("neon_labs/neon-dashboard-1.jpg")
+          %figcaption Iteration #2.
+
+  .box
+    %article.main-column.no-left
+      %p
+        The left sidebar contained all navigational elements. While
+        <strong>analytics</strong> was not yet built out, we still included a
+        link to it to indicate to users that it would eventually be available
+        in the application, fulfilling job story #4.
+      %figure.image-wrapper
+        = image_tag("neon_labs/neon-dashboard.png")
 
   .box
     %article.main-column.no-left
