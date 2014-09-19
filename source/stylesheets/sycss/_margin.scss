@@ -21,3 +21,7 @@ $orientations: top right bottom left;
     margin-#{$orientation}: $gt-m;
   }
 }
+
+.m-bt-nil {
+  margin-bottom: 0;
+}

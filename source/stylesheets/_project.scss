@@ -38,7 +38,7 @@
 
 .box {
   @include outer-container;
-  margin-bottom: 2em;
+  // margin-bottom: 2em;
 
   aside.mini {
     margin-top: 0;
@@ -54,12 +54,25 @@
   }
 }
 
+.full-width {
+  @include fill-parent;
+  @include clearfix;
+  padding-left: 0;
+  padding-right: 0;
+  width: 100%;
+}
+
 .main-column {
   @include fill-parent;
 
   @include media($medium-screen) {
     @include span-columns(9);
     padding-left: 2em;
+    padding-right: 4em;
+  }
+
+  &.fl-w {
+    padding: 0;
   }
 
   &.no-left {
@@ -75,11 +88,9 @@
   padding-left: 2em;
 }
 
-.full-width {
-  @include fill-parent;
-  @include clearfix;
-  padding-left: 0;
-  width: 100%;
+.indent-right {
+  @include shift(3);
+  padding-left: 2em;
 }
 
 figure.image-wrapper {
@@ -133,5 +144,3 @@ article {
     font-size: $f2;
   }
 }
-
-
