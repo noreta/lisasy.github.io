@@ -2,7 +2,9 @@
 // $serif-typeface: 'minion-pro', $georgia;
 $serif-typeface: 'kepler-std', $georgia;
 $sans-serif-typeface: 'jaf-facitweb', $helvetica;
+$serif-bold-typeface: 'kepler-std-display', $georgia;
 
+$headline-typeface: $serif-bold-typeface;
 $display-typeface: $sans-serif-typeface;
 $body-typeface: $serif-typeface;
 

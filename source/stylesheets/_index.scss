@@ -1,61 +1,39 @@
 article.project-item {
-  height: 275px;
+  background: white;
+  float: left;
   margin-bottom: $gt-l;
-  position: relative;
+  width: 100%;
 
-  &:hover {
-    .image-wrapper {
-      background: rgba(black, 0.5);
-    }
-
-    .text-wrapper {
-      @include transform(translateY(-100%));
-      padding: 4em 0 1em 0;
-      text-decoration: none;
-    }
+  .l-col {
+    @include span-columns(4);
+    margin-top: 2.45em;
+    text-align: right;
   }
 
-  .image-wrapper {
-    max-width: 100%;
-    max-height: 158px;
-    overflow: hidden;
-    position: relative;
-    padding: 0.65em 0.65em 0 0.65em;
-
-    img {
-      position: relative;
-      width: 100%;
-      height: auto;
-    }
+  .r-col {
+    @include span-columns(8);
   }
 
-  .text-wrapper {
-    @include transition(all 0.35s ease-in-out);
-    background: $dark-navy;
-    padding: $gt-m 0;
+  .p-title {
+    color: $base-font-color;
+    font-family: $body-typeface;
+    font-size: $f4;
   }
 
   .p-type,
   .p-timeframe {
     @extend .normal;
-    @extend .half-opacity;
+    color: $base-font-color;
     font-size: $f00;
   }
 
   a {
-    color: white;
     text-decoration: none;
   }
-
-  background: $dark-navy;
-  color: white;
-  box-sizing: border-box;
-  text-align: center;
 }
 
 article.project-item.empty {
   border: 5px dashed $dark-navy;
-  background: transparent;
 
   &:hover {
     border-color: lighten($dark-navy, 25);
@@ -65,12 +43,6 @@ article.project-item.empty {
     @include display(flex);
     @include align-items(center);
     @include size(100% 260px);
-
-    &:hover {
-      .text-wrapper-static {
-        color: lighten($dark-navy, 25);
-      }
-    }
   }
 
   .text-wrapper-static {
@@ -78,3 +50,37 @@ article.project-item.empty {
     margin: 0 auto;
   }
 }
+.project-body {
+  padding: $gt-l 0;
+
+  aside {
+    @include span-columns(3);
+    font-family: $display-typeface;
+    font-size: $f0;
+    margin-top: $gutter-row-v0;
+
+    .sidebar-set {
+      margin-bottom: $gt-l;
+    }
+
+    ul {
+      list-style-type: none;
+      margin: $gt-s 0 $gt-l;
+      padding-left: 0;
+
+      li {
+        margin-bottom: $gt-s;
+      }
+
+      a {
+        @include jumpline();
+      }
+    }
+  }
+
+  article.main-column {
+    @include span-columns(9);
+    padding-left: $gt-l;
+  }
+}
+
