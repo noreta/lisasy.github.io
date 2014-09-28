@@ -8,15 +8,6 @@ projects:
     type: Art & Drawing
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: January 2014 - Present
-    sidebar:
-      a:
-        title: Genre
-        items:
-          - Landscape
-          - Urban sketching
-          - Pen and ink
-          - Illustration
-          - Environment
   -
     name:
       Neon
@@ -29,14 +20,15 @@ projects:
     timeframe: October 2013 - November 2013
   -
     name: TypeClub
-    subtitle: Made at Wesleyan University
+    subtitle: I co-founded and managed an 8-person design consultancy at
+      Wesleyan University.
     slug: type-club
     type: Leadership & Management
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
   -
     name: Art
-    subtitle: Made at Wesleyan University
+    subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
     slug: art
     type: Art
     main_image_url: "art/sketch-1.png"
