@@ -1,11 +1,12 @@
 header.header {
-  a {
-    color: $base-font-color;
+  .section-title {
+    a {
+      color: $base-font-color;
+    }
   }
 
   p {
-    font-family: $display-typeface;
-    font-size: $f0;
+    font-size: $f1;
     color: $light-gray;
     margin: 0;
   }

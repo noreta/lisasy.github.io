@@ -5,3 +5,11 @@
     @include span-columns($columns of 12);
   }
 }
+
+@mixin grid-shift($columns) {
+  @include shift(0);
+
+  @include media($medium-screen) {
+    @include shift($columns);
+  }
+}

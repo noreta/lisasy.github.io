@@ -5,21 +5,16 @@ article.project-item {
   width: 100%;
 
   .l-col {
-    @include fill-parent;
+    @include grid-width(4);
 
     @include media($medium-screen) {
-      @include span-columns(4);
       margin-top: 4.85em;
       text-align: right;
     }
   }
 
   .r-col {
-    @include fill-parent;
-
-    @include media($medium-screen) {
-      @include span-columns(6);
-    }
+    @include grid-width(6);
   }
 
   .p-title {
