@@ -9,21 +9,14 @@ footer.footer {
     font-size: $f1;
   }
 
-  .description {
-    @include grid-width(7);
-  }
-
   .contact {
-    @include grid-shift(1);
-    @include grid-width(4);
+    margin-top: 2em;
 
     p {
       font-size: $f0;
     }
 
     ul {
-      padding-left: 0;
-
       li {
         float: left;
         list-style: none;
