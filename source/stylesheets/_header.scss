@@ -1,13 +1,14 @@
 header.header {
   .l-col {
     @include media($medium-screen) {
-      margin-top: 1.35em;
+      margin-top: 2.15em;
     }
   }
 
   .section-title {
     a {
       color: $base-font-color;
+      font-size: $f3;
     }
   }
 
