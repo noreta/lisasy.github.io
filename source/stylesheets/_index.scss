@@ -17,24 +17,27 @@ article.project-item {
   }
 
   .p-type {
+    @extend .normal;
     @extend .half-opacity;
+    font-size: $f00;
+    color: $base-font-color;
+    text-transform: uppercase;
   }
 
-  .p-type,
   .p-timeframe {
     @extend .normal;
-    color: $base-font-color;
+    @extend .half-opacity;
     font-size: $f00;
-  }
-
-  .p-timeframe {
-    color: #ccc;
-    text-transform: uppercase;
+    color: $base-font-color;
   }
 
   .p-subtitle {
     font-size: $f1;
     margin-top: $gt-m;
+
+    a {
+      text-decoration: underline;
+    }
   }
 
   a {
@@ -43,6 +46,20 @@ article.project-item {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.project-preview {
+  text-align: center;
+
+  .project-item {
+    .p-title {
+      font-size: $f3;
+    }
+
+    .p-subtitle {
+      text-align: left;
     }
   }
 }

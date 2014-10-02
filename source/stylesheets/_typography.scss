@@ -35,13 +35,21 @@ p {
 }
 
 ul {
-  padding-left: 1em;
+  padding-left: $gt-m;
 }
 
 ul li {
   list-style-type: square;
   line-height: 1.5;
   margin-bottom: 0.5em;
+}
+
+ol {
+  padding-left: $gt-m;
+
+  li {
+    line-height: 1.5;
+  }
 }
 
 a {
@@ -104,8 +112,9 @@ figcaption {
 %caption {
   @extend .normal;
   color: $light-gray;
-  font-size: $f00;
+  font-size: $f0;
   line-height: 1.4;
+  margin-top: $gt-s;
 }
 
 // Web UI

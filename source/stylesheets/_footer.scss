@@ -1,4 +1,5 @@
 footer.footer {
+  background: rgb(240, 242, 247);
   padding: $gt-m 0;
 
   .section-title {
@@ -27,7 +28,7 @@ footer.footer {
         }
 
         a {
-          color: $light-gray;
+          color: lighten($base-font-color, 10);
           font-size: $f3;
 
           &:hover {

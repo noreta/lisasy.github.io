@@ -1,5 +1,14 @@
 projects:
   -
+    name: Nixle
+    subtitle:
+      Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
+      Nixle keeps you up-to-date with relevant information from your community.
+    slug: nixle
+    type: Product Design - Web & iOS
+    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
+    timeframe: March 2014 - September 2014
+  -
     name: Hues & Views
     subtitle:
       This is an art project examining the relationship between myself and the
@@ -12,10 +21,11 @@ projects:
     name:
       Neon
     subtitle:
-      Made at thoughtbot, Neon is an intelligent thumbnail picker based on
-      machine-learning from Carnegie Mellon University.
+      Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
+      Neon is an intelligent thumbnail picker based on machine-learning from
+      Carnegie Mellon University.
     slug: neon-labs
-    type: Product Design
+    type: Product Design - Web
     main_image_url: "neon_labs/neon-dashboard.png"
     timeframe: October 2013 - November 2013
   -

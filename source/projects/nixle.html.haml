@@ -1,0 +1,227 @@
+%header.project-banner
+  <div class="image-wrapper #{t('nixle.slug')}"></div>
+  %section.banner
+    %h1= t("nixle.name")
+    %h5.half-opacity.timeframe= t("nixle.timeframe")
+    %p.subtitle= t("nixle.subtitle")
+%section.project-body
+  .box
+    %aside.sidebar-l
+      .sidebar-set
+        %header
+          %h5 Toolkit
+          %ul
+            %li Ruby n Rails
+            %li iOS Design
+            %li Backbone.js
+            %li HTML & SCSS
+            %li Sketch app (UI design)
+            %li Adobe Photoshop
+            %li Adobe Illustrator (Icon design)
+            %li Flinto (Prototype)
+            %li Git
+            %li
+              = link_to "thoughtbot's Product Design Sprint",
+                "http://playbook.thoughtbot.com/#prep-work"
+            %li
+              = link_to "Vim",
+                "https://github.com/lisasy/dotfiles/blob/master/vimrc"
+            %li Trello
+      .sidebar-set
+        %header
+          %h5 Team (8)
+          %ul
+            %li 2 Rails developers
+            %li 2 iOS developers
+            %li 1 Backbone/web developer
+            %li 1 Design apprentice
+            %li 1 other designer (end-of-engagement)
+    %article.main-column.fl-w
+      %h3.article-header= t("nixle.standfirst_title")
+      %p.standfirst= t("nixle.standfirst")
+      .row
+        %h4 Project Background
+        %p
+          Founded in 2007, Nixle connects citizens with alerts from their government agencies such as firefighters and police officers. In an effort to expand their product to broadly connect agencies, citizens, and schools altogether, the Nixle team came to <a href="http://thoughtbot.com" target="_blank">thoughtbot</a> to pursue this vision.
+        %p
+          As the lead product designer on this project, it was imperative for
+          me to grasp Nixle's existing product, business, technology, and
+          customer. I led a week-long design sprint with the stakeholders,
+          addressing how to define a product that addresses customers' needs
+          within the various constraints we had.
+        %p
+          Our goal was to build an MVP in web and iOS platforms to provide the
+          services to the customers.
+
+  .box
+    %article
+      .blockquote
+        %h4.title Value Proposition
+        %blockquote
+          Nixle keeps you up-to-date with relevant information from your community.
+
+  .box
+    %article.main-column.no-left
+      %h4 The Customer
+      %p
+        Since Nixle is currently connected to thousands of public safety agencies and citizens using their service, we aimed to define two groups of primary customers:
+      %ol
+        %li School-related people (K-12 school staff & administration, parents, guardians)
+        %li Neighborhood people
+      %p
+        Because <strong>school-related people</strong> represent the more specific
+        target base, we strategized to focus the MVP on optimizing the experience
+        for schools. We hoped that strong engagement within schools would lead
+        to adoption at a neighborhood level.
+      %figure.image-wrapper
+        = image_tag("neon_labs/neon-sprint-whiteboard.jpg")
+        %figcaption
+          After defining our customer (media publishers), we brainstormed the
+          imagined critical user flow of the application. This is Bob's
+          story.
+      %h4 Do we need both a web and iOS app?
+
+  .box
+    %article.main-column.no-left.counter
+      .row
+        %h4 Nixle's primary job (and its secondary jobs)
+        %p
+          As a team, we identified the core <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank">job</a> of this application that will benefit its users.
+          
+  .box
+    %article.full-width
+      .row.counter
+        %aside.mini
+          %h5 Forces
+          %ul
+            %li Nixle matches you with the right neighborhood you belong to.
+            %li Nixle matches you with schools if you are a parent or guardian.
+        .main-column
+          %h5 Situation
+          %p
+            I want to relevant information from my community
+          %h5 Motivation
+          %p
+            so I use the Nixle application to easily access this information
+          %h5 Desired Outcome
+          %p
+            so that I feel more connected to my community.
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Figuring out flow and information architecture
+        %p
+          After defining our job stories, we were able to better understand our
+          users' anticipated experiences in using Neon. Synthesizing these job
+          stories into a holistic product and experience allowed us to
+          preliminarily define the information architecture of Neon.
+        %figure.image-wrapper
+          = image_tag("nixle/nixle-information-architecture.jpg")
+          %figcaption
+            A preliminary sketch of Neon's information architecture of
+            navigation, defined during the design sprint.
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Wireframing
+        %p
+          With all of the knowledge we have at this point, I created
+          low-fidelity wireframes by sketching the main screens.
+
+  .box
+    %article.main-column.no-left
+      .row
+        %h4 Using card sorting to sort out uncertainties
+        %p
+          During this point in the project, I felt <i>very</i> uncertain about
+          the viability of two features: 1) "trackify" and 2) allowing users to
+          create alerts. In order to test my hypothesis that these features
+          would prove mentally challenging to new application users, I ran a <a href="http://robots.thoughtbot.com/card-sorting" target="_blank">card sorting</a>.
+        %p
+          This exercise confirmed my hypothesis that these features would be
+          mentally complexing to new users, and I was able to defend the
+          product decision to not have these two features be in MVP with this
+          evidence.
+  .box
+    %article.col-2
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-wireframe-2.jpg")
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-wireframe-1.jpg")
+
+  .box
+    .row
+      %article.main-column.no-left
+        %h4 Front-end development with Rails, Backbone.js, SCSS, and HTML
+        %p
+          Working in parallel with a Rails developer on this project, I began
+          the front-end development. I wrote in HAML, SCSS, and Coffeescript.
+          The code is not publicly available on Github.
+        :plain
+          <pre><code>
+            @mixin icon($content) {
+              &:before {
+                content: $content;
+              }
+            }
+          </code></pre>
+          <pre><code>
+            @mixin paragraph-ellipsis($number-of-lines: 2) {
+              -webkit-box-orient: vertical;
+              -webkit-line-clamp: $number-of-lines;
+              display: -webkit-box;
+              overflow: hidden;
+              text-overflow: ellipsis;
+            }
+          </code></pre>
+
+  .box
+    .row
+      %article.main-column.no-left
+        %h4 Front-end development with Xcode
+        %p
+          Working in parallel with a Rails developer on this project, I began
+          the front-end development. I wrote in HAML, SCSS, and Coffeescript.
+          The code is not publicly available on Github.
+        %ul
+          %li Organize and use proper design assets (@2x, @3x)
+
+  .box
+    .row
+      %article.main-column.no-left
+        %h4 Exploring different visual design and branding
+        %p
+          In the browser using code, I got to explore different visual and
+          communication design for Neon's dashboard. As a team, we liked the
+          visual branding of the rightmost image below.
+  .box
+    %article.col-2
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-dashboard-3.jpg")
+          %figcaption Iteration #1.
+      .column
+        %figure.image-wrapper
+          = image_tag("neon_labs/neon-dashboard-2.jpg")
+          %figcaption Iteration #2.
+
+  .box
+    %article.main-column.no-left
+      %p
+        The left sidebar contained all navigational elements. While
+        <strong>analytics</strong> was not yet built out, we still included a
+        link to it to indicate to users that it would eventually be available
+        in the application, fulfilling job story #4.
+      %figure.image-wrapper
+        = image_tag("neon_labs/neon-dashboard.png")
+
+  .box
+    %article.main-column.no-left
+      %h4 Shipping
+      %p
+        In six months, I got to work on shipping a web <strong>and</strong> iOS product for Nixle. It was a challenging but wonderful learning experience going from the initial ideation stage and learning about the company and product, to defining the information architecture, visual design, to creating the design assets necessary in Sketch and Illustrator, to learning about templates and views in Backbone.js on Rails, to touching front-end design in Xcode, and to doing testing and research along the way.
+      %p <a href="http://nixle.com">Nixle</a> will be launching this web and iOS application in early November 2014.

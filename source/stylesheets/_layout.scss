@@ -30,8 +30,13 @@ body {
 
 .blockquote {
   @include fill-parent;
-  @extend .bd-top;
-  @extend .bd-bottom;
+  border-top: 4px solid $base-border-color;
+  border-bottom: 4px solid $base-border-color;
+
+  .title {
+    @extend %byline;
+    color: $light-gray;
+  }
 
   blockquote {
     font-size: $f5;
