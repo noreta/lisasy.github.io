@@ -52,6 +52,16 @@ ol {
   }
 }
 
+dl {
+  &.list {
+    list-style-type: square;
+  }
+
+  dt {
+    line-height: 1.5;
+  }
+}
+
 a {
   @include transition(0.25s color linear);
   color: $base-accent-color;
@@ -92,6 +102,13 @@ figcaption {
   blockquote {
     font-size: $f5;
     margin-left: 0;
+  }
+}
+
+pre {
+  code {
+    font-size: $f1;
+    padding-bottom: 1.5em !important;
   }
 }
 

@@ -101,6 +101,12 @@ figure.image-wrapper {
     overflow: hidden;
   }
 
+  &.ios-h {
+    img {
+      @include size(auto 430px);
+    }
+  }
+
   img {
     @include size(100% auto);
   }
