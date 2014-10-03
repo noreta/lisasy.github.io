@@ -96,6 +96,11 @@
 figure.image-wrapper {
   @include size(100% auto);
 
+  &.fx-h {
+    height: 350px;
+    overflow: hidden;
+  }
+
   img {
     @include size(100% auto);
   }

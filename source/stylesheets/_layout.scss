@@ -27,19 +27,3 @@ body {
   @include outer-container;
   padding: $gt-m $gt-s;
 }
-
-.blockquote {
-  @include fill-parent;
-  border-top: 4px solid $base-border-color;
-  border-bottom: 4px solid $base-border-color;
-
-  .title {
-    @extend %byline;
-    color: $light-gray;
-  }
-
-  blockquote {
-    font-size: $f5;
-    margin-left: 0;
-  }
-}
