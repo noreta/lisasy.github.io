@@ -764,21 +764,34 @@ table {
         .col-4 .column:nth-child(4n) {
           margin-right: 0; } }
 
-/* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+/* Border
+
+Main Prefix: bd
+
+*/
+/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-top {
   border-top: 1px solid rgba(0, 0, 0, 0.1); }
 
-/* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-left {
   border-left: 1px solid rgba(0, 0, 0, 0.1); }
 
-/* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-right {
   border-right: 1px solid rgba(0, 0, 0, 0.1); }
 
-/* line 7, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-bottom {
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
+
+/* line 25, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+.bd-top-l {
+  border-top: 4px solid rgba(0, 0, 0, 0.1); }
+
+/* line 29, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+.bd-bottom-l {
+  border-bottom: 4px solid rgba(0, 0, 0, 0.1); }
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 body {
