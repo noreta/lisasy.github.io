@@ -17,6 +17,7 @@
     }
 
     .sidebar-set {
+      font-weight: $fw-normal;
       margin-bottom: 2em;
     }
 
@@ -50,6 +51,7 @@
     li {
       color: rgba(black, 0.35);
       font-size: $f00;
+      font-weight: $fw-normal;
     }
   }
 }

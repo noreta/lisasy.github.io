@@ -6,6 +6,7 @@ en:
       Made at thoughtbot, Nixle keeps you up-to-date with relevant information from your community.
     slug: nixle
     timeframe: March 2014 - September 2014
+    role: Lead Product Designer
     standfirst_title: Overview
     standfirst:
       In six months, I led the product, UX, interface, information architecture, and front-end development on both web and iOS platforms for <a href="http://nixle.com"target="_blank">Nixle</a>, which keeps you up-to-date with relevant information from your community.<br><br> As the lead product designer, I gained many learnings in building a web and iOS application end-to-end, from the initial product ideation all the way to implementation.
@@ -29,6 +30,7 @@ en:
       Made at thoughtbot, Neon Labs is an intelligent thumbnail picker based on
       machine-learning from Carnegie Mellon University.
     slug: neon-labs
+    role: Product Designer
     timeframe: October 2013 - November 2013
     standfirst_title: Overview
     standfirst:
@@ -42,6 +44,7 @@ en:
     subtitle:
       I co-founded and managed an 8-person design consultancy at Wesleyan University.
     slug: type-club
+    role: Co-Founder & Manager
     timeframe: January 2012 - May 2013
     standfirst_title: Overview
     standfirst:

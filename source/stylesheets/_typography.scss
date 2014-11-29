@@ -2,6 +2,7 @@ body {
   font-family: $body-typeface;
   color: $base-font-color;
   font-size: $base-font-size;
+  font-weight: 300;
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -31,7 +32,7 @@ h5 {
 }
 
 p {
-  line-height: 1.5;
+  line-height: 1.75;
 }
 
 ul {
@@ -71,6 +72,10 @@ a {
     text-decoration: underline;
     color: lighten($base-accent-color, 5);
   }
+}
+
+small {
+  font-weight: 400;
 }
 
 .half-opacity {

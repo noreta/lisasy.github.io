@@ -51,3 +51,11 @@ $gt-xs: 0.25em;
     text-align: inherit;
   }
 }
+
+.mbl-nil {
+  display: none;
+
+  @include media($medium-screen) {
+    display: block;
+  }
+}

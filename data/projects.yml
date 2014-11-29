@@ -1,5 +1,21 @@
 projects:
   -
+    name: Onward Off
+    subtitle:
+      My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
+    slug: onwardoff
+    type:
+    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
+    timeframe: November 2014 - Present
+  -
+    name: What Should We Call It
+    subtitle:
+      My friend <a href="http://cbnnr.in/" target="_blank">Carolann Bonner</a> and I write a blog. <a href="http://whatshouldwecall.it" target="_blank">Visit it.</a>
+    slug: onwardoff
+    type:
+    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
+    timeframe: November 2014 - Present
+  -
     name: Nixle
     subtitle:
       Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
@@ -40,6 +56,6 @@ projects:
     name: Art
     subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
     slug: art
-    type: Art
+    type:
     main_image_url: "art/sketch-1.png"
     timeframe: 1997 - Present

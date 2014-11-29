@@ -1,20 +1,11 @@
 header.header {
-  .l-col {
-    @include media($medium-screen) {
-      margin-top: 2.15em;
-    }
-  }
-
-  .section-title {
-    a {
-      color: $base-font-color;
-      font-size: $f3;
-    }
+  a {
+    font-weight: $fw-bold;
+    color: $base-font-color;
   }
 
   p {
     font-size: $f1;
-    color: $light-gray;
     margin: 0;
   }
 }

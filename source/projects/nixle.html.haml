@@ -2,11 +2,16 @@
   <div class="image-wrapper #{t('nixle.slug')}"></div>
   %section.banner
     %h1= t("nixle.name")
+    %h5.half-opacity.timeframe.m-bt-nil Role: #{t("nixle.role")}
     %h5.half-opacity.timeframe= t("nixle.timeframe")
     %p.subtitle= t("nixle.subtitle")
 %section.project-body
   .box
     %aside.sidebar-l
+      .sidebar-set
+        %header
+          %h5 Role
+          %p #{t("nixle.role")}
       .sidebar-set
         %header
           %h5 Toolkit
@@ -31,11 +36,12 @@
         %header
           %h5 Team (8)
           %ul
+            %li 1 Product Designer (me)
             %li 2 Rails developers
             %li 2 iOS developers
             %li 1 Backbone/web developer
             %li 1 Design apprentice
-            %li 1 other designer (end-of-engagement)
+            %li 1 Part-time Designer (end-of-engagement)
     %article.main-column.fl-w
       %h3.article-header= t("nixle.standfirst_title")
       %p.standfirst= t("nixle.standfirst")
@@ -95,18 +101,16 @@
       .row
         %h4 What purpose does Nixle serve to people?
         %p
-          As a team, we identified the core <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank">job</a> of this application that will benefit its customers, whom we defined as "parents, neighbors, people interested in their neighborhoods, and everyone else."
+          In order to define how people would benefit from Nixle, we did an analysis of analogous and competitive products to observe what people got out of these products. These were some of the few we looked at: <a href="http://nextdoor.com/" target="_blank">Nextdoor</a>, <a href="http://patch.com/" target="_blank">Patch.com</a>, and <a href="http://www.potreroview.net/" target="_blank">The Potrero View</a>, amongst others.
         %p
-          Next, we figured out the primary job of the application after defining the perceived customer goals, and how we could help accomplish them.
-        %p
-          In order to get to the point, we did an analysis of analogous and competitive products. These were some of the few we looked at: <a href="http://nextdoor.com/" target="_blank">Nextdoor</a>, <a href="http://patch.com/" target="_blank">Patch.com</a>, and <a href="http://www.potreroview.net/" target="_blank">The Potrero View</a>, amongst others.
+          After this research, we identified the core <a href="https://medium.com/the-job-to-be-done/replacing-the-user-story-with-the-job-story-af7cdee10c27" target="_blank">job</a> of this application that will benefit its customers, whom we defined as "parents, neighbors, people interested in their neighborhoods, and everyone else."
       %figure.image-wrapper
         = image_tag("nixle/nixle-customer-needs.jpg")
         %figcaption
           We determined the customer's goals, inhibitions holding them back
           from completing those goals, and how Nixle could help them accomplish
           them.
-  .box
+  .box.bd-bottom-l
     %article.full-width
       .row.counter
         %aside.mini
@@ -244,8 +248,24 @@
         %ul
           %li Organize and use proper design assets (@2x, @3x) via Sketch and Illustrator.
           %li Organize various storyboards via auto-layout.
-          %li Update typography of elements using the Storyboard.
-
+          %li Update typography using the Storyboard in Xcode.
+          %li Use proper terminology to refer to UI components, defined by the <a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" target="_blank">iOS Human Interface Guidelines</a>.
+        %p
+          Below are some screens in the iOS application. While simple
+          screenshots do not indicate the thought process taking into how we
+          got here, you can see that the primary information architecture
+          relies on the tab bar, a commonly understood design pattern in iOS:
+  .box.bd-bottom-l.p-bottom-l
+    %article.col-3
+      .column
+        %figure.image-wrapper
+          = image_tag("nixle/nixle-ios-feed.png")
+      .column
+        %figure.image-wrapper
+          = image_tag("nixle/nixle-ios-com.png")
+      .column
+        %figure.image-wrapper
+          = image_tag("nixle/nixle-ios-me.png")
   .box
     .row
       %article.main-column.no-left

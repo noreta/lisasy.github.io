@@ -2,11 +2,16 @@
   <div class="image-wrapper #{t('neon_labs.slug')}"></div>
   %section.banner
     %h1= t("neon_labs.name")
+    %h5.half-opacity.timeframe.m-bt-nil Role: #{t("neon_labs.role")}
     %h5.half-opacity.timeframe= t("neon_labs.timeframe")
     %p.subtitle= t("neon_labs.subtitle")
 %section.project-body
   .box.m-bt-nil
     %aside.sidebar-l
+      .sidebar-set
+        %header
+          %h5 Role
+          %p Product Designer
       .sidebar-set
         %header
           %h5 Toolkit
@@ -25,6 +30,7 @@
         %header
           %h5 Team
           %ul
+            %li 1 Product Designer (me)
             %li 1 Rails developer
             %li 1 other designer (part-time)
     %article.main-column.fl-w
@@ -49,6 +55,13 @@
           product and what the customer needed before making decisions on how
           the application should function.
   .box
+    %article
+      .blockquote
+        %h4.title Value Proposition
+        %blockquote
+          Neon enables you to find the best thumbnail in your video to increase
+          viewership.
+  .box
     %article.main-column.no-left
       .row
         %h4 The Customer
@@ -62,13 +75,6 @@
             After defining our customer (media publishers), we brainstormed the
             imagined critical user flow of the application. This is Bob's
             story.
-  .box
-    %article
-      .blockquote
-        %h4.title Value Proposition
-        %blockquote
-          Neon enables you to find the best thumbnail in your video to increase
-          viewership.
   .box
     %article.main-column.no-left.counter
       .row

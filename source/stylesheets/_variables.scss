@@ -1,16 +1,17 @@
 // Typography
 // $serif-typeface: 'minion-pro', $georgia;
 $serif-typeface: 'kepler-std', $georgia;
-$sans-serif-typeface: 'jaf-facitweb', $helvetica;
-$serif-bold-typeface: 'kepler-std-display', $georgia;
+$sans-serif-typeface: 'roboto', $helvetica;
+$serif-bold-typeface: 'roboto', $georgia;
 $font-typeface: "fontawesome";
 
 $headline-typeface: $serif-bold-typeface;
 $display-typeface: $sans-serif-typeface;
-$body-typeface: $serif-typeface;
+$body-typeface: $sans-serif-typeface;
 
 // Colors
-$dark-navy: #0F2231;
+$dark-navy: #2A2F32;
+$maude: #888F93;
 $green: #53B06A;
 $light-tan: #F4F3EE;
 $light-gray: #9C9C9D;

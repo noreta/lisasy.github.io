@@ -2,11 +2,16 @@
   <div class="image-wrapper #{t('type_club.slug')}"></div>
   %section.banner
     %h1= t("type_club.name")
+    %h5.half-opacity.timeframe.m-bt-nil Role: #{t("type_club.role")}
     %h5.half-opacity.timeframe= t("type_club.timeframe")
     %p.subtitle= t("type_club.subtitle")
 %section.project-body
   .box
     %aside.sidebar-l
+      .sidebar-set
+        %header
+          %h5 Role
+          %p #{t("type_club.role")}
       .sidebar-set
         %header
           %h5 Services Offered
@@ -44,8 +49,6 @@
             %figcaption
               TypeClub was featured in the university's student newspaper
               <em>The Wesleyan Argus</em> on April 5, 2012. <a href="http://wesleyanargus.com/2012/04/05/type-club/">Read the article here.</a>
-  .box
-    %article.main-column.no-left
       .row
         %h4 Humble beginnings
         %p
@@ -57,10 +60,15 @@
           school organizations I was apart of, I wanted to find people who
           shared my interest in design so that we can help each other improve
           and use our design skills towards benefiting our local community.
-
+  .box
+    %article.main-column.no-left
+      .row
         %figure.image-wrapper
           = image_tag("type_club/n+1.png")
           %figcaption <em>n+1</em>, March 2013
+  .box
+    %article.main-column.no-left
+      .row
         %h4 Defining a process
         %p
           After months of iterating on the best way to organize the team and
@@ -70,7 +78,7 @@
           %li Meet weekly in person.
           %li Projects would be assigned to 1-3 designers at a time, keeping everyone involved.
           %li Be led as a cooperative with everyone having an input in the direction of the organization.
-  .box
+  .box.bd-top-l.bd-bottom-l.p-bottom-m
     %article.col-2
       .column
         %figure.image-wrapper

@@ -1,39 +1,30 @@
 article.project-item {
-  background: white;
-  float: left;
-  margin-bottom: $gt-l;
-  width: 100%;
+  @include span-columns(6 of 12);
+  @include omega(2n);
 
-  .l-col {
-    @include media($medium-screen) {
-      margin-top: 4.85em;
-    }
-  }
+  background: white;
+  margin-bottom: $gt-l;
 
   .p-title {
     color: $base-font-color;
-    font-family: $body-typeface;
-    font-size: ($f4 + $f5) / 2;
+    font-size: $f3;
   }
 
   .p-type {
     @extend .normal;
     @extend .half-opacity;
-    font-size: $f00;
     color: $base-font-color;
-    text-transform: uppercase;
   }
 
   .p-timeframe {
     @extend .normal;
     @extend .half-opacity;
-    font-size: $f00;
     color: $base-font-color;
   }
 
   .p-subtitle {
     font-size: $f1;
-    margin-top: $gt-m;
+    margin-top: $gt-s;
 
     a {
       text-decoration: underline;
