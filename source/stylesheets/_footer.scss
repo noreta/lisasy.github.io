@@ -8,13 +8,13 @@ footer.footer {
   }
 
   .contact {
-    margin-top: 2em;
-
     p {
       font-size: $f0;
     }
 
     ul {
+      float: right;
+
       li {
         float: left;
         list-style: none;
