@@ -1,6 +1,10 @@
 .project-body {
-  @include outer-container;
-  padding: 3em 0;
+  padding: $gt-m;
+
+  @include media($medium-screen) {
+    @include outer-container;
+    padding: 3em 0;
+  }
 
   h4 {
     padding-top: 1em;
@@ -122,12 +126,16 @@ figure.image-wrapper.side-caption {
   }
 
   img {
-    @include span-columns(6 of 9);
+    @include media($medium-screen) {
+      @include span-columns(6 of 9);
+    }
   }
 
   figcaption {
-    @include span-columns(3 of 9);
     word-wrap: break-word;
+    @include media($medium-screen) {
+      @include span-columns(3 of 9);
+    }
   }
 }
 

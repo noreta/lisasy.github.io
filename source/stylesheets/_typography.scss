@@ -105,8 +105,11 @@ figcaption {
   }
 
   blockquote {
-    font-size: $f5;
     margin-left: 0;
+
+    @include media($medium-screen) {
+      font-size: $f5;
+    }
   }
 }
 
@@ -133,11 +136,15 @@ pre {
 }
 
 %standfirst, .standfirst {
-  font-size: ($f4 + $f3) / 2;
+  @include media($medium-screen) {
+    font-size: ($f4 + $f3) / 2;
+  }
 }
 
 %standfirst-second, .standfirst-second {
-  font-size: $f3;
+  @include media($medium-screen) {
+    font-size: $f3;
+  }
 }
 
 %byline {
