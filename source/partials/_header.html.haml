@@ -1,3 +1,11 @@
 %header.header
   .outer-container.bd-bottom
-    %p.pull-l <a href="/" >Lisa Sy</a> is a professional designer and artist based in California.
+    %p.header-description.pull-l
+      <a href="/" >Lisa Sy</a>
+      is a professional designer and artist based in California.
+    %nav.site-nav
+      %ul.site-nav-list
+        %li.site-nav-item
+          = link_to "Work", "/"
+        %li.site-nav-item
+          = link_to "About", "/about"

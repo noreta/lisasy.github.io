@@ -1,6 +1,9 @@
 article.project-item {
-  @include span-columns(6 of 12);
-  @include omega(2n);
+
+  @include media($medium-screen) {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+  }
 
   background: white;
   margin-bottom: $gt-l;
@@ -10,13 +13,13 @@ article.project-item {
     font-size: $f3;
   }
 
-  .p-type {
+  .p-timeframe {
     @extend .normal;
     @extend .half-opacity;
     color: $base-font-color;
   }
 
-  .p-timeframe {
+  .p-type {
     @extend .normal;
     @extend .half-opacity;
     color: $base-font-color;
@@ -24,7 +27,7 @@ article.project-item {
 
   .p-subtitle {
     font-size: $f1;
-    margin-top: $gt-s;
+    margin-top: 0;
 
     a {
       text-decoration: underline;
@@ -37,6 +40,29 @@ article.project-item {
 
     &:hover {
       text-decoration: underline;
+    }
+  }
+}
+
+.project-meta-info-list {
+  @include fill-parent;
+  @include clearfix;
+  margin: 0 auto;
+  padding-left: 0;
+}
+
+.project-meta-info-item {
+  display: inline-block;
+
+  &:nth-child(2) {
+    padding-left: $gt-m;
+    position: relative;
+
+    &:before {
+      content: "\2022";
+      position: absolute;
+      left: $gt-xs;
+      top: -($gt-xs - 0.1em);
     }
   }
 }

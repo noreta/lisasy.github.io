@@ -1,9 +1,9 @@
 activate :automatic_image_sizes
 
 set :relative_links, true
-set :css_dir, 'stylesheets'
-set :js_dir, 'js'
-set :images_dir, 'img'
+set :css_dir, "stylesheets"
+set :js_dir, "js"
+set :images_dir, "img"
 set :haml, :format => :html5
 
 activate :blog do |project|
@@ -21,12 +21,6 @@ activate :pagination do
   end
 end
 
-# data.projects.projects.each do |project|
-#   proxy "/projects/#{project[:slug]}.html", "/projects/template.html",
-#       locals: {project: project},
-#       ignore: true
-# end
-
 set :markdown_engine, :redcarpet
 set :markdown, :fenced_code_blocks => true, :smartypants => true
 activate :rouge_syntax
@@ -39,7 +33,5 @@ end
 activate :deploy do |deploy|
   deploy.method = :git
   deploy.build_before = true
-  deploy.branch = 'master'
+  deploy.branch = "master"
 end
-
-
