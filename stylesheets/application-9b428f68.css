@@ -2,7 +2,7 @@
 * {
   -webkit-box-sizing: border-box;
   -moz-box-sizing: border-box;
-  box-sizing: border-box; }
+          box-sizing: border-box; }
 
 /*! normalize.css v1.0.1 | MIT License | git.io/normalize */
 /* ==========================================================================
@@ -419,7 +419,9 @@ input[disabled] {
 /* line 444, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_normalize.scss */
 input[type="checkbox"],
 input[type="radio"] {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+     -moz-box-sizing: border-box;
+          box-sizing: border-box;
   /* 1 */
   padding: 0;
   /* 2 */
@@ -440,7 +442,7 @@ input[type="search"] {
   -moz-box-sizing: content-box;
   -webkit-box-sizing: content-box;
   /* 2 */
-  box-sizing: content-box; }
+          box-sizing: content-box; }
 
 /*
  * Removes inner padding and search cancel button in Safari 5 and Chrome
@@ -857,8 +859,7 @@ dl dt {
 /* line 66, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 a {
   -webkit-transition: 0.25s color linear;
-  -moz-transition: 0.25s color linear;
-  transition: 0.25s color linear;
+          transition: 0.25s color linear;
   color: #53b06a;
   text-decoration: none; }
   /* line 71, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
@@ -948,19 +949,29 @@ a.button {
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
 body {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
   display: flex;
   min-height: 100vh;
-  flex-direction: column; }
-  /* line 4, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column; }
+  /* line 6, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
   body main.container {
-    flex: 1; }
+    -webkit-box-flex: 1;
+    -webkit-flex: 1;
+        -ms-flex: 1;
+            flex: 1; }
 
-/* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+/* line 11, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
 .l-col {
   width: 100%;
   float: left; }
   @media screen and (min-width: 40em) {
-    /* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+    /* line 11, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
     .l-col {
       float: left;
       display: block;
@@ -970,15 +981,15 @@ body {
       .l-col:last-child {
         margin-right: 0; } }
   @media screen and (min-width: 40em) {
-    /* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+    /* line 11, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
     .l-col {
       text-align: right; } }
 
-/* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
 .r-col {
   width: 100%; }
   @media screen and (min-width: 40em) {
-    /* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+    /* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
     .r-col {
       float: left;
       display: block;
@@ -988,7 +999,7 @@ body {
       .r-col:last-child {
         margin-right: 0; } }
 
-/* line 22, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
+/* line 24, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_layout.scss */
 .outer-container {
   *zoom: 1;
   max-width: 62.5em;
@@ -1095,20 +1106,18 @@ article.project-item.empty {
   /* line 91, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item.empty a {
     display: -webkit-box;
-    display: -moz-box;
     display: box;
     display: -webkit-flex;
     display: -moz-flex;
     display: -ms-flexbox;
     display: flex;
     -webkit-box-align: center;
-    -moz-box-align: center;
     box-align: center;
     -webkit-align-items: center;
     -moz-align-items: center;
     -ms-align-items: center;
     -o-align-items: center;
-    align-items: center;
+            align-items: center;
     -ms-flex-align: center;
     width: 100%;
     height: 260px; }
@@ -1254,31 +1263,37 @@ header.project-banner {
     width: auto;
     height: 550px;
     background-attachment: fixed;
-    background-size: cover;
+    -webkit-background-size: cover cover;
+            background-size: cover;
     margin-bottom: 0; }
     /* line 12, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.hues-and-views {
       background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/hues_and_views/hv-koblenz-2014.JPG");
+      background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/hues_and_views/hv-koblenz-2014.JPG");
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/hues_and_views/hv-koblenz-2014.JPG");
       background-position: 50%; }
     /* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.neon-labs {
       background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/neon_labs/neon-dashboard-fdba00e0.png");
+      background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/neon_labs/neon-dashboard-fdba00e0.png");
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/neon_labs/neon-dashboard-fdba00e0.png");
       background-position: 50%; }
     /* line 28, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.type-club {
       background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/type_club/Wesleyan-Olin-16a8ab40.jpg");
+      background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/type_club/Wesleyan-Olin-16a8ab40.jpg");
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.2)), url("../img/type_club/Wesleyan-Olin-16a8ab40.jpg");
       background-position: center bottom; }
     /* line 36, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.art {
       background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/art/drawing-wip-0e131b89.jpg");
+      background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/art/drawing-wip-0e131b89.jpg");
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.2)), url("../img/art/drawing-wip-0e131b89.jpg");
       background-position: center; }
     /* line 44, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
     header.project-banner .image-wrapper.nixle {
       background-image: -webkit-linear-gradient(-270deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/nixle/nixle-display-71805b89.png");
+      background-image: -webkit-linear-gradient(90deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/nixle/nixle-display-71805b89.png");
       background-image: linear-gradient(0deg, rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.1)), url("../img/nixle/nixle-display-71805b89.png");
       background-position: center; }
   /* line 53, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
