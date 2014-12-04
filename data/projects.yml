@@ -7,14 +7,18 @@ projects:
     type:
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: November 2014 - Present
+    external: true
+    url: http://onwardoff.tumblr.com
   -
     name: What Should We Call It
     subtitle:
       My friend <a href="http://cbnnr.in/" target="_blank">Carolann Bonner</a> and I write a blog. <a href="http://whatshouldwecall.it" target="_blank">Visit it.</a>
-    slug: onwardoff
+    slug: whatshouldwecallit
     type:
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: November 2014 - Present
+    external: true
+    url: http://whatshouldwecall.it
   -
     name: Nixle
     subtitle:
@@ -24,6 +28,7 @@ projects:
     type: Product Design - Web & iOS
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: March 2014 - September 2014
+    external: false
   -
     name: Hues & Views
     subtitle:
@@ -33,6 +38,7 @@ projects:
     type: Art & Drawing
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     timeframe: January 2014 - Present
+    external: false
   -
     name:
       Neon
@@ -44,6 +50,7 @@ projects:
     type: Product Design - Web
     main_image_url: "neon_labs/neon-dashboard.png"
     timeframe: October 2013 - November 2013
+    external: false
   -
     name: TypeClub
     subtitle: I co-founded and managed an 8-person design consultancy at
@@ -52,6 +59,7 @@ projects:
     type: Leadership & Management
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     timeframe: January 2012 - May 2013
+    external: false
   -
     name: Art
     subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
@@ -59,3 +67,4 @@ projects:
     type:
     main_image_url: "art/sketch-1.png"
     timeframe: 1997 - Present
+    external: false

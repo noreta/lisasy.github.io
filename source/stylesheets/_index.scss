@@ -10,7 +10,7 @@ article.project-item {
 
   .p-title {
     color: $base-font-color;
-    font-size: $f3;
+    font-size: ($f2 + $f3) / 2;
   }
 
   .p-timeframe {
@@ -59,6 +59,7 @@ article.project-item {
     position: relative;
 
     &:before {
+      @extend .half-opacity;
       content: "\2022";
       position: absolute;
       left: $gt-xs;

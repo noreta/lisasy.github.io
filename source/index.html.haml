@@ -6,12 +6,24 @@ layout: "home"
   .p-top-m
     - data.projects.projects.each_with_index do |project, index|
       %article.project-item
-        =link_to "/projects/#{project.slug}" do
-          %h4.p-title= project.name
-        %ul.project-meta-info-list
-          %li.project-meta-info-item
-            %h6.p-timeframe= project.timeframe
-          - if project.type?
+        - if project.external === true
+          = link_to project.url do
+            %h3.p-title= project.name
+          %ul.project-meta-info-list
             %li.project-meta-info-item
-              %h6.p-type= project.type
-        %p.p-subtitle= project.subtitle
+              %h6.p-timeframe= project.timeframe
+            - if project.type?
+              %li.project-meta-info-item
+                %h6.p-type= project.type
+          %p.p-subtitle= project.subtitle
+
+        - else
+          =link_to "/projects/#{project.slug}" do
+            %h3.p-title= project.name
+          %ul.project-meta-info-list
+            %li.project-meta-info-item
+              %h6.p-timeframe= project.timeframe
+            - if project.type?
+              %li.project-meta-info-item
+                %h6.p-type= project.type
+          %p.p-subtitle= project.subtitle

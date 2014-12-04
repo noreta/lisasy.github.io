@@ -8,19 +8,6 @@ body {
   }
 }
 
-.l-col {
-  @include grid-width(4);
-  float: left;
-
-  @include media($medium-screen) {
-    text-align: right;
-  }
-}
-
-.r-col {
-  @include grid-width(6);
-}
-
 .outer-container {
   @include outer-container;
   padding: $gt-m;
