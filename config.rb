@@ -15,7 +15,12 @@ activate :i18n
 activate :rouge_syntax
 
 activate :blog do |project|
-  project.layout = 'project'
+  project.layout = "project"
+end
+
+activate :blog do |blog|
+  blog.prefix = "blog"
+  blog.layout = "home"
 end
 
 activate :pagination do
