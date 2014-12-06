@@ -1,13 +1,13 @@
 // Typography
 // $serif-typeface: 'minion-pro', $georgia;
-$serif-typeface: 'kepler-std', $georgia;
-$sans-serif-typeface: 'roboto', $helvetica;
-$serif-bold-typeface: 'roboto', $georgia;
+$serif-typeface: "ff-tisa-web-pro", $georgia;
+$sans-serif-typeface: "roboto", $helvetica;
+$serif-bold-typeface: "ff-tisa-web-pro", $georgia;
 $font-typeface: "fontawesome";
 
 $headline-typeface: $serif-bold-typeface;
 $display-typeface: $sans-serif-typeface;
-$body-typeface: $sans-serif-typeface;
+$body-typeface: $serif-typeface;
 
 // Colors
 $dark-navy: #2A2F32;
@@ -15,10 +15,11 @@ $maude: #888F93;
 $green: #53B06A;
 $light-tan: #F4F3EE;
 $light-gray: #9C9C9D;
+$maroon: #af5b6b;
 
 
 $base-font-color: $dark-navy;
-$base-accent-color: $green;
+$base-accent-color: $maroon;
 
 // Font Sizes
 $f00: 12px; // Captions/Small

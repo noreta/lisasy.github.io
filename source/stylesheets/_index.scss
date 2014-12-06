@@ -1,5 +1,4 @@
 article.project-item {
-
   @include media($medium-screen) {
     @include span-columns(6 of 12);
     @include omega(2n);
@@ -11,6 +10,7 @@ article.project-item {
   .p-title {
     color: $base-font-color;
     font-size: ($f2 + $f3) / 2;
+    font-weight: $fw-semibold;
   }
 
   .p-timeframe {
@@ -47,12 +47,14 @@ article.project-item {
 .project-meta-info-list {
   @include fill-parent;
   @include clearfix;
+  line-height: $f1;
   margin: 0 auto;
   padding-left: 0;
 }
 
 .project-meta-info-item {
   display: inline-block;
+  line-height: $f0;
 
   &:nth-child(2) {
     padding-left: $gt-m;

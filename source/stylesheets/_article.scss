@@ -1,0 +1,45 @@
+.article-directory {
+  @include media($medium-screen) {
+    @include span-columns(8 of 12);
+    padding-top: $gt-l;
+    padding-bottom: $gt-l;
+  }
+}
+
+.article-item {
+  margin-bottom: $gt-xxl;
+  position: relative;
+
+  &:after {
+    position: absolute;
+    bottom: -($gt-xl);
+    left: 0;
+    content: "";
+    border: 3px solid $base-border-color;
+    width: em(144);
+  }
+
+  &:last-child {
+    margin-bottom: 0;
+
+    &:after {
+      display: none;
+    }
+  }
+}
+
+.article-title {
+  color: $base-accent-color;
+  font-size: $f3;
+  font-weight: $fw-normal;
+}
+
+.article-date {
+  @extend .half-opacity;
+  font-family: $sans-serif-typeface;
+}
+
+.article-body {
+  font-family: "ff-tisa-web-pro";
+  font-size: ($f2 + $f1) / 2;
+}

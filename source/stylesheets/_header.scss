@@ -1,3 +1,7 @@
+.header {
+  font-family: $sans-serif-typeface;
+}
+
 .header a {
   font-weight: $fw-bold;
   color: $base-font-color;
@@ -28,7 +32,7 @@
 
 .site-nav-item {
   display: inline-block;
-  margin-right: $gt-m;
+  margin-right: $gt-l;
   margin-bottom: 0;
 
   &:last-child {

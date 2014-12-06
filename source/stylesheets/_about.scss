@@ -1,6 +1,12 @@
 .about-description {
   @include media($medium-screen) {
     @include span-columns(8 of 12);
-    padding: $gt-m 0;
+    padding-top: $gt-l;
+    padding-bottom: $gt-l;
   }
+}
+
+.about-title {
+  font-size: $f3;
+  font-weight: $fw-normal;
 }

@@ -101,6 +101,7 @@
 
 figure.image-wrapper {
   @include size(100% auto);
+  margin-bottom: $gt-l;
 
   &.fx-h {
     height: 350px;
