@@ -170,6 +170,88 @@
                 <p>You only live once. Do yourself a grand favor and choose to define what “success” means to you.</p>
               </div>
             </article>
+            <article class='article-item'>
+              <h2 class='article-title'><a href="/writing/2014/writing-code-using-vim.html">Writing Code Using Vim</a></h2>
+              <small class='article-date'>March  6, 2014</small>
+              <div class='article-body'>
+                <p>When I first interviewed for a design apprentice position at
+                <a href="http://thoughtbot.com">thoughtbot</a>, I switched from Sublime Text
+                2 and to join the Vim world. Why? A majority of the developers and designers use Vim as their preferred text editor, and I wanted to make a good impression during the interview. Today, Vim is what I use to code.</p>
+                
+                <p>The first two weeks of my relationship with Vim was frustrating; I cursed at my
+                keyboard, impatient with how difficult it was to navigate the terrain under my
+                fingers. Deleting a word seemed impossible. Even navigating through the text
+                felt like climbing a mountain; I couldn&rsquo;t use the arrow keys on my keyboard. I
+                navigated with the HJKL keys. But with a <a href="http://www.viemu.com/vi-vim-cheat-sheet.gif">Vim graphical
+                cheatsheet</a> by my side, I kept
+                trudging along.</p>
+                
+                <p>If you&rsquo;re trying out Vim, give it two weeks before deciding that it isn&rsquo;t for
+                you. It has honestly made me more efficient, and therefore, happier coder! Here are some shortcut
+                keys that I really enjoy:</p>
+                
+                <h4>Scenario #1: You want to sort the attributes alphabetically in your CSS file.</h4>
+                
+                <p><pre><code>
+                div {
+                  margin: 10px 20px;
+                  border-top: 1px solid #000;
+                  box-sizing: border-box;
+                  padding: 20px;
+                }
+                </pre></code></p>
+                
+                <p>You want to sort the attributes alphabetically in your CSS to improve legibility and standardize your method. It&rsquo;s really easy to do this in Vim. It is as simple as this:  <code>V&lt;esc&gt;:sort</code></p>
+                
+                <p>It becomes:</p>
+                
+                <p><pre><code>
+                div {
+                  border-top: 1px solid #000;
+                  box-sizing: border-box;
+                  margin: 10px 20px;
+                  padding: 20px;
+                }
+                </pre></code></p>
+                
+                <h4>Scenario #2: You want to change a words within a tag.</h4>
+                <pre class="highlight html"><span class="nt">&lt;p&gt;</span>The <span class="nt">&lt;strong&gt;</span>brown<span class="nt">&lt;/strong&gt;</span> dog likes to eat dog food.<span class="nt">&lt;/p&gt;</span>
+                </pre>
+                <p>Let&rsquo;s say the dog isn&rsquo;t brown; it is blue! Instead of going into the
+                selection and clicking backspace x 5 (because I know that hurts my fingers
+                if I do it all day), let&rsquo;s make it easier for ourself. Go into the selection, and&hellip;</p>
+                
+                <ul>
+                <li>To change inner tag: <code>&lt;esc&gt;:cit</code></li>
+                <li>To change inner word: <code>&lt;esc&gt;:ciw</code></li>
+                <li>To delete inner word: <code>&lt;esc&gt;:diw</code></li>
+                </ul>
+                
+                <hr>
+                
+                <p>If you decide to take the leap to use Vim, here are my recommendations:</p>
+                
+                <ul>
+                <li><p><strong>Give it at least two weeks before deciding if it works for you or not.</strong>
+                I&rsquo;ve talked to folks who give up after three days, deeming that the learning
+                curve is too high. Of course it&rsquo;s hard to learn. And of course you will be
+                very slow in the beginning. But once you go through the process of
+                trial-and-error over the course of two weeks, you might find you enjoy Vim.</p></li>
+                <li><p><strong>Practice Vim on side projects, not during your day job.</strong> At the beginning
+                of your quest, you will inevitably write code much slower using Vim than with
+                your usual text editor. Practice Vim on your side projects so that you don&rsquo;t
+                feel the pressure to learn Vim AND perform efficiently at your job. When you
+                use Vim on your side project, you can mentally focus all of your energy on
+                learning Vim and take note of things you learn without any overhanging
+                deadline. You&rsquo;ll learn better this way.</p></li>
+                <li><p><strong>Refer to the Vim Wiki for assistance, or Google in general.</strong> If you are a
+                programmer and reading this, chances are that you&rsquo;re already used to the
+                workflow of Googling for whatever help you look for in your day-to-day work.
+                A website I enjoyed very much is the <a href="http://vim.wikia.com/wiki/Vim_Tips_Wiki">Vim section on
+                Wikia</a>.</p></li>
+                </ul>
+              </div>
+            </article>
           </section>
         </section>
       </section>
