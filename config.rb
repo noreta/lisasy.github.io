@@ -1,5 +1,6 @@
 page "/projects/*", layout: "project"
-page "/writing/*",  layout: "writing"
+page "/writing/",  layout: "writing"
+page "/writing/*",  layout: "article"
 
 set :relative_links, true
 set :css_dir, "stylesheets"

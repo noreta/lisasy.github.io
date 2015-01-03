@@ -114,10 +114,34 @@ figcaption {
 }
 
 pre {
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+code {
+  background: #ECECEC;
+  padding-left: 0.25em;
+  padding-right: 0.25em;
+}
+
+pre {
   code {
     font-size: $f1;
     padding-bottom: 1.5em !important;
   }
+}
+
+pre {
+  code.hljs {
+    padding: 0 !important;
+    margin-left: -8.00em;
+  }
+}
+
+hr {
+  background: $base-border-color;
+  border: 0;
+  height: 1px;
 }
 
 // Typographic Variables

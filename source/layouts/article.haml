@@ -1,0 +1,13 @@
+- wrap_layout :layout do
+
+  = partial "partials/header"
+
+  %main.container
+    %section.outer-container
+      %section.article-wrapper
+        %article.article-item
+          %h2.article-title= current_page.title
+          %small.article-date= format_date(current_page.date)
+          .article-body= yield
+
+= partial "partials/footer"
