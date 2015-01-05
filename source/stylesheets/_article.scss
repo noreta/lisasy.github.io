@@ -45,3 +45,22 @@
   font-size: ($f2 + $f1) / 2;
   margin-top: $gt-m;
 }
+
+.article-nav {
+  @include fill-parent;
+  margin-top: $gt-l;
+}
+
+.article-nav-link {
+  display: block;
+  text-align: center;
+  width: 100%;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.article-comments {
+  margin-top: $gt-l;
+}

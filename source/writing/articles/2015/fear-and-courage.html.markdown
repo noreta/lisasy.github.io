@@ -30,17 +30,22 @@ During this process, after I decided to be open the gates for changes in my
 life to occur, I saw my opportunities blossom. I was both open to new jobs, new
 people, new places.
 
-While uncertainty can be scary, it’s equally fruitless to attempt to control or
-force the outcome of a situation. The one example dealing with my current
-situation right now is the state of my housing. I’m transitioning to a new
-apartment to live within the Bay Area. Anyone who lives here can attest to what
-a nightmare it is. The process typically involves responding to fifty
-Craigslist postings and receiving few if any response. Beyond the fact that
-there is a housing crisis in this current climate, you also can’t help but take
-it a little personally when potentially roommates choose to not respond to your
-email. I can’t control if people choose to not respond to me. However, what I
-can do is send those email solicitations out and hope for the best. I could
-only steer the ship in the direction I feel would be best for me.
+While uncertainty can be scary, it’s equally fruitless to attempt to *control*
+or *force* the outcome of a situation. One current example is the state of my
+current housing situation. I’m transitioning to a new apartment to live within
+the Bay Area. Anyone who lives here can attest to what a nightmare that process
+is. With the limited housing stock here and the highest cost of living, this
+experience can be frustrating. The process typically involves responding to
+fifty Craigslist postings and receiving few if any response. Beyond the fact
+that there is a housing crisis in this current climate, you also can’t help but
+take it a little personally when potentially roommates choose to not respond to
+your email. 
+
+I'm current jumping between friends' couches and floors around town until I
+find a new place to live. I can’t control if people choose to not respond to
+me. However, what I can do is send those email solicitations out and hope for
+the best. I can't control the sea and the weather conditions, but what I can do
+is steer the ship in the direction I feel is best fit for me.
 
 
 What compelled me to truly open the gates in my life for radical change? When
@@ -56,5 +61,7 @@ in my mind when I voiced this to myself.
 The sort of courage I got to uncover for myself is the courage to love, be
 patient, keep an open heart and an open mind. While in this process I sorted it
 a lot of tangible shifts in my life, the biggest shift was the mental one I
-underwent: discovering my own Lisa-flavored courage that was in my core. You
-have that too, and I hope you get to dig into that for yourself.
+underwent: discovering my own Lisa-flavored courage that was at my core.
+
+The courage is present in everyone. I hope that we all get the opportunities to
+tap into that courage by stripping away the fear we carry in our lives.

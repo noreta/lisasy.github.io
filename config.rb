@@ -23,6 +23,10 @@ activate :blog do |writing|
   writing.permalink = "/:year/:title.html"
 end
 
+activate :disqus do |d|
+  d.shortname = "banjogirl"
+end
+
 activate :pagination do
   pageable_set :projects do
     data.projects
