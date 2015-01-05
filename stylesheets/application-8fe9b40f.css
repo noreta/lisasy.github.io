@@ -1311,7 +1311,26 @@ article.project-item.empty {
 /* line 43, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
 .article-body {
   font-family: "ff-tisa-web-pro";
-  font-size: 17px; }
+  font-size: 17px;
+  margin-top: 1em; }
+
+/* line 49, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
+.article-nav {
+  width: 100%;
+  margin-top: 2em; }
+
+/* line 54, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
+.article-nav-link {
+  display: block;
+  text-align: center;
+  width: 100%; }
+  /* line 59, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
+  .article-nav-link:hover {
+    text-decoration: none; }
+
+/* line 64, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
+.article-comments {
+  margin-top: 2em; }
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_project-header.scss */
 header.project-banner {
