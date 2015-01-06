@@ -68,8 +68,6 @@ GEM
       middleman-core (>= 3.0.0)
       net-sftp
       ptools
-    middleman-disqus (1.0.0)
-      middleman-core (~> 3.1)
     middleman-livereload (3.1.1)
       em-websocket (>= 0.2.0)
       middleman-core (>= 3.0.2)
@@ -138,7 +136,6 @@ DEPENDENCIES
   middleman-autoprefixer
   middleman-blog
   middleman-deploy
-  middleman-disqus
   middleman-livereload (~> 3.1.0)
   middleman-pagination
   middleman-rouge
