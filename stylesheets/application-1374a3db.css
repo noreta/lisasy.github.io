@@ -812,7 +812,7 @@ body {
 
 /* line 8, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0; }
 
@@ -928,12 +928,12 @@ hr {
 
 /* line 148, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h1 {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px; }
 
 /* line 154, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .article-header {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 23px;
   display: inline;
   border-bottom: 4px solid #2a2f32; }
@@ -950,7 +950,7 @@ h1 {
 
 /* line 174, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h5, .blockquote .title, article .counter:before {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase; }
 
@@ -966,7 +966,7 @@ a.button {
   border-radius: 0.1875em;
   border: 3px solid #af5b6b;
   display: block;
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5em 1em;
   text-align: center; }
   /* line 198, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
@@ -1044,7 +1044,7 @@ article.project-item {
     margin-top: 0;
     font-size: 14px;
     color: #2a2f32;
-    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     /* line 36, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
     article.project-item .p-subtitle a {
       text-decoration: underline; }
@@ -1129,7 +1129,7 @@ article.project-item {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin-top: 72px; }
     /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
@@ -1169,7 +1169,7 @@ article.project-item {
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_header.scss */
 .header {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 5, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_header.scss */
 .header a {
@@ -1217,7 +1217,7 @@ article.project-item {
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_footer.scss */
 .footer {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   /* line 4, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_footer.scss */
   .footer p {
     font-size: 16px; }
@@ -1320,7 +1320,7 @@ article.project-item {
 
 /* line 38, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
 .article-date {
-  font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 43, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
 .article-body {
@@ -1457,7 +1457,7 @@ header.project-banner {
         display: block;
         margin-right: 2.35765%;
         width: 23.23176%;
-        font-family: "roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px;
         margin-top: 72px; }
         /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
