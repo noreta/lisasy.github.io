@@ -1,4 +1,14 @@
 projects:
+  -
+    name: Middleman Redesign
+    subtitle:
+      My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
+    slug: middleman
+    type: Web Design & Front-End Development
+    main_image_url: "middleman/middleman-thumbnail.jpg"
+    index_image_url: "middleman/middleman-thumbnail.jpg"
+    timeframe: November 2014 - December 2014
+    external: false
   # -
   #   name: Onward Off
   #   subtitle:

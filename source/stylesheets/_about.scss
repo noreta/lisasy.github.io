@@ -1,9 +1,13 @@
 .about-description {
   @include media($medium-screen) {
     @include span-columns(7 of 12);
-    padding-top: $gt-l;
-    padding-bottom: $gt-l;
+    // padding-top: $gt-l;
+    // padding-bottom: $gt-l;
   }
+}
+
+.about-description p {
+  font-family: $sans-serif-typeface;
 }
 
 .about-title {
