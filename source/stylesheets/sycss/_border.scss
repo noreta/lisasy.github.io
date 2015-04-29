@@ -21,8 +21,16 @@ $directions: top left right bottom;
   }
 }
 
+.bd-top-m {
+  border-top: $bd-st-m solid $bd-color;
+}
+
 .bd-top-l {
   border-top: $bd-st-l solid $bd-color;
+}
+
+.bd-bottom-m {
+  border-bottom: $bd-st-m solid $bd-color;
 }
 
 .bd-bottom-l {
