@@ -796,10 +796,18 @@ Main Prefix: bd
   border-bottom: 1px solid rgba(0, 0, 0, 0.1); }
 
 /* line 25, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+.bd-top-m {
+  border-top: 2px solid rgba(0, 0, 0, 0.1); }
+
+/* line 29, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-top-l {
   border-top: 4px solid rgba(0, 0, 0, 0.1); }
 
-/* line 29, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+/* line 33, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
+.bd-bottom-m {
+  border-bottom: 2px solid rgba(0, 0, 0, 0.1); }
+
+/* line 37, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/sycss/_border.scss */
 .bd-bottom-l {
   border-bottom: 4px solid rgba(0, 0, 0, 0.1); }
 
@@ -808,11 +816,11 @@ body {
   font-family: "ff-tisa-web-pro", Georgia, Cambria, "Times New Roman", Times, serif;
   color: #2a2f32;
   font-size: 16px;
-  font-weight: 300; }
+  font-weight: 400; }
 
 /* line 8, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h1, h2, h3, h4, h5, h6 {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-weight: 600;
   margin: 0; }
 
@@ -928,12 +936,12 @@ hr {
 
 /* line 148, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h1 {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 48px; }
 
 /* line 154, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 .article-header {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 23px;
   display: inline;
   border-bottom: 4px solid #2a2f32; }
@@ -950,7 +958,7 @@ h1 {
 
 /* line 174, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
 h5, .blockquote .title, article .counter:before {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   font-size: 14px;
   text-transform: uppercase; }
 
@@ -966,7 +974,7 @@ a.button {
   border-radius: 0.1875em;
   border: 3px solid #af5b6b;
   display: block;
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
   padding: 0.5em 1em;
   text-align: center; }
   /* line 198, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_typography.scss */
@@ -1018,15 +1026,15 @@ article.project-item {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 48.82117%; }
+      width: 31.76157%; }
       /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
       article.project-item:last-child {
         margin-right: 0; }
       /* line 70, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_omega.scss */
-      article.project-item:nth-child(2n) {
+      article.project-item:nth-child(3n) {
         margin-right: 0; }
       /* line 75, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_omega.scss */
-      article.project-item:nth-child(2n+1) {
+      article.project-item:nth-child(3n+1) {
         clear: left; } }
   /* line 10, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
   article.project-item .p-title {
@@ -1044,7 +1052,7 @@ article.project-item {
     margin-top: 0;
     font-size: 14px;
     color: #2a2f32;
-    font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
     /* line 36, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_index.scss */
     article.project-item .p-subtitle a {
       text-decoration: underline; }
@@ -1129,7 +1137,7 @@ article.project-item {
     display: block;
     margin-right: 2.35765%;
     width: 23.23176%;
-    font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
     font-size: 14px;
     margin-top: 72px; }
     /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
@@ -1169,7 +1177,7 @@ article.project-item {
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_header.scss */
 .header {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 5, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_header.scss */
 .header a {
@@ -1217,7 +1225,7 @@ article.project-item {
 
 /* line 1, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_footer.scss */
 .footer {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
   /* line 4, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_footer.scss */
   .footer p {
     font-size: 16px; }
@@ -1249,19 +1257,21 @@ article.project-item {
     float: left;
     display: block;
     margin-right: 2.35765%;
-    width: 57.35098%;
-    padding-top: 2em;
-    padding-bottom: 2em; }
+    width: 57.35098%; }
     /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
     .about-description:last-child {
       margin-right: 0; } }
 
 /* line 9, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
+.about-description p {
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+
+/* line 13, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
 .about-title {
   font-size: 28px;
   font-weight: 400; }
 
-/* line 14, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
+/* line 18, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
 .about-sidebar {
   float: left;
   display: block;
@@ -1273,7 +1283,7 @@ article.project-item {
   .about-sidebar:last-child {
     margin-right: 0; }
 
-/* line 20, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
+/* line 24, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_about.scss */
 .about-profile-image {
   width: 100%;
   height: auto; }
@@ -1320,7 +1330,7 @@ article.project-item {
 
 /* line 38, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
 .article-date {
-  font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif; }
+  font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif; }
 
 /* line 43, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/_article.scss */
 .article-body {
@@ -1457,7 +1467,7 @@ header.project-banner {
         display: block;
         margin-right: 2.35765%;
         width: 23.23176%;
-        font-family: "helvetica neue", "Helvetica Neue", Helvetica, Arial, sans-serif;
+        font-family: "Roboto", "Helvetica Neue", Helvetica, Arial, sans-serif;
         font-size: 14px;
         margin-top: 72px; }
         /* line 40, /Users/lisasy/Dropbox/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
