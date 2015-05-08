@@ -3,8 +3,11 @@
 }
 
 .header a {
-  font-weight: $fw-bold;
   color: $base-font-color;
+}
+
+.header a.focus {
+  font-weight: $fw-bold;
 }
 
 .header-description {

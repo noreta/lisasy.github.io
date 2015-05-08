@@ -8,13 +8,13 @@ layout: "home"
       %article.project-item
         - if project.external === true
           %h3.p-title= link_to project.name, project.url
-          %ul.project-meta-info-list
-            %li.project-meta-info-item
-              %h6.p-timeframe= project.timeframe
-            - if project.type?
-              %li.project-meta-info-item
-                %h6.p-type= project.type
-          %p.p-subtitle= project.subtitle
+          -# %ul.project-meta-info-list
+          -#   %li.project-meta-info-item
+          -#     %h6.p-timeframe= project.timeframe
+          -#   - if project.type?
+          -#     %li.project-meta-info-item
+          -#       %h6.p-type= project.type
+          -# %p.p-subtitle= project.subtitle
 
         - else
           -# %h3.p-title= link_to project.name, "/projects/#{project.slug}"
@@ -22,9 +22,9 @@ layout: "home"
             .project-index-image-container
               = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
               %h6.project-index-timeframe= project.timeframe
-          %ul.project-meta-info-list
-            %li.project-meta-info-item
-            - if project.type?
+          -# %ul.project-meta-info-list
+          -#   %li.project-meta-info-item
+          -#   - if project.type?
               -# %li.project-meta-info-item
                 -# %h6.p-type= project.type
           -# %p.p-subtitle= project.subtitle

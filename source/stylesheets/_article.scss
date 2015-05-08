@@ -1,7 +1,8 @@
 .article-directory,
 .article-wrapper {
   @include media($medium-screen) {
-    @include span-columns(8 of 12);
+    @include shift(2.5);
+    @include span-columns(7 of 12);
     padding-top: $gt-l;
     padding-bottom: $gt-l;
   }
@@ -31,17 +32,19 @@
 
 .article-title {
   color: $base-accent-color;
-  font-size: $f3;
+  font-size: ($f2 + $f3) / 2;
   font-weight: $fw-normal;
 }
 
 .article-date {
   @extend .half-opacity;
   font-family: $sans-serif-typeface;
+  margin-top: 0;
 }
 
 .article-body {
-  font-family: "ff-tisa-web-pro";
+  // font-family: "ff-tisa-web-pro";
+  font-family: $sans-serif-typeface;
   font-size: ($f2 + $f1) / 2;
   margin-top: $gt-m;
 }
