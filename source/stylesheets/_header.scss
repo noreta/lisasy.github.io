@@ -15,6 +15,12 @@
   margin: 0;
 }
 
+.header-container {
+  @include outer-container;
+  padding-top: 1.5em;
+  padding-bottom: 1.5em;
+}
+
 .site-nav {
   @include fill-parent;
   margin-top: $gt-m;

@@ -1,3 +1,55 @@
+article.priority-row {
+  @include fill-parent();
+  overflow: hidden;
+
+  .facebook-item {
+    background-color: #3b5998;
+    padding: $gt-xxl $gt-l;
+    text-align: center;
+    color: white;
+
+    @include media($medium-screen) {
+      @include span-columns(8 of 12);
+    }
+  }
+
+  .art-item {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 402px;
+
+    @include media($medium-screen) {
+      @include span-columns(4 of 12);
+    }
+
+    img {
+      @include size(100% auto);
+    }
+  }
+}
+
+.facebook-item {
+  .facebook-title {
+    font-weight: 500;
+    font-size: $base-font-size;
+  }
+
+  .facebook-timeframe {
+    font-weight: 400;
+    text-transform: none;
+    color: rgba(white, 0.5);
+  }
+
+  .fa-facebook-official {
+    color: white;
+    font-size: $f5 * 2;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 16px;
+  }
+}
+
 article.project-item {
   @include media($medium-screen) {
     @include span-columns(4 of 12);

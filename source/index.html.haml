@@ -4,6 +4,15 @@ layout: "home"
 
 %section.outer-container
   .p-top-m
+    %article.priority-row
+      .facebook-item
+        -# = image_tag("facebook/facebook-thumbnail.png")
+        %i.fa.fa-facebook-official
+        %h4.facebook-title Product Designer
+        %h5.facebook-timeframe January 2015 — Now
+      .art-item{:style => "background-image: url('img/art/Koblenz-Square-M.png')"}
+        -# = image_tag("art/Walden-Single-M.png")
+  .p-top-l
     - data.projects.projects.each_with_index do |project, index|
       %article.project-item
         - if project.external === true

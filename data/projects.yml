@@ -1,14 +1,14 @@
 projects:
-  -
-    name: Facebook
-    subtitle:
-      My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
-    slug: facebook
-    type: Product Design
-    main_image_url: "facebook/facebook-thumbnail.png"
-    index_image_url: "facebook/facebook-thumbnail.png"
-    timeframe: January 2015 - Now
-    external: false
+  # -
+  #   name: Facebook
+  #   subtitle:
+  #     My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
+  #   slug: facebook
+  #   type: Product Design
+  #   main_image_url: "facebook/facebook-thumbnail.png"
+  #   index_image_url: "facebook/facebook-thumbnail.png"
+  #   timeframe: January 2015 - Now
+  #   external: false
   -
     name: Middleman Redesign
     subtitle:
