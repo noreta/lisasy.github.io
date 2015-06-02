@@ -4,47 +4,20 @@
     %h1= t("nixle.name")
     %h5.half-opacity.timeframe.m-bt-nil Role: #{t("nixle.role")}
     %h5.half-opacity.timeframe= t("nixle.timeframe")
-    %p.subtitle= t("nixle.subtitle")
+    %p.subtitle
+      Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
+      Nixle keeps you up-to-date with relevant information from your community. In six months, I led the product, UX, interface, information architecture, and front-end development on both web and iOS platforms for <a href="http://nixle.com"target="_blank">Nixle</a>, which keeps you up-to-date with relevant information from your community.
 %section.project-body
   .box
     %aside.sidebar-l
       .sidebar-set
         %header
-          %h5 Role
-          %p #{t("nixle.role")}
-      .sidebar-set
-        %header
-          %h5 Toolkit
+          %h5 Navigation
           %ul
-            %li Ruby on Rails
-            %li iOS Design
-            %li Backbone.js
-            %li HTML & SCSS
-            %li Sketch app (UI design)
-            %li Adobe Photoshop
-            %li Adobe Illustrator (Icon design)
-            %li Flinto (Prototype)
-            %li Git
-            %li
-              = link_to "thoughtbot's Product Design Sprint",
-                "http://playbook.thoughtbot.com/#prep-work"
-            %li
-              = link_to "Vim",
-                "https://github.com/lisasy/dotfiles/blob/master/vimrc"
-            %li Trello
-      .sidebar-set
-        %header
-          %h5 Team (8)
-          %ul
-            %li 1 Product Designer (me)
-            %li 2 Rails developers
-            %li 2 iOS developers
-            %li 1 Backbone/web developer
-            %li 1 Design apprentice
-            %li 1 Part-time Designer (end-of-engagement)
+            %li= link_to "Project Background", "#background"
+            %li= link_to "Product Strategy", "#product-strategy"
+            %li= link_to "Insights & Learnings", "#insights"
     %article.main-column.fl-w
-      %h3.article-header= t("nixle.standfirst_title")
-      %p.standfirst= t("nixle.standfirst")
       .row
         %h4 Project Background
         %p
@@ -61,43 +34,17 @@
         %p
           Our goal was to build an MVP in web and iOS platforms to provide the
           services to the customers.
-
-  .box
-    %article
-      .blockquote
+      .row
         %h4.title Value Proposition
-        %blockquote
-          Nixle keeps you up-to-date with relevant information from your community.
-  .box
-    %article.main-column.no-left
-      %h4 The Customer
-      %p
-        Since Nixle is currently connected to thousands of public safety agencies and citizens using their service, we aimed to define two groups of primary customers:
-      %ol
-        %li School-related people (K-12 school staff & administration, parents, guardians)
-        %li Neighborhood people
-      %p
-        Because <strong>school-related people</strong> represent the more
-        specific target base, we determined them to be the target customers for
-        the MVP. We hoped that a portion of this group would become
-        <strong>"super users"</strong> who would engage deeply with Nixle and
-        convert their neighbors into Nixle users. We hypothesized that strong
-        engagement within schools would lead to adoption at a neighborhood
-        level.
-      %figure.image-wrapper
-        = image_tag("nixle/nixle-customer-strategy.jpg")
-  .box
-    %article
-      .blockquote
-        %h4.title Customer Goals
-        %blockquote
-          OneBlock’s customers are parents, neighbors, people interested in
+        %p Nixle keeps you up-to-date with relevant information from your community.
+
+      .row
+        %h4 The Customer
+        %p
+          We found that OneBlock’s customers are parents, neighbors, people interested in
           their neighborhoods, and everyone else. They are the customers
           because they want to learn what is going on and also interact with
           the community.
-
-  .box
-    %article.main-column.no-left.counter
       .row
         %h4 What purpose does Nixle serve to people?
         %p
@@ -128,30 +75,6 @@
           %h5 Desired Outcome
           %p
             so that I feel more connected to my community.
-
-  .box
-    %article.main-column.no-left
-      .row
-        %h4 Figuring out flow and information architecture
-        %p
-          Due to the large scope of the product across web and mobile platforms, I looked at the large picture on what type of experience to provide, and how we would get there. In considering this large scope, we were able to break up the product into these core components:
-        %ul.col-2
-          .column
-            %li Landing/Onboarding
-            %li Authentication
-            %li Notification
-            %li Feed
-          .column
-            %li Communities
-            %li User
-            %li Settings
-        %p
-          Since we operated mobile-first, I figured out the flow and information architecture of the native iOS appliciation, taking into consideration native components based on the <a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" target="_blank">iOS Human Interface Guidelines</a>. While broad conceptual architecture across iOS and the web remained the same, their respective platforms allowed for diverging presentations of information.
-        %figure.image-wrapper
-          = image_tag("nixle/nixle-information-architecture.jpg")
-          %figcaption
-            A preliminary sketch of Neon's information architecture of
-            navigation, defined during the design sprint.
 
   .box
     %article.main-column.no-left
@@ -204,68 +127,7 @@
         creates a post and sends it to their nearby neighborhoods:
       %figure.image-wrapper
         = image_tag("nixle/nixle-selection.gif")
-  .box
-    .row
-      %article.main-column.no-left
-        %h4 Front-end development with Rails, Backbone.js, SCSS, and HTML
-        %p
-          I got to work with Backbone.js on Rails for this project. While the
-          API was served through Rails, Backbone.js was used to create a
-          performant front-end experience for the user. I collaborated closely
-          with the Nixle developer, and we problem-solved often to ensure we
-          were creating the cleanest and most easily maintainable code base. I
-          wrote in HTML, SCSS, and Javascript, occasionally creating templates
-          and views in Backbone.js.
-        %p
-          Here are some simple code snippets that emerged from this project:
-        :plain
-          <pre><code>
-            @mixin icon($content) {
-              &:before {
-                content: $content;
-              }
-            }
-          </code></pre>
-          <pre><code>
-            @mixin paragraph-ellipsis($number-of-lines: 2) {
-              -webkit-box-orient: vertical;
-              -webkit-line-clamp: $number-of-lines;
-              display: -webkit-box;
-              overflow: hidden;
-              text-overflow: ellipsis;
-            }
-          </code></pre>
 
-  .box
-    .row
-      %article.main-column.no-left
-        %h4 Front-end development with Xcode
-        %p
-          While my primary role in working on the iOS application was to direct
-          the product design and provide assets, I had occasional opportunities
-          to touch the code base in Xcode. Here are some of the things I got to
-          do:
-        %ul
-          %li Organize and use proper design assets (@2x, @3x) via Sketch and Illustrator.
-          %li Organize various storyboards via auto-layout.
-          %li Update typography using the Storyboard in Xcode.
-          %li Use proper terminology to refer to UI components, defined by the <a href="https://developer.apple.com/library/ios/documentation/userexperience/conceptual/mobilehig/" target="_blank">iOS Human Interface Guidelines</a>.
-        %p
-          Below are some screens in the iOS application. While simple
-          screenshots do not indicate the thought process taking into how we
-          got here, you can see that the primary information architecture
-          relies on the tab bar, a commonly understood design pattern in iOS:
-  .box.bd-bottom-l.p-bottom-l
-    %article.col-3
-      .column
-        %figure.image-wrapper
-          = image_tag("nixle/nixle-ios-feed.png")
-      .column
-        %figure.image-wrapper
-          = image_tag("nixle/nixle-ios-com.png")
-      .column
-        %figure.image-wrapper
-          = image_tag("nixle/nixle-ios-me.png")
   .box
     .row
       %article.main-column.no-left

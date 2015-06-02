@@ -1,8 +1,9 @@
 %header.project-banner
   <div class="image-wrapper #{t('art.slug')}"></div>
   %section.banner
-    %h1= t("art.name")
-    %h5.half-opacity.timeframe= t("art.timeframe")
+    %h1 Mission Statement
+    %p.subtitle
+      Everyone's stories and experiences shape who they are, what they see, and how they see. Some stories get lost in translation, others stay on the margins. My work tells the story that is typically unheard. When we hear each others' stories, we understand each other better. When we understand each other, we open up our intention to build connections, community, and radical awareness of ourselves and others.
 %section.project-body
   .box
     %aside.sidebar-l
@@ -10,15 +11,19 @@
         =link_to "See older work", "http://lisasy.carbonmade.com/", class: "button", target: "_blank"
       .sidebar-set
         %header
-          %h5 Experiences
+          %h5 Collection
           %ul
-            %li Drawing
-            %li Painting (oil, acryllic)
-            %li Printmaking (screen, letterpress)
-            %li Typography
-            %li Graphic design
-            %li Installation Art
-            %li Electronic Media
+            %li= link_to "Cardinal Colored (2010)", "#"
+            %li= link_to "Downtown LA (2010)", "#"
+            %li= link_to "San Francisco Trio (2014)", "#"
+            %li= link_to "Self Discovery (2011)", "#"
+      .sidebar-set
+        %header
+          %h5 Other
+          %ul
+            %li= link_to "Sketchbooks", "#"
+            %li= link_to "Nudes", "#"
+            %li= link_to "Walden (2012)", "#"
       .sidebar-set
         %header
           %h5 Education
@@ -28,9 +33,6 @@
             %li Art Center College of Design: Illustration at Saturday High (Pasadena, CA, 2008)
             %li Carnegie Mellon University: Fine Art Pre-College Summer Program (Pittsburgh, PA, 2008)
     %article.main-column.fl-w
-      %h3.article-header= t("art.standfirst_title")
-      %p.standfirst-second= t("art.standfirst")
-
       .row
         %figure.image-wrapper.side-caption
           = image_tag("art/nude-1.jpg")

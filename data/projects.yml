@@ -1,14 +1,4 @@
 projects:
-  # -
-  #   name: Facebook
-  #   subtitle:
-  #     My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
-  #   slug: facebook
-  #   type: Product Design
-  #   main_image_url: "facebook/facebook-thumbnail.png"
-  #   index_image_url: "facebook/facebook-thumbnail.png"
-  #   timeframe: January 2015 - Now
-  #   external: false
   -
     name: Middleman Redesign
     subtitle:
@@ -19,26 +9,6 @@ projects:
     index_image_url: "middleman/middleman-thumbnail.jpg"
     timeframe: November 2014 - December 2014
     external: false
-  # -
-  #   name: Onward Off
-  #   subtitle:
-  #     My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
-  #   slug: onwardoff
-  #   type:
-  #   main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
-  #   timeframe: November 2014 - Present
-  #   external: true
-  #   url: http://onwardoff.tumblr.com
-  # -
-  #   name: What Should We Call It
-  #   subtitle:
-  #     My friend <a href="http://cbnnr.in/" target="_blank">Carolann Bonner</a> and I write a blog. <a href="http://whatshouldwecall.it" target="_blank">Visit it.</a>
-  #   slug: whatshouldwecallit
-  #   type:
-  #   main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
-  #   timeframe: November 2014 - Present
-  #   external: true
-  #   url: http://whatshouldwecall.it
   -
     name: Nixle
     subtitle:
@@ -85,10 +55,20 @@ projects:
     timeframe: Jan. 2012 - May 2013
     external: false
   -
-    name: Art
-    subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
-    slug: art
-    type:
-    main_image_url: "art/sketch-1.png"
-    timeframe: 1997 - Present
+    name: Nudes
+    subtitle: Nude studies
+    slug: nudes
+    type: Fine Art
+    # main_image_url: "nudes/Wesleyan-Olin.jpg"
+    index_image_url: "nudes/nude-2.jpg"
+    timeframe: 2010
     external: false
+  # -
+  #   name: Art
+  #   subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
+  #   slug: art
+  #   type:
+  #   main_image_url: "art/sketch-1.png"
+  #   index_image_url: "art/sketch-1.png"
+  #   timeframe: 1997 - Present
+  #   external: false
