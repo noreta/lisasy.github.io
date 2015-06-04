@@ -1672,20 +1672,20 @@ header.project-banner {
   padding-left: 2em; }
 
 /* line 102, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_project.scss */
-.image-wrapper {
+figure.image-wrapper {
   width: 100%;
   height: auto;
   margin-bottom: 2em; }
   /* line 106, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_project.scss */
-  .image-wrapper.fx-h {
+  figure.image-wrapper.fx-h {
     height: 350px;
     overflow: hidden; }
   /* line 112, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_project.scss */
-  .image-wrapper.ios-h img {
+  figure.image-wrapper.ios-h img {
     width: auto;
     height: 430px; }
   /* line 117, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_project.scss */
-  .image-wrapper img {
+  figure.image-wrapper img {
     width: 100%;
     height: auto; }
 
@@ -1808,15 +1808,15 @@ article {
       float: left;
       display: block;
       margin-right: 2.35765%;
-      width: 23.23176%; }
+      width: 31.76157%; }
       /* line 40, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/neat/grid/_span-columns.scss */
       .grid-item:last-child {
         margin-right: 0; }
       /* line 70, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/neat/grid/_omega.scss */
-      .grid-item:nth-child(4n) {
+      .grid-item:nth-child(3n) {
         margin-right: 0; }
       /* line 75, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/neat/grid/_omega.scss */
-      .grid-item:nth-child(4n+1) {
+      .grid-item:nth-child(3n+1) {
         clear: left; } }
 
 /* line 10, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_grid.scss */
@@ -1825,5 +1825,5 @@ article {
   /* line 13, /Users/lisasy/Dropbox (Personal)/Development/lisasy.github.io/source/stylesheets/_grid.scss */
   .grid-item-wrapper img {
     max-height: 250px;
-    width: 100%;
-    object-fit: cover; }
+    object-fit: cover;
+    width: 100%; }
