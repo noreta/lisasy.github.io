@@ -54,15 +54,15 @@ projects:
     index_image_url: "type_club/TC-index-image.png"
     timeframe: Jan. 2012 - May 2013
     external: false
-  -
-    name: Nudes
-    subtitle: Nude studies
-    slug: nudes
-    type: Fine Art
-    # main_image_url: "nudes/Wesleyan-Olin.jpg"
-    index_image_url: "nudes/nude-2.jpg"
-    timeframe: 2010
-    external: false
+  # -
+  #   name: Nudes
+  #   subtitle: Nude studies
+  #   slug: nudes
+  #   type: Fine Art
+  #   # main_image_url: "nudes/Wesleyan-Olin.jpg"
+  #   index_image_url: "nudes/nude-2.jpg"
+  #   timeframe: 2010
+  #   external: false
   # -
   #   name: Art
   #   subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
