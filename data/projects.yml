@@ -4,21 +4,19 @@ projects:
     subtitle:
       My photo diary. <a href="http://onwardoff.tumblr.com" target="_blank">Visit it.</a>
     slug: middleman
-    type: Web Design & Front-End Development
+    type: Product Design, Front-End Development
     main_image_url: "middleman/middleman-thumbnail.jpg"
     index_image_url: "middleman/middleman-thumbnail.jpg"
-    timeframe: November 2014 - December 2014
+    timeframe: 2014
     external: false
   -
-    name: Nixle
-    subtitle:
-      Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
-      Nixle keeps you up-to-date with relevant information from your community.
-    slug: nixle
-    type: Product Design - Web & iOS
-    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
-    index_image_url: "nixle/nixle-index-logo.png"
-    timeframe: Mar. 2014 - Sept. 2014
+    name: thank you's by Frank Ocean
+    subtitle: ""
+    slug: thank-yous
+    type: Print Design, Book Binding
+    main_image_url: "art/frank-ocean/open-last.jpg"
+    index_image_url: "art/frank-ocean/open-last.jpg"
+    timeframe: 2012
     external: false
   -
     name: Hues & Views
@@ -26,10 +24,31 @@ projects:
       This is an art project examining the relationship between myself and the
       spaces I encounter.
     slug: hues-and-views
-    type: Art & Drawing
+    type: Urban Sketching
     main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
     index_image_url: "hues_and_views/hv-logo.png"
-    timeframe: Jan. 2014 - Present
+    timeframe: 2014 - Present
+    external: true
+    url: http://huesandviews.tumblr.com
+  -
+    name: Aching
+    subtitle: ""
+    slug: aching
+    type: Drawing
+    main_image_url: "art/Aching.png"
+    index_image_url: "art/Aching.png"
+    timeframe: 2011
+    external: false
+  -
+    name: Nixle
+    subtitle:
+      Made at <a href="http://thoughtbot.com" target="_blank">thoughtbot</a>,
+      Nixle keeps you up-to-date with relevant information from your community.
+    slug: nixle
+    type: Product Design, Front-End Development
+    main_image_url: "hues_and_views/hv-koblenz-2014.JPG"
+    index_image_url: "nixle/nixle-index-logo.png"
+    timeframe: 2014
     external: false
   -
     name:
@@ -39,10 +58,10 @@ projects:
       Neon is an intelligent thumbnail picker based on machine-learning from
       Carnegie Mellon University.
     slug: neon-labs
-    type: Product Design - Web
+    type: Product Design
     main_image_url: "neon_labs/neon-dashboard.png"
     index_image_url: "neon_labs/neon-index-image.png"
-    timeframe: Oct. 2013 - Nov. 2013
+    timeframe: 2013
     external: false
   -
     name: TypeClub
@@ -52,23 +71,104 @@ projects:
     type: Leadership & Management
     main_image_url: "type_club/Wesleyan-Olin.jpg"
     index_image_url: "type_club/TC-index-image.png"
-    timeframe: Jan. 2012 - May 2013
+    timeframe: 2012 - 2013
     external: false
-  # -
-  #   name: Nudes
-  #   subtitle: Nude studies
-  #   slug: nudes
-  #   type: Fine Art
-  #   # main_image_url: "nudes/Wesleyan-Olin.jpg"
-  #   index_image_url: "nudes/nude-2.jpg"
-  #   timeframe: 2010
-  #   external: false
-  # -
-  #   name: Art
-  #   subtitle: All my life, I've loved art. I enjoy the practice of creating 2D and 3D forms from my imagination. The nature of art is that it brings the artist's subjectives observations, opinions, and lived bodily experience into the art they make.
-  #   slug: art
-  #   type:
-  #   main_image_url: "art/sketch-1.png"
-  #   index_image_url: "art/sketch-1.png"
-  #   timeframe: 1997 - Present
-  #   external: false
+  -
+    name: Nudes
+    subtitle: Nude studies
+    slug: nudes
+    type: Drawing
+    main_image_url: "art/nude-1.jpg"
+    index_image_url: "art/nude-1.jpg"
+    timeframe: 2011
+    external: false
+  -
+    name: Koblenz, Germany
+    subtitle: ""
+    slug: koblenz
+    type: Fine Art
+    main_image_url: "art/Koblenz-Square-M.png"
+    index_image_url: "art/Koblenz-Square-M.png"
+    timeframe: 2014
+    external: false
+  -
+    name: Corkboard
+    subtitle: ""
+    slug: corkboard
+    type: Oil Painting
+    main_image_url: "art/oil/Corkboard-2010.jpg"
+    index_image_url: "art/oil/Corkboard-2010.jpg"
+    timeframe: 2010
+    external: false
+  -
+    name: Cardinal Colored
+    subtitle: ""
+    slug: cardinal
+    type: Fine Art
+    main_image_url: "art/cardinal-colored/cardinalcolored.jpg"
+    index_image_url: "art/cardinal-colored/cardinalcolored.jpg"
+    timeframe: 2010
+    external: false
+  -
+    name: Self Sufficiency
+    subtitle: ""
+    slug: self-sufficiency
+    type: Fine Art
+    main_image_url: "art/self-discovery/Self-Sufficiency-2011.jpg"
+    index_image_url: "art/self-discovery/Self-Sufficiency-2011.jpg"
+    timeframe: 2011
+    external: false
+  -
+    name: DTLA 2010
+    subtitle: ""
+    slug: dtla
+    type: Fine Art
+    main_image_url: "art/DTLA-2010.jpg"
+    index_image_url: "art/DTLA-2010.jpg"
+    timeframe: 2010
+    external: false
+  -
+    name: Experiment
+    subtitle: ""
+    slug: experiment
+    type: Fine Art
+    main_image_url: "art/experiment.jpg"
+    index_image_url: "art/experiment.jpg"
+    timeframe: 2010
+    external: false
+  -
+    name: Jonathan in Pittsburgh
+    subtitle: ""
+    slug: jonathan-in-pittsburgh
+    type: Drawing
+    main_image_url: "art/Jonathan-in-Pittsburgh-2008.jpeg"
+    index_image_url: "art/Jonathan-in-Pittsburgh-2008.jpeg"
+    timeframe: 2008
+    external: false
+  -
+    name: Lisa in a Chair
+    subtitle: ""
+    slug: lisa-in-chair
+    type: Oil Painting
+    main_image_url: "art/Lisa-in-a-Chair-2009.jpeg"
+    index_image_url: "art/Lisa-in-a-Chair-2009.jpeg"
+    timeframe: 2009
+    external: false
+  -
+    name: Shoes
+    subtitle: ""
+    slug: shoes
+    type: Drawing
+    main_image_url: "art/Shoes-2009.jpeg"
+    index_image_url: "art/Shoes-2009.jpeg"
+    timeframe: 2009
+    external: false
+  -
+    name: Truck
+    subtitle: ""
+    slug: truck
+    type: Oil Painting
+    main_image_url: "art/Truck-2009.jpeg"
+    index_image_url: "art/Truck-2009.jpeg"
+    timeframe: 2009
+    external: false

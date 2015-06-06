@@ -9,22 +9,19 @@ article.priority-row {
     color: white;
 
     @include media($medium-screen) {
-      @include span-columns(8 of 12);
+      @include span-columns(6 of 12);
     }
   }
 
-  .art-item {
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    height: 402px;
-
+  .person-description {
     @include media($medium-screen) {
-      @include span-columns(4 of 12);
+      @include span-columns(6 of 12);
     }
 
-    img {
-      @include size(100% auto);
+    .description {
+      font-weight: 400;
+      font-size: $f3;
+      line-height: 36px;
     }
   }
 }
@@ -43,60 +40,47 @@ article.priority-row {
 
   .fa-facebook-official {
     color: white;
-    font-size: $f5 * 2;
+    font-size: $f5 * 1.5;
     text-align: center;
     width: 100%;
     margin-bottom: 16px;
   }
 }
 
-article.project-item {
-  @include media($medium-screen) {
-    @include span-columns(4 of 12);
-    @include omega(3n);
-  }
+.project-description {
+  margin-top: $gt-s;
+}
 
-  background: white;
-  margin-bottom: $gt-l;
+.project-name {
+  color: rgba($base-font-color, 0.5);
+  font-size: $f0;
+  font-weight: $fw-semibold;
+}
 
-  .p-title {
-    color: $base-font-color;
-    font-size: ($f2 + $f3) / 2;
-    font-weight: $fw-semibold;
-  }
+.project-type {
+  @extend .normal;
+  @extend .half-opacity;
+  color: $base-font-color;
+  font-size: $f0;
+}
 
-  .p-timeframe {
-    @extend .normal;
-    @extend .half-opacity;
-    color: $base-font-color;
-  }
+.p-timeframe {
+  @extend .normal;
+  @extend .half-opacity;
+  color: $base-font-color;
+}
 
-  .p-type {
-    @extend .normal;
-    @extend .half-opacity;
-    color: $base-font-color;
-  }
 
-  .p-subtitle {
-    margin-top: 0;
-    @extend .normal;
-    @extend .half-opacity;
-    font-size: $f0;
-    color: $base-font-color;
-    font-family: $sans-serif-typeface;
-
-    a {
-      text-decoration: underline;
-    }
-  }
+.p-subtitle {
+  margin-top: 0;
+  @extend .normal;
+  @extend .half-opacity;
+  font-size: $f0;
+  color: $base-font-color;
+  font-family: $sans-serif-typeface;
 
   a {
-    color: $base-font-color;
-    text-decoration: none;
-
-    &:hover {
-      text-decoration: underline;
-    }
+    text-decoration: underline;
   }
 }
 
@@ -124,10 +108,6 @@ article.project-item {
       top: -($gt-xs - 0.1em);
     }
   }
-}
-
-.project-index-image-container {
-  position: relative;
 }
 
 .project-index-timeframe {

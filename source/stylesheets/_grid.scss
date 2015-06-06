@@ -1,5 +1,5 @@
 .grid-item {
-  margin-bottom: $gt-m;
+  margin-bottom: $gt-xl;
 
   @include media($medium-screen) {
     @include span-columns(4 of 12);
@@ -12,6 +12,7 @@
 
   img {
     max-height: 250px;
+    min-height: 250px;
     object-fit: cover;
     width: 100%;
   }
