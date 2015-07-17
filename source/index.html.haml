@@ -19,7 +19,8 @@ layout: "home"
         - if project.external === true
           %article.grid-item
             .grid-item-wrapper
-              = link_to image_tag(project.index_image_url, class: "project-index-image"), project.url
+              -# = link_to image_tag(project.index_image_url, class: "project-index-image"), project.url
+              = image_tag(project.index_image_url, class: "project-index-image")
               .project-description
                 %h2.project-name #{project.name} (#{project.timeframe})
                 %h3.project-type= project.type
@@ -28,7 +29,8 @@ layout: "home"
           - if project.index_image_url?
             %article.grid-item
               .grid-item-wrapper
-                = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
+                -# = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
+                = image_tag(project.index_image_url, class: "project-index-image")
                 .project-description
                   %h2.project-name #{project.name} (#{project.timeframe})
                   %h3.project-type= project.type
