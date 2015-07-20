@@ -105,8 +105,8 @@ projects:
     subtitle: ""
     slug: cardinal
     type: Fine Art
-    main_image_url: "art/cardinal-colored/cardinalcolored.jpg"
-    index_image_url: "art/cardinal-colored/cardinalcolored.jpg"
+    main_image_url: "art/cardinal-colored/CardinalColored.jpg"
+    index_image_url: "art/cardinal-colored/CardinalColored.jpg"
     timeframe: 2010
     external: false
   -

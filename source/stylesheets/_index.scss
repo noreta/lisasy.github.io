@@ -13,6 +13,17 @@ article.priority-row {
     }
   }
 
+  .art-cta-item {
+    background-color: #3b5998;
+    padding: $gt-xxl $gt-l;
+    text-align: center;
+    color: white;
+
+    @include media($medium-screen) {
+      @include span-columns(6 of 12);
+    }
+  }
+
   .person-description {
     @include media($medium-screen) {
       @include span-columns(6 of 12);

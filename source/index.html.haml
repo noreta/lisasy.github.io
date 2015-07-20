@@ -9,9 +9,11 @@ layout: "home"
         %i.fa.fa-facebook-official
         %h4.facebook-title Product Designer
         %h5.facebook-timeframe January 2015 — Now
-      .person-description
-        %h2.description
-          Hey there! My name is Lisa, and I'm an interdisciplinary designer, artist, illustrator, and front-end developer. I currently work at Facebook in California as a product designer.
+      .art-cta-item
+        %h4 View my art tumblr
+      -# .person-description
+      -#   %h2.description
+      -#     Hey there! My name is Lisa, and I'm an interdisciplinary designer, artist, illustrator, and front-end developer. I currently work at Facebook in California as a product designer.
 
   .p-top-l
     %article.full-width.fl-w
@@ -21,9 +23,9 @@ layout: "home"
             .grid-item-wrapper
               -# = link_to image_tag(project.index_image_url, class: "project-index-image"), project.url
               = image_tag(project.index_image_url, class: "project-index-image")
-              .project-description
-                %h2.project-name #{project.name} (#{project.timeframe})
-                %h3.project-type= project.type
+              -# .project-description
+              -#   %h2.project-name #{project.name} (#{project.timeframe})
+              -#   %h3.project-type= project.type
 
         - else
           - if project.index_image_url?
@@ -31,6 +33,6 @@ layout: "home"
               .grid-item-wrapper
                 -# = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
                 = image_tag(project.index_image_url, class: "project-index-image")
-                .project-description
-                  %h2.project-name #{project.name} (#{project.timeframe})
-                  %h3.project-type= project.type
+                -# .project-description
+                -#   %h2.project-name #{project.name} (#{project.timeframe})
+                -#   %h3.project-type= project.type
