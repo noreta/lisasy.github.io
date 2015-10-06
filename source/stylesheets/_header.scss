@@ -1,6 +1,6 @@
 .header {
+  background-color: $light-tan;
   font-family: $sans-serif-typeface;
-  background-color: #555E97;
 }
 
 .header a {
@@ -50,6 +50,19 @@
   }
 
   a {
+    margin-bottom: 4px;
+
+    &:hover {
+      border-bottom: 2px solid $base-font-color;
+      text-decoration: none;
+    }
+  }
+}
+
+.header-home {
+  background-color: #555E97;
+
+  a {
     color: white;
     margin-bottom: 4px;
 
@@ -59,3 +72,4 @@
     }
   }
 }
+

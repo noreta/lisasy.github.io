@@ -8,23 +8,30 @@ section.masthead {
   }
 
   .header-title {
-    font-size: 32px;
     font-weight: 400;
     margin-bottom: 12px;
+
+    @include media($medium-screen) {
+      font-size: 32px;
+    }
   }
 
   .header-subtitle {
-    font-size: 18px;
     font-weight: 400;
     opacity: 0.5;
+    @include media($medium-screen) {
+      font-size: 18px;
+    }
   }
 }
 
 section.miscellaneous {
   article.history,
   article.writing {
-    @include span-columns(6 of 12);
-    @include omega(2n);
+    @include media($medium-screen) {
+      @include span-columns(6 of 12);
+      @include omega(2n);
+    }
   }
 
   ul {

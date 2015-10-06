@@ -6,19 +6,21 @@
 }
 
 .resources-header {
-  padding: 2em 0 1em;
+  padding: 4em 0;
   text-align: center;
-  margin-bottom: 3em;
+  margin-bottom: 2em;
 }
 
 .resources-header .title {
   font-size: $f3;
+  line-height: 1.5;
 }
 
 .resources-header .subtitle {
   font-weight: 400;
-  font-size: $f2;
-  margin-bottom: 1.5em;
+  font-size: ($f2 + $f3)/2;
+  line-height: 1.5;
+  margin-bottom: 0.5em;
 }
 
 .separator-block {
@@ -30,11 +32,12 @@
 
 .resources-list {
   padding-left: 0;
+  margin-bottom: $gt-xl;
 }
 
 .resources-list li {
   list-style-type: none;
-  margin-bottom: 2em;
+  margin-bottom: 3em;
 }
 
 .resources-list li p {
