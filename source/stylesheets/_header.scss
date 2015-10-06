@@ -1,5 +1,6 @@
 .header {
   font-family: $sans-serif-typeface;
+  background-color: #555E97;
 }
 
 .header a {
@@ -46,5 +47,15 @@
 
   &:last-child {
     margin-right: 0;
+  }
+
+  a {
+    color: white;
+    margin-bottom: 4px;
+
+    &:hover {
+      border-bottom: 2px solid white;
+      text-decoration: none;
+    }
   }
 }

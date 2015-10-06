@@ -1,39 +1,72 @@
 ---
 layout: "home"
 ---
-
+%section.masthead
+  %section.outer-container.masthead-content
+    %h1.header-title Lisa Sy is a designer and artist based in Oakland, California.
+    %h2.header-subtitle Art, design, and technology oriented towards community and self-expression.
 %section.outer-container
-  .p-top-m
-    %article.priority-row
-      .facebook-item
-        %i.fa.fa-facebook-official
-        %h4.facebook-title Product Designer
-        %h5.facebook-timeframe January 2015 — Now
-      .art-cta-item
-        %h4
-          = link_to "View my art tumblr", "http://lisasyart.tumblr.com"
-      -# .person-description
-      -#   %h2.description
-      -#     Hey there! My name is Lisa, and I'm an interdisciplinary designer, artist, illustrator, and front-end developer. I currently work at Facebook in California as a product designer.
-
-  .p-top-l
-    %article.full-width.fl-w
-      - data.projects.projects.each_with_index do |project, index|
-        - if project.external === true
-          %article.grid-item
-            .grid-item-wrapper
-              -# = link_to image_tag(project.index_image_url, class: "project-index-image"), project.url
-              = image_tag(project.index_image_url, class: "project-index-image")
-              -# .project-description
-              -#   %h2.project-name #{project.name} (#{project.timeframe})
-              -#   %h3.project-type= project.type
-
-        - else
-          - if project.index_image_url?
-            %article.grid-item
-              .grid-item-wrapper
-                -# = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
-                = image_tag(project.index_image_url, class: "project-index-image")
-                -# .project-description
-                -#   %h2.project-name #{project.name} (#{project.timeframe})
-                -#   %h3.project-type= project.type
+  %section.project-cta-area
+    %article.box-link
+      = link_to "Product Design", ""
+    %article.box-link
+      = link_to "Product Design", ""
+    %article.box-link
+      = link_to "Product Design", ""
+  %section.miscellaneous
+    %article.history
+      %ul
+        %li
+          %p.title Facebook
+          %p.caption Product Designer, January 2015 - Present
+          %p.caption Menlo Park, CA
+        %li
+          %p.title thoughtbot, inc.
+          %p.caption Product Designer, January 2013 - November 2014
+          %p.caption San Francisco, CA
+        %li
+          %p.title Wesleyan University
+          %p.caption Bachelor of Arts, American Studies, 2013
+          %p.caption Middletown, CT
+    %article.writing
+      %ul
+        - blog.articles.each do |article|
+          %li
+            %p.title=link_to article.title, article.url
+            %p.caption=format_date(article.date)
+-#
+-# %section.outer-container
+-#   .p-top-m
+-#     %article.priority-row
+-#       .facebook-item
+-#         %i.fa.fa-facebook-official
+-#         %h4.facebook-title Product Designer
+-#         %h5.facebook-timeframe January 2015 — Now
+-#       .art-cta-item
+-#         %h4
+-#           = link_to "View my art tumblr", "http://lisasyart.tumblr.com"
+-#       -# .person-description
+-#       -#   %h2.description
+-#       -#     Hey there! My name is Lisa, and I'm an interdisciplinary designer, artist, illustrator, and front-end developer. I currently work at Facebook in California as a product designer.
+-#
+-#   .p-top-l
+-#     %article.full-width.fl-w
+-#       - data.projects.projects.each_with_index do |project, index|
+-#         - if project.external === true
+-#           %article.grid-item
+-#             .grid-item-wrapper
+-#               -# = link_to image_tag(project.index_image_url, class: "project-index-image"), project.url
+-#               = image_tag(project.index_image_url, class: "project-index-image")
+-#               -# .project-description
+-#               -#   %h2.project-name #{project.name} (#{project.timeframe})
+-#               -#   %h3.project-type= project.type
+-#
+-#         - else
+-#           - if project.index_image_url?
+-#             %article.grid-item
+-#               .grid-item-wrapper
+-#                 -# = link_to image_tag(project.index_image_url, class: "project-index-image"), "/projects/#{project.slug}"
+-#                 = image_tag(project.index_image_url, class: "project-index-image")
+-#                 -# .project-description
+-#                 -#   %h2.project-name #{project.name} (#{project.timeframe})
+-#                 -#   %h3.project-type= project.type

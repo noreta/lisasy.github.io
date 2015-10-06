@@ -1,3 +1,57 @@
+section.masthead {
+  background-color: #555E97;
+  color: white;
+  text-align: center;
+
+  .masthead-content {
+    padding: 180px 0;
+  }
+
+  .header-title {
+    font-size: 32px;
+    font-weight: 400;
+    margin-bottom: 12px;
+  }
+
+  .header-subtitle {
+    font-size: 18px;
+    font-weight: 400;
+    opacity: 0.5;
+  }
+}
+
+section.miscellaneous {
+  article.history,
+  article.writing {
+    @include span-columns(6 of 12);
+    @include omega(2n);
+  }
+
+  ul {
+    padding-left: 0;
+
+    li {
+      list-style-type: none;
+      margin-bottom: 24px;
+
+      p {
+        margin: 0;
+      }
+    }
+  }
+
+  .title {
+    font-size: 16px;
+    line-height: (24/16) * 100%;
+  }
+
+  .caption {
+    color: #96999E;
+    font-size: 14px;
+    line-height: (20/14) * 100%;
+  }
+}
+
 article.priority-row {
   @include fill-parent();
   overflow: hidden;
