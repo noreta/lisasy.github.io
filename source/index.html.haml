@@ -6,15 +6,16 @@ layout: "home"
     %h1.header-title Lisa Sy is a designer and artist based in Oakland, California.
     %h2.header-subtitle Art, design, and technology oriented towards community and self-expression.
 %section.outer-container
-  %section.project-cta-area
-    %article.box-link
-      = link_to "Product Design", ""
-    %article.box-link
-      = link_to "Product Design", ""
-    %article.box-link
-      = link_to "Product Design", ""
+  -# %section.project-cta-area
+  -#   %article.box-link
+  -#     = link_to "Product Design", ""
+  -#   %article.box-link
+  -#     = link_to "Product Design", ""
+  -#   %article.box-link
+  -#     = link_to "Product Design", ""
   %section.miscellaneous
     %article.history
+      %h2.section-title Experiences
       %ul
         %li
           %p.title Facebook
@@ -29,6 +30,7 @@ layout: "home"
           %p.caption Bachelor of Arts, American Studies, 2013
           %p.caption Middletown, CT
     %article.writing
+      %h2.section-title Articles
       %ul
         - blog.articles.each do |article|
           %li

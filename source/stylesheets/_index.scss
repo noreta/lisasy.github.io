@@ -25,7 +25,19 @@ section.masthead {
   }
 }
 
+.section-title {
+  display: inline;
+  font-size: 16px;
+  padding-bottom: 4px;
+  border-bottom: 2px solid $base-font-color;
+ 
+ 
+}
+
 section.miscellaneous {
+  padding: $gt-l 0;
+  overflow: hidden;
+
   article.history,
   article.writing {
     @include media($medium-screen) {
@@ -36,10 +48,15 @@ section.miscellaneous {
 
   ul {
     padding-left: 0;
+    margin-bottom: 0;
 
     li {
       list-style-type: none;
       margin-bottom: 24px;
+
+      &:last-child {
+        margin-bottom: 0;
+      }
 
       p {
         margin: 0;
