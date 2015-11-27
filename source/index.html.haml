@@ -5,14 +5,19 @@ layout: "home"
   %section.outer-container.masthead-content
     %h1.header-title Lisa Sy is a designer and artist based in Oakland, California.
     %h2.header-subtitle Art, design, and technology oriented towards community and self-expression.
+%section.featured-project
+  %article.outer-container.featured-project-content
+    -# %h2.featured-section-title Featured Project
+    %section.family-portrait-container
+      .images-container
+        = image_tag("art/family-portrait/01-dad-daughter.png", class: "")
+        = image_tag("art/family-portrait/02-dad-son.png", class: "")
+        = image_tag("art/family-portrait/03-mom-children.png", class: "")
+      -# .text-container
+      -#   %h2.project-title Family Portrait
+      -#   %caption Oil on canvas, 2015
+
 %section.outer-container
-  -# %section.project-cta-area
-  -#   %article.box-link
-  -#     = link_to "Product Design", ""
-  -#   %article.box-link
-  -#     = link_to "Product Design", ""
-  -#   %article.box-link
-  -#     = link_to "Product Design", ""
   %section.miscellaneous
     %article.history
       %h2.section-title Experiences
